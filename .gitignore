@@ -3,6 +3,8 @@ myEnv/
 
 # Test files
 TestFiles/
+logs/
+outputs/
 
 # Python cache
 __pycache__/
