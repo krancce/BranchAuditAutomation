@@ -1,5 +1,6 @@
 import json
 import argparse
+import os
 from PIL import Image
 import openai
 from pathlib import Path
@@ -9,24 +10,24 @@ import base64
 import logging
 from datetime import datetime
 import time
-import google.generativeai as genai
-import os
+from dotenv import load_dotenv
 
 
+
+load_dotenv() # pulls variables from .env into os.environ
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # --- Configuration & Constants ---
 MODEL_PRICING = {
     "gpt-4o": {"input": 0.005, "output": 0.015},
     "o4-mini": {"input": 0.00015, "output": 0.0006},
     "gpt-3.5-turbo": {"input": 0.0005, "output": 0.0015},
-    "gemini-pro-vision": {"input": 0.000125, "output": 0.000375}
 }
 
 MODEL_TOKEN_LIMIT = {
     "gpt-4o": 128000,
     "gpt-3.5-turbo": 16385,
     "o4-mini": 128000,  # Assume same limit as gpt-4o until confirmed otherwise
-    "gemini-pro-vision": 60000
 }
 
 
@@ -49,18 +50,6 @@ def init_openai_client():
     except openai.OpenAIError as e:
         print(f"Error initializing OpenAI client: {e}. Ensure OPENAI_API_KEY is set.")
         exit(1)
-
-# Initialize Gemini Client
-# Expects Gemini_API_KEY environment variable to be set
-def init_gemini_client():
-    from google.generativeai import configure
-
-    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    if not GOOGLE_API_KEY:
-        print("Error: GOOGLE_API_KEY environment variable is not set.")
-        exit(1)
-    
-    configure(api_key=GOOGLE_API_KEY)
 
 # --- Logging Setup ---
 def setup_logging():
@@ -172,37 +161,16 @@ def evaluate_batch(model: str, general_prompt: str, section_prompt: str,
         params["temperature"] = 0.2
 
     # Send request
-    return client.chat.completions.create(**params).to_dict()
-
-# --- Google Gemini API Interaction ---
-def evaluate_batch_gemini(general_prompt: str, section_prompt: str,
-                          gold_images: List[Path], batch_images: Dict[str, List[Path]]) -> Dict[str, Any]:
-    model = genai.GenerativeModel('gemini-pro-vision')
-    image_parts = []
-
-    # Add gold images
-    for i, img_path in enumerate(gold_images):
-        img_bytes = resize_image(img_path)
-        image_parts.append({"mime_type": "image/jpeg", "data": img_bytes})
-        image_parts.append(f"Gold Standard {i+1}.")
-
-    # Add submission images
-    for store_id, imgs in batch_images.items():
-        image_parts.append(f"Submission from store {store_id}:")
-        for img_path in imgs:
-            img_bytes = resize_image(img_path)
-            image_parts.append({"mime_type": "image/jpeg", "data": img_bytes})
-
-    full_prompt = [f"{general_prompt}\n\n{section_prompt}\n\nEvaluate all submissions. Return a JSON object mapping each store ID to its audit result."]
-
-    # Gemini handles multimodal prompt as a list of strings and image dicts
-    prompt_parts = full_prompt + image_parts
-    response = model.generate_content(prompt_parts)
-    
-    return {
-        "usage": {"prompt_tokens": 0, "completion_tokens": 0},  # Gemini doesn't return token usage reliably
-        "choices": [{"message": {"content": response.text}}]
-    }
+    # Send request with error handling
+    try:
+        response = client.chat.completions.create(**params)
+        return response.to_dict()
+    except openai.OpenAIError as e:
+        logging.error(f"OpenAI API error: {e}")
+        raise
+    except Exception as e:
+        logging.error(f"Unexpected error during OpenAI call: {e}")
+        raise
 
 
 # --- Cost Calculation ---
@@ -274,7 +242,10 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
 
     # Load prompts
     try:
-        general_prompt = load_prompt(Path("testfiles/branch_audit_system_prompt.txt"))
+        general_prompt = load_prompt(Path("testfiles/branch_audit_system_prompt.txt")).replace(
+            "YYYY-MM-DD and YYYY-MM-DD", f"{args.start_date} and {args.end_date}"
+        )
+
         section_prompt = load_prompt(Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section_name}.txt")
     except Exception as e:
         print(f"❌ Failed to load prompt files: {e}")
@@ -307,22 +278,13 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
 
         start_time = time.time()
         try:
-            if model.startswith("gemini"):
-                api_result = evaluate_batch_gemini(
-                    general_prompt=general_prompt,
-                    section_prompt=section_prompt,
-                    gold_images=gold_images,
-                    batch_images=batch
-                )
-            else:
-                api_result = evaluate_batch(
-                    model=model,
-                    general_prompt=general_prompt,
-                    section_prompt=section_prompt,
-                    gold_images=gold_images,
-                    batch_images=batch
-                )
-
+            api_result = evaluate_batch(
+            model=model,
+            general_prompt=general_prompt,
+            section_prompt=section_prompt,
+            gold_images=gold_images,
+            batch_images=batch
+            )
 
             end_time = time.time()
             elapsed_time = end_time - start_time  # In seconds
@@ -339,27 +301,102 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                 percent_used = (total_tokens / max_tokens) * 100
                 total_cost += cost
 
-                try:
-                    store_results = json.loads(content)
-                    parsed_successfully = True
-                except json.JSONDecodeError:
-                    logging.error(f"Malformed JSON returned in batch {i+1}. Content:\n{content[:500]}")
-                    print(f"⚠️ Batch {i+1} returned invalid JSON. Storing raw response for each store.")
-                    parsed_successfully = False
-                    # Save raw response for each store in the batch
-                    store_results = { store_id: {
-                        "raw_response_error": "Failed to parse JSON for batch.",
-                        "raw_text_excerpt": content[:500]  # limit size to avoid bloating
-                        }
-                        for store_id in batch.keys()
-                    }
+                max_retries = 3
+                for attempt in range(max_retries):
+                    try:
+                        store_results = json.loads(content.strip().strip('```json').strip('```'))
+                        break  # Successful parse
+                    except json.JSONDecodeError as e:
+                        logging.error(f"❌ JSON parsing failed for batch {i+1}, attempt {attempt+1}. Error: {e}. Content:\n{content[:500]}")
+                        print(f"❌ Batch {i+1} returned invalid JSON. Attempt {attempt+1} of {max_retries}. Retrying...")
+                        
+                        if attempt < max_retries - 1:
+                            # Re-evaluate the batch to get a new response
+                            time.sleep(2)  # small delay before retry
+                            api_result = evaluate_batch(
+                                model=model,
+                                general_prompt=general_prompt,
+                                section_prompt=section_prompt,
+                                gold_images=gold_images,
+                                batch_images=batch
+                            )
+                            content = api_result.get("choices")[0].get("message").get("content")
+                            usage = api_result.get("usage", {})
+                            prompt_tokens = usage.get("prompt_tokens", 0)
+                            completion_tokens = usage.get("completion_tokens", 0)
+                            total_tokens = prompt_tokens + completion_tokens
+                            cost = compute_cost(model, prompt_tokens, completion_tokens)
+                            total_cost += cost
+                        else:
+                            effective_cost = max(cost, 0.01)
+                            with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
+                                f.write(
+                                    f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
+                                    f"  Stores: {len(batch)}\n"
+                                    f"  Prompt Tokens: {prompt_tokens}\n"
+                                    f"  Completion Tokens: {completion_tokens}\n"
+                                    f"  Total Tokens: {total_tokens}\n"
+                                    f"  Token Usage: {percent_used:.2f}% of {max_tokens} limit\n"
+                                    f"  Input Cost: ${(prompt_tokens / 1000) * MODEL_PRICING[model]['input']:.6f}\n"
+                                    f"  Output Cost: ${(completion_tokens / 1000) * MODEL_PRICING[model]['output']:.6f}\n"
+                                    f"  Estimated Cost: ${cost:.6f}\n"
+                                    f"  Billed (Minimum) Cost: ${effective_cost:.2f}\n"
+                                    f"  Time Taken: {elapsed_time:.2f} seconds\n"
+                                    f"  ❌ ERROR: JSON failed after {max_retries} attempts. Skipping batch.\n\n"
+                                )
+                            print(f"❌ Aborting batch {i+1} after {max_retries} failed attempts to get valid JSON.")
+                            exit(1)
+
+
 
                 for store_id, section_result in store_results.items():
                     update_store_json(store_id, section_name, section_result, OUTPUTS_DIR)
 
                 effective_cost = max(cost, 0.01)  # OpenAI enforces minimum billing per request
 
-                low_conf_log = format_low_confidence_stores(store_results, threshold=0.75)
+                # Stats summary
+                low_conf_threshold = 0.75
+
+                # Build log summary string
+                # Track failed store IDs and those needing manual review
+                failed_stores = []
+                manual_review_stores = []
+                num_pass = 0
+                num_fail = 0
+
+                for store_id, result in store_results.items():
+                    if isinstance(result, dict):
+                        conf = result.get("confidence", 1.0)
+                        if isinstance(conf, (int, float)) and conf < low_conf_threshold:
+                            manual_review_stores.append((store_id, conf))
+                        if result.get("pass") is False:
+                            num_fail+= 1
+                            failed_stores.append(store_id)
+                        elif result.get("pass") is True:
+                            num_pass += 1
+
+                total_evaluated = num_pass + num_fail
+                pass_rate = (num_pass / total_evaluated) * 100 if total_evaluated > 0 else 0.0
+
+                low_conf_log = (
+                    f"  Total evaluated: {total_evaluated}\n"
+                    f"  Passed: {num_pass}\n"
+                    f"  Failed: {num_fail}\n"
+                    f"  Pass Rate: {pass_rate:.2f}%\n"
+                    f"  Stores requiring manual review (confidence < {low_conf_threshold}): {len(manual_review_stores)}\n"
+                )
+
+                if failed_stores:
+                    low_conf_log += "  ❌ Failed stores:\n"
+                    for store_id in failed_stores:
+                        low_conf_log += f"    - {store_id}\n"
+
+                if manual_review_stores:
+                    low_conf_log += "  🧐 Manual review stores:\n"
+                    for store_id, conf in manual_review_stores:
+                        low_conf_log += f"    - {store_id}: Confidence {conf:.2f}\n"
+
+
 
                 with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
                     f.write(
@@ -374,11 +411,11 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                         f"  Estimated Cost: ${cost:.6f}\n"
                         f"  Billed (Minimum) Cost: ${effective_cost:.2f}\n"
                         f"  Time Taken: {elapsed_time:.2f} seconds\n\n"
-                        f"{low_conf_log if parsed_successfully else '⚠️ JSON parsing failed — raw response stored.'}\n"
+                        f"{low_conf_log}\n"
                     )
 
             else:
-                print("⚠️ API result malformed. Skipping batch.")
+                logging.warning(f"API result malformed in batch {i+1}. No content or usage returned.")
 
         except Exception as e:
             print(f"❌ Error processing batch {i+1}: {e}")
@@ -412,16 +449,23 @@ if __name__ == "__main__":
         help="Number of stores to include in each API call batch."
     )
 
+    parser.add_argument(
+    "--start-date",
+    type=str,
+    required=True,
+    help="Start date in YYYY-MM-DD format. Images earlier than this will be flagged."
+    )
+    parser.add_argument(
+        "--end-date",
+        type=str,
+        required=True,
+        help="End date in YYYY-MM-DD format. Images later than this will be flagged."
+    )
+
     args = parser.parse_args()
 
-    # Initialize Gemini client if selected model is Gemini
-    if args.model.startswith("gemini"):
-        if not os.getenv("GOOGLE_API_KEY"):
-            print("❌ Error: GOOGLE_API_KEY environment variable is not set.")
-            exit(1)
-        init_gemini_client()
-    else:
-        init_openai_client()
+    # Initialize the openAI client
+    init_openai_client()
     
     # Define OUTPUTS_DIR dynamically based on model
     OUTPUTS_DIR = Path("outputs") / args.model

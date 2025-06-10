@@ -9,3 +9,6 @@ outputs/
 # Python cache
 __pycache__/
 *.pyc
+
+# API KEY
+.env
