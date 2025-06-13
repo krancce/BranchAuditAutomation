@@ -199,6 +199,7 @@ def compute_cost(model: str, prompt_tokens: int, completion_tokens: int) -> floa
     
     input_cost = (prompt_tokens / 1000) * rates["input"]
     output_cost = (completion_tokens / 1000) * rates["output"]
+
     return input_cost + output_cost
 
 # --- Output Writer ---
@@ -254,6 +255,14 @@ def format_low_confidence_stores(store_results: dict, threshold: float = 0.75) -
 
 # --- Main Pipeline ---
 def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int, start_date: str):
+
+    # Section Log initialization
+    section_start_time = time.time()
+    total_prompt_tokens = 0
+    total_completion_tokens = 0
+    all_passed_stores = []
+    all_failed_stores = []
+
     print(f"Processing section: {section_name} (model: {model})")
 
     # Load prompts
@@ -291,9 +300,9 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
     total_cost = 0.0
 
     for i, batch in enumerate(batches):
+        start_time = time.time()
         print(f"\n🌀 Processing batch {i + 1}/{len(batches)} ({len(batch)} stores)...")
 
-        start_time = time.time()
         try:
             api_result = evaluate_batch(
             model=model,
@@ -314,6 +323,8 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                 completion_tokens = usage.get("completion_tokens", 0)
                 total_tokens = prompt_tokens + completion_tokens
                 cost = compute_cost(model, prompt_tokens, completion_tokens)
+                total_prompt_tokens += prompt_tokens
+                total_completion_tokens += completion_tokens
                 max_tokens = MODEL_TOKEN_LIMIT.get(model, 100000)  # fallback if not defined
                 percent_used = (total_tokens / max_tokens) * 100
                 total_cost += cost
@@ -322,11 +333,18 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                 for attempt in range(max_retries):
                     try:
                         store_results = json.loads(content.strip().strip('```json').strip('```'))
+                        if not isinstance(store_results, dict) or not store_results:
+                            raise ValueError("Invalid response: not a valid store_id dictionary")
                         break  # Successful parse
+
+
                     except json.JSONDecodeError as e:
                         logging.error(f"❌ JSON parsing failed for batch {i+1}, attempt {attempt+1}. Error: {e}. Content:\n{content[:500]}")
                         print(f"❌ Batch {i+1} returned invalid JSON. Attempt {attempt+1} of {max_retries}. Retrying...")
                         
+                        if attempt == 0: 
+                            print(f"\n🌀 Processing batch {i + 1}/{len(batches)} ({len(batch)} stores)...")
+
                         if attempt < max_retries - 1:
                             # Re-evaluate the batch to get a new response
                             time.sleep(2)  # small delay before retry
@@ -347,9 +365,13 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                         else:
                             effective_cost = max(cost, 0.01)
                             with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
+                                evaluated_store_ids = list(batch.keys())
+                                store_list_str = ", ".join(evaluated_store_ids)
+
                                 f.write(
                                     f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
-                                    f"  Stores: {len(batch)}\n"
+                                    f"  Number of Stores Evaluated: {len(batch)}\n"
+                                    f"  Stores Evaluated: {store_list_str}\n"
                                     f"  Prompt Tokens: {prompt_tokens}\n"
                                     f"  Completion Tokens: {completion_tokens}\n"
                                     f"  Total Tokens: {total_tokens}\n"
@@ -362,7 +384,8 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                                     f"  ❌ ERROR: JSON failed after {max_retries} attempts. Skipping batch.\n\n"
                                 )
                             print(f"❌ Aborting batch {i+1} after {max_retries} failed attempts to get valid JSON.")
-                            exit(1)
+                            continue
+
 
 
 
@@ -389,8 +412,10 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                         if result.get("pass") is False:
                             num_fail+= 1
                             failed_stores.append(store_id)
+                            all_failed_stores.append(store_id)
                         elif result.get("pass") is True:
                             num_pass += 1
+                            all_passed_stores.append(store_id)
 
                 total_evaluated = num_pass + num_fail
                 pass_rate = (num_pass / total_evaluated) * 100 if total_evaluated > 0 else 0.0
@@ -416,10 +441,14 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
 
 
                 with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
+                    evaluated_store_ids = list(store_results.keys())
+                    store_list_str = ", ".join(evaluated_store_ids)
+
                     f.write(
                         f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
-                        f"  Stores: {len(batch)}\n"
-                        f"  Section Evaluated: {args.section}\n"
+                        f"  Number of Stores Evaluated: {len(batch)}\n"
+                        f"  Section Evaluated: {section_name}\n"
+                        f"  Stores Evaluated: {store_list_str}\n"
                         f"  Prompt Tokens: {prompt_tokens}\n"
                         f"  Completion Tokens: {completion_tokens}\n"
                         f"  Total Tokens: {total_tokens}\n"
@@ -441,6 +470,40 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
 
     print(f"\n✅ Section {section_name} complete. Total cost: ${total_cost:.4f}")
 
+    # Section Log
+    section_end_time = time.time()
+    elapsed = section_end_time - section_start_time
+    total_stores = len(all_passed_stores) + len(all_failed_stores)
+    section_log_file = LOGS_DIR / "section_log.txt"
+
+    with open(section_log_file, "a", encoding="utf-8") as f:
+        f.write("="*60 + "\n")
+        f.write(f"📋 Section Summary: {section_name} — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("="*60 + "\n")
+        f.write(f"  Model: {model}\n")
+        f.write(f"  Stores Evaluated: {total_stores}\n")
+        f.write(f"  Passed: {len(all_passed_stores)}\n")
+        f.write(f"  Failed: {len(all_failed_stores)}\n")
+        f.write(f"  Prompt Tokens: {total_prompt_tokens}\n")
+        f.write(f"  Completion Tokens: {total_completion_tokens}\n")
+        f.write(f"  Total Tokens: {total_prompt_tokens + total_completion_tokens}\n")
+        f.write(f"  Estimated Cost: ${total_cost:.4f}\n")
+        f.write(f"  Total Time: {elapsed:.2f} seconds\n\n")
+        f.write("\n\n")
+
+        if all_failed_stores:
+            f.write("❌ Failed Stores:\n")
+            for sid in all_failed_stores:
+                f.write(f"  - {sid}\n")
+
+        if all_passed_stores:
+            f.write("\n✅ Passed Stores:\n")
+            for sid in all_passed_stores:
+                f.write(f"  - {sid}\n")
+
+    print(f"📝 Section summary written to: {section_log_file}")
+
+
 # --- Command-Line Interface ---
 if __name__ == "__main__":
     setup_logging()  # Setup error logging to file
@@ -451,7 +514,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--section",
         required=True,
-        help="Section name to process (e.g., A1, B2, etc.). This must match the folder names in testfiles/submissions and testfiles/goldstandards."
+        help="Section name to process (e.g., A1, B2, etc.). Use 'ALL' to process all sections."
     )
     parser.add_argument(
         "--model",
@@ -477,6 +540,14 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    if args.section.upper() == "ALL":
+        section_list = sorted([
+            d.name for d in (Path("testfiles/submissions")).iterdir() if d.is_dir()
+        ])
+    else:
+        section_list = [args.section]
+
+
     # Initialize the openAI client
     init_openai_client()
     
@@ -499,14 +570,16 @@ if __name__ == "__main__":
     submissions_dir = testfiles_dir / "submissions"
     goldstandard_dir = testfiles_dir / "goldstandards"
 
-    process_section(
-        section_name=args.section,
-        submissions_dir=submissions_dir,
-        goldstandard_dir=goldstandard_dir,
-        model=args.model,
-        batch_size=args.batch_size,
-        start_date=args.start_date
-    )
+    for section in section_list:
+        print(f"\n===== Processing Section {section} =====")
+        process_section(
+            section_name=section,
+            submissions_dir=submissions_dir,
+            goldstandard_dir=goldstandard_dir,
+            model=args.model,
+            batch_size=args.batch_size,
+            start_date=args.start_date
+        )
 
     print("-" * 30)
     print("Automation run finished.")
