@@ -14,8 +14,10 @@ from dotenv import load_dotenv
 
 
 
-load_dotenv() # pulls variables from .env into os.environ
+load_dotenv(override=True) # pulls variables from .env into os.environ
 openai.api_key = os.getenv("OPENAI_API_KEY")
+print(f"✅ Python sees OPENAI_API_KEY = {os.getenv('OPENAI_API_KEY')[:10]}...")
+
 
 # --- Configuration & Constants ---
 MODEL_PRICING = {
@@ -140,13 +142,27 @@ def evaluate_batch(model: str, general_prompt: str, section_prompt: str,
 
     # Add submissions
     for store_id, imgs in batch_images.items():
-        user_content.append({"type": "text", "text": f"Submission from store {store_id}:"})
+        user_content.append({
+            "type": "text",
+            "text": f"Submission from store {store_id}.\nStore ID = \"{store_id}\". When returning your JSON, use this exact store ID as the key."
+        })
+
         for img_path in imgs:
             img_bytes = resize_image(img_path)
             img_b64 = image_to_base64(img_bytes)
             user_content.append({"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}})
 
     user_content.append({"type": "text", "text": "Evaluate all submissions. Return a JSON object mapping each store ID to its audit result using the format described in the system prompt."})
+    user_content.append({
+        "type": "text",
+        "text": (
+        "Important: You must return a JSON object mapping store IDs to their audit results.\n"
+        "Each key must match exactly the store ID shown in the 'Submission from store X' section.\n"
+        "Do not invent, skip, reorder, or renumber store IDs.\n"
+        "If you're unsure about any mapping, explicitly return a fail for that store ID with low confidence."
+        )
+    })
+
 
     messages.append({"role": "user", "content": user_content})
 
@@ -237,14 +253,15 @@ def format_low_confidence_stores(store_results: dict, threshold: float = 0.75) -
 
 
 # --- Main Pipeline ---
-def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int):
+def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int, start_date: str):
     print(f"Processing section: {section_name} (model: {model})")
 
     # Load prompts
     try:
-        general_prompt = load_prompt(Path("testfiles/branch_audit_system_prompt.txt")).replace(
-            "YYYY-MM-DD and YYYY-MM-DD", f"{args.start_date} and {args.end_date}"
-        )
+        system_prompt = load_prompt(Path("testfiles/branch_audit_system_prompt.txt"))
+        # only inject the start date into “YYYY-MM-DD”
+        general_prompt = system_prompt.replace("YYYY-MM-DD", start_date)
+
 
         section_prompt = load_prompt(Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section_name}.txt")
     except Exception as e:
@@ -402,6 +419,7 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
                     f.write(
                         f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
                         f"  Stores: {len(batch)}\n"
+                        f"  Section Evaluated: {args.section}\n"
                         f"  Prompt Tokens: {prompt_tokens}\n"
                         f"  Completion Tokens: {completion_tokens}\n"
                         f"  Total Tokens: {total_tokens}\n"
@@ -455,12 +473,7 @@ if __name__ == "__main__":
     required=True,
     help="Start date in YYYY-MM-DD format. Images earlier than this will be flagged."
     )
-    parser.add_argument(
-        "--end-date",
-        type=str,
-        required=True,
-        help="End date in YYYY-MM-DD format. Images later than this will be flagged."
-    )
+
 
     args = parser.parse_args()
 
@@ -491,7 +504,8 @@ if __name__ == "__main__":
         submissions_dir=submissions_dir,
         goldstandard_dir=goldstandard_dir,
         model=args.model,
-        batch_size=args.batch_size
+        batch_size=args.batch_size,
+        start_date=args.start_date
     )
 
     print("-" * 30)
