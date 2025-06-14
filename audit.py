@@ -11,6 +11,8 @@ import logging
 from datetime import datetime
 import time
 from dotenv import load_dotenv
+import httpx
+import asyncio
 
 
 
@@ -42,16 +44,6 @@ LOGS_DIR = Path("logs")
 OUTPUTS_DIR = Path("outputs")
 COST_LOG_FILE = LOGS_DIR / "cost_log.txt"
 ERROR_LOG_FILE = LOGS_DIR / "error_log.txt"
-
-# Initialize OpenAI Client
-# Expects OPENAI_API_KEY environment variable to be set
-def init_openai_client():
-    global client
-    try:
-        client = openai.OpenAI()
-    except openai.OpenAIError as e:
-        print(f"Error initializing OpenAI client: {e}. Ensure OPENAI_API_KEY is set.")
-        exit(1)
 
 # --- Logging Setup ---
 def setup_logging():
@@ -126,68 +118,35 @@ def load_prompt(file_path: Path) -> str:
         logging.error(f"Error loading prompt {file_path}: {e}")
         raise
 
-# --- OpenAI API Interaction ---
-def evaluate_batch(model: str, general_prompt: str, section_prompt: str,
-                   gold_images: List[Path], batch_images: Dict[str, List[Path]]) -> Dict[str, Any]:
-    messages = [{"role": "system", "content": general_prompt}]
-    user_content = [{"type": "text", "text": section_prompt}]
-
-    global client
-    # Gold standards
-    for i, img_path in enumerate(gold_images):
-        img_bytes = resize_image(img_path)
-        img_b64 = image_to_base64(img_bytes)
-        user_content.append({"type": "text", "text": f"Gold Standard {i+1}:"})
-        user_content.append({"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}})
-
-    # Add submissions
-    for store_id, imgs in batch_images.items():
-        user_content.append({
-            "type": "text",
-            "text": f"Submission from store {store_id}.\nStore ID = \"{store_id}\". When returning your JSON, use this exact store ID as the key."
-        })
-
-        for img_path in imgs:
-            img_bytes = resize_image(img_path)
-            img_b64 = image_to_base64(img_bytes)
-            user_content.append({"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}})
-
-    user_content.append({"type": "text", "text": "Evaluate all submissions. Return a JSON object mapping each store ID to its audit result using the format described in the system prompt."})
-    user_content.append({
-        "type": "text",
-        "text": (
-        "Important: You must return a JSON object mapping store IDs to their audit results.\n"
-        "Each key must match exactly the store ID shown in the 'Submission from store X' section.\n"
-        "Do not invent, skip, reorder, or renumber store IDs.\n"
-        "If you're unsure about any mapping, explicitly return a fail for that store ID with low confidence."
-        )
-    })
-
-
-    messages.append({"role": "user", "content": user_content})
-
-    # Build request parameters dynamically
-    params = {
-        "model": model,
-        "messages": messages
+# --- Async Batch Evaluations ---
+async def evaluate_batch_async(session, model, messages, i, max_retries=3):
+    headers = {
+        "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",
+        "Content-Type": "application/json"
     }
 
-    # Only apply temperature override if the model supports it
-    if model not in ["o4-mini"]:
-        params["temperature"] = 0.2
+    payload = {
+        "model": model,
+        "messages": messages,
+        "temperature": 0.2 if model != "o4-mini" else None
+    }
 
-    # Send request
-    # Send request with error handling
-    try:
-        response = client.chat.completions.create(**params)
-        return response.to_dict()
-    except openai.OpenAIError as e:
-        logging.error(f"OpenAI API error: {e}")
-        raise
-    except Exception as e:
-        logging.error(f"Unexpected error during OpenAI call: {e}")
-        raise
-
+    for attempt in range(max_retries):
+        try:
+            response = await session.post(
+                "https://api.openai.com/v1/chat/completions",
+                json={k: v for k, v in payload.items() if v is not None},
+                headers=headers,
+                timeout=60
+            )
+            response.raise_for_status()
+            return i, response.json()
+        except Exception as e:
+            logging.error(f"❌ Async batch {i+1} attempt {attempt+1}/{max_retries} failed: {e}")
+            print(f"❌ Async batch {i+1} attempt {attempt+1}/{max_retries} failed.")
+            if attempt == max_retries - 1:
+                return i, None
+            await asyncio.sleep(1.5 * (attempt + 1))  # brief backoff
 
 # --- Cost Calculation ---
 def compute_cost(model: str, prompt_tokens: int, completion_tokens: int) -> float:
@@ -219,14 +178,6 @@ def update_store_json(store_id: str, section: str, evaluation_content: Any, outp
     else:
         data = {"store_id": store_id, "evaluations": {}}
 
-    # The evaluation_content is likely a string from the model.
-    # If it's meant to be structured JSON from the model, parse it here.
-    # For now, storing as is.
-    # try:
-    #    data["evaluations"][section] = json.loads(evaluation_content)
-    # except json.JSONDecodeError:
-    #    data["evaluations"][section] = {"raw_text_evaluation": evaluation_content}
-
     data["evaluations"][section] = evaluation_content
 
 
@@ -252,18 +203,50 @@ def format_low_confidence_stores(store_results: dict, threshold: float = 0.75) -
         return "  Stores requiring manual review (confidence < 0.75):\n" + "\n".join(low_confidence_lines)
     return "ALL PASS!"
 
+### --- Create a list of message payloads — one for each batch — so they can be submitted asynchronously using evaluate_batch_async. ----
+def build_messages(general_prompt, section_prompt, gold_images, batch_images):
+    messages = [{"role": "system", "content": general_prompt}]
+    user_content = [{"type": "text", "text": section_prompt}]
+
+    # Attach gold standard images
+    for img in gold_images:
+
+        img_bytes = resize_image(img)
+        img_b64 = image_to_base64(img_bytes)
+
+        user_content.append({
+            "type": "image_url",
+            "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}
+        })
+
+    # Attach submitted images
+    for store_id, store_images in batch_images.items():
+        # Insert a store ID label as text before its images
+        user_content.append({"type": "text", "text": f"Store ID: {store_id}"})
+        for img_path in store_images:
+            img_bytes = resize_image(img_path)
+            img_b64 = image_to_base64(img_bytes)
+            user_content.append({
+                "type": "image_url",
+                "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}
+            })
+
+
+
+    messages.append({"role": "user", "content": user_content})
+    return messages
 
 # --- Main Pipeline ---
 def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int, start_date: str):
 
     # Section Log initialization
-    section_start_time = time.time()
     total_prompt_tokens = 0
     total_completion_tokens = 0
     all_passed_stores = []
     all_failed_stores = []
 
     print(f"Processing section: {section_name} (model: {model})")
+    section_start_time = time.time()
 
     # Load prompts
     try:
@@ -294,179 +277,135 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
         return
 
     batches = batch_stores(store_dict, batch_size=batch_size)
+    # Prepare OpenAI message payloads for each batch (for async submission)
+    batch_payloads = []
+    for i, batch in enumerate(batches):
+        messages = build_messages(general_prompt, section_prompt, gold_images, batch)
+        batch_payloads.append((i, messages, batch))
+
+    async def process_batches():
+        async with httpx.AsyncClient() as session:
+            tasks = [
+                evaluate_batch_async(session, model, messages, i)
+                for i, messages, _ in batch_payloads
+            ]
+            return await asyncio.gather(*tasks)
+        
+    results = asyncio.run(process_batches())
+
+
     print(f"📦 Found {len(store_dict)} stores. Will process in {len(batches)} batch(es) of {batch_size}.")
 
 
     total_cost = 0.0
 
-    for i, batch in enumerate(batches):
-        start_time = time.time()
-        print(f"\n🌀 Processing batch {i + 1}/{len(batches)} ({len(batch)} stores)...")
+    for i, response_json in results:
+        batch = batch_payloads[i][2]  # batch_images
 
-        try:
-            api_result = evaluate_batch(
-            model=model,
-            general_prompt=general_prompt,
-            section_prompt=section_prompt,
-            gold_images=gold_images,
-            batch_images=batch
+        print(f"\n🌀 Processing batch {i + 1}/{len(batch_payloads)} ({len(batch)} stores)...")
+
+        if response_json is None:
+            print(f"❌ Batch {i+1} failed completely. Skipping...")
+            continue
+
+        content = response_json["choices"][0]["message"]["content"]
+        usage = response_json.get("usage", {})
+
+        # === Parsing JSON from model ===
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                store_results = json.loads(content.strip().strip('```json').strip('```'))
+                if not isinstance(store_results, dict) or not store_results:
+                    raise ValueError("Invalid response format")
+                break
+            except Exception as e:
+                logging.error(f"❌ JSON parsing failed for batch {i+1}, attempt {attempt+1}. Error: {e}")
+                print(f"❌ Batch {i+1} returned invalid JSON. Attempt {attempt+1}/{max_retries}. Skipping...")
+                if attempt == max_retries - 1:
+                    continue  # Skip this batch entirely
+
+        # === Token + cost accounting ===
+        prompt_tokens = usage.get("prompt_tokens", 0)
+        completion_tokens = usage.get("completion_tokens", 0)
+        total_tokens = prompt_tokens + completion_tokens
+        cost = compute_cost(model, prompt_tokens, completion_tokens)
+        total_prompt_tokens += prompt_tokens
+        total_completion_tokens += completion_tokens
+        max_tokens = MODEL_TOKEN_LIMIT.get(model, 100000)
+        percent_used = (total_tokens / max_tokens) * 100
+        total_cost += cost
+        effective_cost = max(cost, 0.01)
+        is_last_batch = i == len(batch_payloads) - 1
+
+        # === Update store JSONs ===
+        for store_id, section_result in store_results.items():
+            update_store_json(store_id, section_name, section_result, OUTPUTS_DIR)
+
+        # === Log pass/fail/confidence ===
+        failed_stores = []
+        manual_review_stores = []
+        num_pass = 0
+        num_fail = 0
+        low_conf_threshold = 0.75
+
+        for store_id, result in store_results.items():
+            if isinstance(result, dict):
+                conf = result.get("confidence", 1.0)
+                if isinstance(conf, (int, float)) and conf < low_conf_threshold:
+                    manual_review_stores.append((store_id, conf))
+                if result.get("pass") is False:
+                    num_fail += 1
+                    failed_stores.append(store_id)
+                    all_failed_stores.append(store_id)
+                elif result.get("pass") is True:
+                    num_pass += 1
+                    all_passed_stores.append(store_id)
+
+        total_evaluated = num_pass + num_fail
+        pass_rate = (num_pass / total_evaluated) * 100 if total_evaluated > 0 else 0.0
+
+        low_conf_log = (
+            f"  Total evaluated: {total_evaluated}\n"
+            f"  Passed: {num_pass}\n"
+            f"  Failed: {num_fail}\n"
+            f"  Pass Rate: {pass_rate:.2f}%\n"
+            f"  Stores requiring manual review (confidence < {low_conf_threshold}): {len(manual_review_stores)}\n"
+        )
+
+        if failed_stores:
+            low_conf_log += "  ❌ Failed stores:\n"
+            for store_id in failed_stores:
+                low_conf_log += f"    - {store_id}\n"
+
+        if manual_review_stores:
+            low_conf_log += "  🧐 Manual review stores:\n"
+            for store_id, conf in manual_review_stores:
+                low_conf_log += f"    - {store_id}: Confidence {conf:.2f}\n"
+
+        with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
+            evaluated_store_ids = list(store_results.keys())
+            store_list_str = ", ".join(evaluated_store_ids)
+            f.write(
+                f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batch_payloads)} - Model: {model}\n"
+                f"  Number of Stores Evaluated: {len(batch)}\n"
+                f"  Section Evaluated: {section_name}\n"
+                f"  Stores Evaluated: {store_list_str}\n"
+                f"  Prompt Tokens: {prompt_tokens}\n"
+                f"  Completion Tokens: {completion_tokens}\n"
+                f"  Total Tokens: {total_tokens}\n"
+                f"  Token Usage: {percent_used:.2f}% of {max_tokens} limit\n"
+                f"  Input Cost: ${(prompt_tokens / 1000) * MODEL_PRICING[model]['input']:.6f}\n"
+                f"  Output Cost: ${(completion_tokens / 1000) * MODEL_PRICING[model]['output']:.6f}\n"
+                f"  Estimated Cost: ${cost:.6f}\n"
+                f"  Billed (Minimum) Cost: ${effective_cost:.2f}\n"
             )
+            if is_last_batch:
+                section_end_time = time.time()
+                elapsed = section_end_time - section_start_time
+                f.write(f"  Total Section Elapsed Time: {elapsed:.2f} seconds\n")
+            f.write("\n" + low_conf_log + "\n")
 
-            end_time = time.time()
-            elapsed_time = end_time - start_time  # In seconds
-
-            usage = api_result.get("usage", {})
-            content = api_result.get("choices")[0].get("message").get("content")
-
-            if usage and content:
-                prompt_tokens = usage.get("prompt_tokens", 0)
-                completion_tokens = usage.get("completion_tokens", 0)
-                total_tokens = prompt_tokens + completion_tokens
-                cost = compute_cost(model, prompt_tokens, completion_tokens)
-                total_prompt_tokens += prompt_tokens
-                total_completion_tokens += completion_tokens
-                max_tokens = MODEL_TOKEN_LIMIT.get(model, 100000)  # fallback if not defined
-                percent_used = (total_tokens / max_tokens) * 100
-                total_cost += cost
-
-                max_retries = 3
-                for attempt in range(max_retries):
-                    try:
-                        store_results = json.loads(content.strip().strip('```json').strip('```'))
-                        if not isinstance(store_results, dict) or not store_results:
-                            raise ValueError("Invalid response: not a valid store_id dictionary")
-                        break  # Successful parse
-
-
-                    except json.JSONDecodeError as e:
-                        logging.error(f"❌ JSON parsing failed for batch {i+1}, attempt {attempt+1}. Error: {e}. Content:\n{content[:500]}")
-                        print(f"❌ Batch {i+1} returned invalid JSON. Attempt {attempt+1} of {max_retries}. Retrying...")
-                        
-                        if attempt == 0: 
-                            print(f"\n🌀 Processing batch {i + 1}/{len(batches)} ({len(batch)} stores)...")
-
-                        if attempt < max_retries - 1:
-                            # Re-evaluate the batch to get a new response
-                            time.sleep(2)  # small delay before retry
-                            api_result = evaluate_batch(
-                                model=model,
-                                general_prompt=general_prompt,
-                                section_prompt=section_prompt,
-                                gold_images=gold_images,
-                                batch_images=batch
-                            )
-                            content = api_result.get("choices")[0].get("message").get("content")
-                            usage = api_result.get("usage", {})
-                            prompt_tokens = usage.get("prompt_tokens", 0)
-                            completion_tokens = usage.get("completion_tokens", 0)
-                            total_tokens = prompt_tokens + completion_tokens
-                            cost = compute_cost(model, prompt_tokens, completion_tokens)
-                            total_cost += cost
-                        else:
-                            effective_cost = max(cost, 0.01)
-                            with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
-                                evaluated_store_ids = list(batch.keys())
-                                store_list_str = ", ".join(evaluated_store_ids)
-
-                                f.write(
-                                    f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
-                                    f"  Number of Stores Evaluated: {len(batch)}\n"
-                                    f"  Stores Evaluated: {store_list_str}\n"
-                                    f"  Prompt Tokens: {prompt_tokens}\n"
-                                    f"  Completion Tokens: {completion_tokens}\n"
-                                    f"  Total Tokens: {total_tokens}\n"
-                                    f"  Token Usage: {percent_used:.2f}% of {max_tokens} limit\n"
-                                    f"  Input Cost: ${(prompt_tokens / 1000) * MODEL_PRICING[model]['input']:.6f}\n"
-                                    f"  Output Cost: ${(completion_tokens / 1000) * MODEL_PRICING[model]['output']:.6f}\n"
-                                    f"  Estimated Cost: ${cost:.6f}\n"
-                                    f"  Billed (Minimum) Cost: ${effective_cost:.2f}\n"
-                                    f"  Time Taken: {elapsed_time:.2f} seconds\n"
-                                    f"  ❌ ERROR: JSON failed after {max_retries} attempts. Skipping batch.\n\n"
-                                )
-                            print(f"❌ Aborting batch {i+1} after {max_retries} failed attempts to get valid JSON.")
-                            continue
-
-
-
-
-                for store_id, section_result in store_results.items():
-                    update_store_json(store_id, section_name, section_result, OUTPUTS_DIR)
-
-                effective_cost = max(cost, 0.01)  # OpenAI enforces minimum billing per request
-
-                # Stats summary
-                low_conf_threshold = 0.75
-
-                # Build log summary string
-                # Track failed store IDs and those needing manual review
-                failed_stores = []
-                manual_review_stores = []
-                num_pass = 0
-                num_fail = 0
-
-                for store_id, result in store_results.items():
-                    if isinstance(result, dict):
-                        conf = result.get("confidence", 1.0)
-                        if isinstance(conf, (int, float)) and conf < low_conf_threshold:
-                            manual_review_stores.append((store_id, conf))
-                        if result.get("pass") is False:
-                            num_fail+= 1
-                            failed_stores.append(store_id)
-                            all_failed_stores.append(store_id)
-                        elif result.get("pass") is True:
-                            num_pass += 1
-                            all_passed_stores.append(store_id)
-
-                total_evaluated = num_pass + num_fail
-                pass_rate = (num_pass / total_evaluated) * 100 if total_evaluated > 0 else 0.0
-
-                low_conf_log = (
-                    f"  Total evaluated: {total_evaluated}\n"
-                    f"  Passed: {num_pass}\n"
-                    f"  Failed: {num_fail}\n"
-                    f"  Pass Rate: {pass_rate:.2f}%\n"
-                    f"  Stores requiring manual review (confidence < {low_conf_threshold}): {len(manual_review_stores)}\n"
-                )
-
-                if failed_stores:
-                    low_conf_log += "  ❌ Failed stores:\n"
-                    for store_id in failed_stores:
-                        low_conf_log += f"    - {store_id}\n"
-
-                if manual_review_stores:
-                    low_conf_log += "  🧐 Manual review stores:\n"
-                    for store_id, conf in manual_review_stores:
-                        low_conf_log += f"    - {store_id}: Confidence {conf:.2f}\n"
-
-
-
-                with open(COST_LOG_FILE, "a", encoding='utf-8') as f:
-                    evaluated_store_ids = list(store_results.keys())
-                    store_list_str = ", ".join(evaluated_store_ids)
-
-                    f.write(
-                        f"[{datetime.now().isoformat()}] Batch {i+1}/{len(batches)} - Model: {model}\n"
-                        f"  Number of Stores Evaluated: {len(batch)}\n"
-                        f"  Section Evaluated: {section_name}\n"
-                        f"  Stores Evaluated: {store_list_str}\n"
-                        f"  Prompt Tokens: {prompt_tokens}\n"
-                        f"  Completion Tokens: {completion_tokens}\n"
-                        f"  Total Tokens: {total_tokens}\n"
-                        f"  Token Usage: {percent_used:.2f}% of {max_tokens} limit\n"
-                        f"  Input Cost: ${(prompt_tokens / 1000) * MODEL_PRICING[model]['input']:.6f}\n"
-                        f"  Output Cost: ${(completion_tokens / 1000) * MODEL_PRICING[model]['output']:.6f}\n"
-                        f"  Estimated Cost: ${cost:.6f}\n"
-                        f"  Billed (Minimum) Cost: ${effective_cost:.2f}\n"
-                        f"  Time Taken: {elapsed_time:.2f} seconds\n\n"
-                        f"{low_conf_log}\n"
-                    )
-
-            else:
-                logging.warning(f"API result malformed in batch {i+1}. No content or usage returned.")
-
-        except Exception as e:
-            print(f"❌ Error processing batch {i+1}: {e}")
-            logging.error(f"Batch {i+1} failed: {e}")
 
     print(f"\n✅ Section {section_name} complete. Total cost: ${total_cost:.4f}")
 
@@ -547,9 +486,6 @@ if __name__ == "__main__":
     else:
         section_list = [args.section]
 
-
-    # Initialize the openAI client
-    init_openai_client()
     
     # Define OUTPUTS_DIR dynamically based on model
     OUTPUTS_DIR = Path("outputs") / args.model
