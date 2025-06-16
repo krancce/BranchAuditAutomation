@@ -468,6 +468,44 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
 
     print(f"📝 Section summary written to: {section_log_file}")
 
+# run all at one go
+async def run_single_evaluation(section, store_id, session, args):
+    try:
+        system_prompt_path = Path("testfiles/branch_audit_system_prompt.txt")
+        section_prompt_path = Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section}.txt"
+        gold_image_dir = Path("testfiles/goldstandards") / section
+        submission_image_dir = Path("testfiles/submissions") / section / store_id
+
+        system_prompt = load_prompt(system_prompt_path).replace("YYYY-MM-DD", args.start_date)
+        section_prompt = load_prompt(section_prompt_path) + "\n\nIMPORTANT: For each store submission, you will first see a line like ‘Store ID: 045’. Use this store ID exactly when generating your JSON response."
+
+        gold_images = sorted([
+            f for f in gold_image_dir.glob("*") if f.suffix.lower() in [".jpg", ".jpeg", ".png"]
+        ])
+        submission_images = sorted([
+            f for f in submission_image_dir.glob("*") if f.suffix.lower() in [".jpg", ".jpeg", ".png"]
+        ])
+        if not submission_images:
+            print(f"⚠️ No submission for store {store_id} section {section}")
+            return
+
+        messages = build_messages(
+            system_prompt,
+            section_prompt,
+            gold_images,
+            {store_id: submission_images}
+        )
+
+        _, response_json = await evaluate_batch_async(session, args.model, messages, 0)
+        if response_json:
+            content = response_json["choices"][0]["message"]["content"]
+            parsed = json.loads(content.strip().strip('```json').strip('```'))
+
+            section_result = parsed.get(store_id, parsed)
+            update_store_json(store_id, section, section_result, OUTPUTS_DIR)
+            print(f"✅ Evaluated {store_id} / {section}")
+    except Exception as e:
+        print(f"❌ Error in {store_id} / {section}: {e}")
 
 # --- Command-Line Interface ---
 if __name__ == "__main__":
@@ -475,12 +513,19 @@ if __name__ == "__main__":
     ensure_dir_exists(LOGS_DIR)
 
     parser = argparse.ArgumentParser(description="Cash4You Branch Appearance Audit Automation CLI")
-    
+
     parser.add_argument(
-        "--section",
-        required=True,
-        help="Section name to process (e.g., A1, B2, etc.). Use 'ALL' to process all sections."
+        "--ALL_IN_ONE_GO",
+        action="store_true",
+        help="Evaluate all sections for all stores in one async run."
     )
+
+    parser.add_argument(
+        '--section', 
+        type=str,
+        help="Section to evaluate (e.g., A1) or 'ALL'"
+    )
+
 
     parser.add_argument(
         '--store', 
@@ -513,7 +558,11 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.section.upper() == "ALL":
+    if not args.ALL_IN_ONE_GO and not args.section:
+        parser.error("--section is required unless --ALL_IN_ONE_GO is specified.")
+
+
+    if args.section and args.section.upper() == "ALL":
         section_list = sorted([
             d.name for d in (Path("testfiles/submissions")).iterdir() if d.is_dir()
         ])
@@ -527,9 +576,15 @@ if __name__ == "__main__":
 
     print("Starting Branch Appearance Audit Automation...")
     print(f"Model: {args.model}")
-    print(f"Section: {args.section}")
-    print(f"Submission images from: testfiles/submissions/{args.section}/")
-    print(f"Gold standard images from: testfiles/goldstandards/{args.section}/")
+    if args.ALL_IN_ONE_GO:
+        print("Section: ALL_IN_ONE_GO")
+        print("Submission images from: testfiles/submissions/")
+        print("Gold standard images from: testfiles/goldstandards/")
+    else:
+        print(f"Section: {args.section}")
+        print(f"Submission images from: testfiles/submissions/{args.section}/")
+        print(f"Gold standard images from: testfiles/goldstandards/{args.section}/")
+
     print(f"Output JSONs to: {OUTPUTS_DIR}")
     print(f"Cost log: {COST_LOG_FILE}")
     print(f"Error log: {ERROR_LOG_FILE}")
@@ -540,17 +595,49 @@ if __name__ == "__main__":
     submissions_dir = testfiles_dir / "submissions"
     goldstandard_dir = testfiles_dir / "goldstandards"
 
-    for section in section_list:
-        print(f"\n===== Processing Section {section} =====")
-        process_section(
-            section_name=section,
-            submissions_dir=submissions_dir,
-            goldstandard_dir=goldstandard_dir,
-            model=args.model,
-            batch_size=args.batch_size,
-            start_date=args.start_date,
-            store_id=args.store
-        )
+    if args.ALL_IN_ONE_GO:
+        print(f"🚀 Running all sections for all stores in one async run...")
+
+        async def run_all_sections_all_stores():
+            tasks = []
+            async with httpx.AsyncClient() as session:
+                # Dynamically gather section list from submission folder
+                section_list = sorted([
+                    d.name for d in (Path("testfiles/submissions")).iterdir() if d.is_dir()
+                ])
+
+                for section in section_list:
+                    section_dir = submissions_dir / section
+                    if not section_dir.exists():
+                        print(f"⚠️ Skipping section {section} — No submission folder found.")
+                        continue
+
+                    for store_folder in section_dir.iterdir():
+                        if store_folder.is_dir():
+                            store_id = store_folder.name
+                            tasks.append(run_single_evaluation(section, store_id, session, args))
+
+                if not tasks:
+                    print("⚠️ No evaluation tasks were created.")
+                else:
+                    await asyncio.gather(*tasks)
+
+        
+        asyncio.run(run_all_sections_all_stores())
+
+    else:
+        for section in section_list:
+            print(f"\n===== Processing Section {section} =====")
+            process_section(
+                section_name=section,
+                submissions_dir=submissions_dir,
+                goldstandard_dir=goldstandard_dir,
+                model=args.model,
+                batch_size=args.batch_size,
+                start_date=args.start_date,
+                store_id=args.store
+            )
+
 
 
     print("-" * 30)
