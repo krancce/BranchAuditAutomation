@@ -1,3 +1,5 @@
 openai
 pillow
-openai httpx
+openai 
+httpx
+python-dotenv

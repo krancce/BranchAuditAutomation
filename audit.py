@@ -222,7 +222,7 @@ def build_messages(general_prompt, section_prompt, gold_images, batch_images):
     # Attach submitted images
     for store_id, store_images in batch_images.items():
         # Insert a store ID label as text before its images
-        user_content.append({"type": "text", "text": f"Store ID: {store_id}"})
+        user_content.append({"type": "text", "text": f"Store ID: {store_id} — Use this exact ID as a key in your JSON output."})
         for img_path in store_images:
             img_bytes = resize_image(img_path)
             img_b64 = image_to_base64(img_bytes)
@@ -237,7 +237,7 @@ def build_messages(general_prompt, section_prompt, gold_images, batch_images):
     return messages
 
 # --- Main Pipeline ---
-def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int, start_date: str):
+def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: Path, model: str, batch_size: int, start_date: str, store_id=None):
 
     # Section Log initialization
     total_prompt_tokens = 0
@@ -255,7 +255,10 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
         general_prompt = system_prompt.replace("YYYY-MM-DD", start_date)
 
 
-        section_prompt = load_prompt(Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section_name}.txt")
+        raw_section_prompt = load_prompt(Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section_name}.txt")
+        reinforcement = "\n\nIMPORTANT: For each store submission, you will first see a line like ‘Store ID: 045’. Use this store ID exactly when generating your JSON response."
+        section_prompt = raw_section_prompt + reinforcement
+
     except Exception as e:
         print(f"❌ Failed to load prompt files: {e}")
         return
@@ -270,7 +273,17 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
     
     # Load submissions
     section_submissions_dir = submissions_dir / section_name
-    store_dict = get_store_submission_paths(section_submissions_dir)
+    store_dict_all = get_store_submission_paths(section_submissions_dir)
+
+    if store_id:
+        if store_id in store_dict_all:
+            store_dict = {store_id: store_dict_all[store_id]}
+        else:
+            print(f"⚠️ Store ID '{store_id}' not found in section {section_name}")
+            return
+    else:
+        store_dict = store_dict_all
+
 
     if not store_dict:
         print(f"⚠️ No submissions found for section {section_name}")
@@ -339,8 +352,21 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
         is_last_batch = i == len(batch_payloads) - 1
 
         # === Update store JSONs ===
-        for store_id, section_result in store_results.items():
-            update_store_json(store_id, section_name, section_result, OUTPUTS_DIR)
+        batch_store_ids = list(batch.keys())  # actual store IDs used in this batch
+
+        for output_store_id, section_result in store_results.items():
+            # Match output_store_id to real store_id
+            if output_store_id in batch_store_ids:
+                actual_store_id = output_store_id
+            elif len(store_results) == len(batch_store_ids):
+                # Heuristic fallback: use order
+                actual_store_id = batch_store_ids.pop(0)
+            else:
+                logging.warning(f"⚠️ Output store ID {output_store_id} not found in batch. Skipping.")
+                continue
+
+            update_store_json(actual_store_id, section_name, section_result, OUTPUTS_DIR)
+
 
         # === Log pass/fail/confidence ===
         failed_stores = []
@@ -449,12 +475,20 @@ if __name__ == "__main__":
     ensure_dir_exists(LOGS_DIR)
 
     parser = argparse.ArgumentParser(description="Cash4You Branch Appearance Audit Automation CLI")
-
+    
     parser.add_argument(
         "--section",
         required=True,
         help="Section name to process (e.g., A1, B2, etc.). Use 'ALL' to process all sections."
     )
+
+    parser.add_argument(
+        '--store', 
+        type=str, 
+        default=None, 
+        help='Optional: Specify a single store ID to evaluate within the given section'
+    )
+
     parser.add_argument(
         "--model",
         default="o4-mini",
@@ -514,8 +548,10 @@ if __name__ == "__main__":
             goldstandard_dir=goldstandard_dir,
             model=args.model,
             batch_size=args.batch_size,
-            start_date=args.start_date
+            start_date=args.start_date,
+            store_id=args.store
         )
+
 
     print("-" * 30)
     print("Automation run finished.")
