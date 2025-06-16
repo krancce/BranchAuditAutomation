@@ -496,7 +496,15 @@ async def run_single_evaluation(section, store_id, session, args):
             {store_id: submission_images}
         )
 
-        _, response_json = await evaluate_batch_async(session, args.model, messages, 0)
+        max_retries = 3
+        for attempt in range(max_retries):
+            _, response_json = await evaluate_batch_async(session, args.model, messages, 0)
+            if response_json:
+                break
+            else:
+                print(f"⚠️ Retry {attempt+1}/{max_retries} for {store_id} / {section}")
+                await asyncio.sleep(1.5 * (attempt + 1))
+
         if response_json:
             content = response_json["choices"][0]["message"]["content"]
             parsed = json.loads(content.strip().strip('```json').strip('```'))
@@ -622,7 +630,50 @@ if __name__ == "__main__":
                 else:
                     await asyncio.gather(*tasks)
 
-        
+                    # === Post-evaluation integrity check ===
+                    print("🔍 Checking for incomplete evaluations per store...")
+                    missing_log = LOGS_DIR / "missing_sections_log.txt"
+                    expected_sections = sorted([
+                        d.name for d in (Path("testfiles/submissions")).iterdir() if d.is_dir()
+                    ])
+
+                    missing_report = []
+                    for json_file in OUTPUTS_DIR.glob("*.json"):
+                        try:
+                            with open(json_file, 'r', encoding='utf-8') as f:
+                                data = json.load(f)
+                            evaluated_sections = list(data.get("evaluations", {}).keys())
+                            store_id = data.get("store_id", json_file.stem)
+
+                            missing_sections = sorted(set(expected_sections) - set(evaluated_sections))
+                            if missing_sections:
+                                missing_report.append(f"Store {store_id} is missing sections: {', '.join(missing_sections)}")
+
+                        except Exception as e:
+                            logging.error(f"⚠️ Could not read output JSON {json_file.name}: {e}")
+                            continue
+
+                    if missing_report:
+                        with open(missing_log, "w", encoding="utf-8") as f:
+                            f.write("\n".join(missing_report))
+                        print(f"❗ Some stores are missing evaluations. See: {missing_log}")
+                    else:
+                        print("✅ All stores have all expected section evaluations.")
+                        
+                        all_end_time = time.time()
+                        total_time = all_end_time - all_start_time
+
+                        summary_log = LOGS_DIR / "all_sections_summary.txt"
+                        with open(summary_log, "a", encoding="utf-8") as f:
+                            f.write("="*60 + "\n")
+                            f.write(f"🕒 Async Full Evaluation Summary — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+                            f.write("="*60 + "\n")
+                            f.write(f"  Model: {args.model}\n")
+                            f.write(f"  Total Runtime: {total_time:.2f} seconds\n")
+                            f.write(f"  Start Date for Evaluation: {args.start_date}\n\n")
+
+        all_start_time = time.time()
+
         asyncio.run(run_all_sections_all_stores())
 
     else:
