@@ -469,7 +469,7 @@ def process_section(section_name: str, submissions_dir: Path, goldstandard_dir: 
     print(f"📝 Section summary written to: {section_log_file}")
 
 # run all at one go
-async def run_single_evaluation(section, store_id, session, args):
+async def run_single_evaluation(section, store_id, session, args, failed_tasks: list=None):
     try:
         system_prompt_path = Path("testfiles/branch_audit_system_prompt.txt")
         section_prompt_path = Path("testfiles/branch_audit_user_prompts_all_sections") / f"{section}.txt"
@@ -513,7 +513,11 @@ async def run_single_evaluation(section, store_id, session, args):
             update_store_json(store_id, section, section_result, OUTPUTS_DIR)
             print(f"✅ Evaluated {store_id} / {section}")
     except Exception as e:
-        print(f"❌ Error in {store_id} / {section}: {e}")
+        msg = f"{store_id} / {section} failed after 3 retries — {str(e)}"
+        print(f"❌ {msg}")
+        if failed_tasks is not None:
+            failed_tasks.append(msg)
+
 
 # --- Command-Line Interface ---
 if __name__ == "__main__":
@@ -608,6 +612,7 @@ if __name__ == "__main__":
 
         async def run_all_sections_all_stores():
             tasks = []
+            failed_tasks = []
             async with httpx.AsyncClient() as session:
                 # Dynamically gather section list from submission folder
                 section_list = sorted([
@@ -623,12 +628,19 @@ if __name__ == "__main__":
                     for store_folder in section_dir.iterdir():
                         if store_folder.is_dir():
                             store_id = store_folder.name
-                            tasks.append(run_single_evaluation(section, store_id, session, args))
+                            tasks.append(run_single_evaluation(section, store_id, session, args, failed_tasks = failed_tasks))
 
                 if not tasks:
                     print("⚠️ No evaluation tasks were created.")
                 else:
                     await asyncio.gather(*tasks)
+                    if failed_tasks:
+                        with open(ERROR_LOG_FILE, "a", encoding="utf-8") as f:
+                            f.write(f"\n🧨 Failed Evaluations ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')}):\n")
+                            for msg in failed_tasks:
+                                f.write(f"{msg}\n")
+                        print(f"⚠️ {len(failed_tasks)} tasks failed. See error log at {ERROR_LOG_FILE}")
+                   
 
                     # === Post-evaluation integrity check ===
                     print("🔍 Checking for incomplete evaluations per store...")
