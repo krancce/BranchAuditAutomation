@@ -128,7 +128,7 @@ async def evaluate_batch_async(session, model, messages, i, max_retries=3):
     payload = {
         "model": model,
         "messages": messages,
-        "temperature": 0.2 if model != "o4-mini" else None
+        "temperature": 0.0 if model != "o4-mini" else None
     }
 
     for attempt in range(max_retries):
