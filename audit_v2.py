@@ -41,17 +41,25 @@ def log_warning(msg: str, error_log_path: str = "logs/error_log.txt"):
 
 # === Utility Functions ===
 
-def resize_image_bytes(image_bytes: bytes, target_width: int = 800) -> bytes:
+def resize_image_bytes(image_bytes: bytes, target_longer_side: int = 1000) -> bytes:
     img = Image.open(io.BytesIO(image_bytes))
-    w_percent = (target_width / float(img.size[0]))
-    h_size = int((float(img.size[1]) * float(w_percent)))
-    img = img.resize((target_width, h_size))
+    width, height = img.size
+
+    if width >= height:
+        w_new = target_longer_side
+        h_new = int((height / width) * w_new)
+    else:
+        h_new = target_longer_side
+        w_new = int((width / height) * h_new)
+
+    img = img.resize((w_new, h_new))
+
     buf = io.BytesIO()
     if img.mode not in ("RGB", "L"):
         img = img.convert("RGB")
     img.save(buf, format="JPEG")
-
     return buf.getvalue()
+
 
 def encode_image_bytes(image_bytes: bytes) -> str:
     return base64.b64encode(image_bytes).decode("utf-8")
@@ -141,7 +149,7 @@ def track_cost(model_name: str, task_count: int):
     with open(cost_log_file, "w") as f:
         json.dump(logs, f, indent=2)
 
-def generate_summary(store_id, results, start_time, end_time):
+def generate_summary(store_id, results, submission_time, evaluation_time, total_time):
     passed_sections = []
     failed_sections = []
     for section, result in results.items():
@@ -167,7 +175,12 @@ def generate_summary(store_id, results, start_time, end_time):
         f"  ✅ Passed: {passed} — {passed_sections}\n"
         f"  ❌ Failed: {failed} — {failed_sections}\n"
         f"  Pass Rate: {pass_rate:.1f}%\n"
-        f"  Elapsed Time: {end_time - start_time:.2f} seconds\n"
+        f"{'+'*60}\n"
+        f"  🕐 Time Breakdown:\n"
+        f"     📸  Photo Retrieval: {submission_time:.2f} sec\n"
+        f"     ⚙️  Evaluation Time: {evaluation_time:.2f} sec\n"
+        f"     ⏱️  Total Elapsed:   {total_time:.2f} sec\n"
+
     )
     print(summary)
 
@@ -176,22 +189,33 @@ def generate_summary(store_id, results, start_time, end_time):
 
 # === Main Evaluation ===
 
-def evaluate_store(store_id: int, quarter: int, model: str, start_date: str):
+def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, section_code: str = None):
     logging.info(f"Starting evaluation for Store {store_id:03d}, Q{quarter}, Model: {model}")
     retriever = PhotoRetriever(store_id, quarter)
+    photo_start = time.time()
     photos_by_section = retriever.retrieve_all_photos()
+    photo_end = time.time()
+
+    submission_time = photo_end - photo_start
+
 
     system_prompt = load_system_prompt(SYSTEM_PROMPT_FILE)
+    system_prompt = system_prompt.replace("required_start_date = YYYY-MM-DD", f"required_start_date = {start_date}")
+
 
     all_tasks = []
 
+    # Filter to specific section if provided
+    target_sections = {section_code.upper()} if section_code else photos_by_section.keys()
+
     for section_code, submission_photos in photos_by_section.items():
+        if section_code not in target_sections:
+            continue
         try:
             user_prompt = load_user_prompt(section_code)
         except FileNotFoundError:
             log_warning(f"Missing prompt for section {section_code}")
             continue
-
 
         gold_dir = GOLDSTANDARD_DIR / section_code
         gold_images = []
@@ -226,9 +250,13 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str):
         all_tasks.append(task)
 
     logging.info(f"Submitting {len(all_tasks)} tasks to OpenAI for evaluation...")
-    start_time = time.time()
+    eval_start = time.time()
     results = submit_async_tasks(all_tasks, model=model, start_date=start_date)
-    end_time = time.time()
+    eval_end = time.time()
+
+    evaluation_time = eval_end - eval_start
+    total_time = eval_end - photo_start
+
     logging.info(f"Completed evaluations for Store {store_id:03d}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -248,8 +276,12 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str):
             try:
                 parsed_result = json.loads(result)
                 # If nested with store ID like "001", flatten it
-                if isinstance(parsed_result, dict) and list(parsed_result.keys())[0] == f"{store_id:03d}":
-                    parsed_result = parsed_result[f"{store_id:03d}"]
+                if isinstance(parsed_result, dict):
+                    # Try to flatten any nested store-level key
+                    keys = list(parsed_result.keys())
+                    if keys[0] in (f"{store_id:03d}", "000", "STORE_ID") or keys[0].isdigit():
+                        parsed_result = parsed_result[keys[0]]
+
                 formatted_results[section] = parsed_result
 
             except json.JSONDecodeError as e:
@@ -276,10 +308,26 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(existing_data, f, indent=2)
 
-    generate_summary(store_id=store_id, results=formatted_results, start_time=start_time, end_time=end_time)
+    generate_summary(
+        store_id=store_id,
+        results=formatted_results,
+        submission_time=submission_time,
+        evaluation_time=evaluation_time,
+        total_time=total_time
+    )
 
     logging.info(f"Results saved to {output_path}")
     track_cost(model, len(all_tasks))
+
+    # NEW: Save reference image paths per section to a log file
+    reference_log_path = LOG_DIR / "reference_photo_log.txt"
+    with open(reference_log_path, "a", encoding="utf-8") as ref_log:
+        ref_log.write(f"\n=== Store {store_id:03d} Reference Image Log ===\n")
+        for section_code, submission_photos in photos_by_section.items():
+            ref_log.write(f"\n[Section {section_code}]\n")
+            for submission in submission_photos:
+                ref_log.write(f"  - DB Path: {submission.get('original_path', 'N/A')} → Renamed: {submission['filename']}\n")
+        ref_log.write("="*40 + "\n")
 
 
 
@@ -290,6 +338,7 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, default="gpt-4o")
     parser.add_argument("--start-date", type=str, default=datetime.now().strftime("%Y-%m-%d"))
     parser.add_argument("--auto", action="store_true", help="Run evaluation for all qualifying stores automatically")
+    parser.add_argument("--section", type=str, help="Evaluate a single section (e.g., B2, D4)")
     args = parser.parse_args()
 
     if args.auto:
@@ -303,7 +352,18 @@ if __name__ == "__main__":
                 model=args.model,
                 start_date=args.start_date
             )
+
+    elif args.store_id and args.section:
+        # NEW: Single-section evaluation mode
+        evaluate_store(
+            store_id=args.store_id,
+            quarter=args.quarter,
+            model=args.model,
+            start_date=args.start_date,
+            section_code=args.section.upper()
+        )
     elif args.store_id:
+        # Existing: Full-store evaluation mode
         evaluate_store(
             store_id=args.store_id,
             quarter=args.quarter,
@@ -311,4 +371,5 @@ if __name__ == "__main__":
             start_date=args.start_date
         )
     else:
-        print("❌ Please provide either --store_id or --auto flag.")
+        print("❌ Please provide either --auto or --store_id [and optionally --section].")
+

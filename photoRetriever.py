@@ -93,7 +93,8 @@ class PhotoRetriever:
                         image_bytes = f.read()
                     photos.append({
                         'filename': filename,
-                        'image_bytes': image_bytes
+                        'image_bytes': image_bytes,
+                        'original_path': photo_src  # NEW: Save original DB path
                     })
                     break
                 except Exception as e:
