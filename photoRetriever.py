@@ -21,8 +21,8 @@ LOG_FILE = 'logs/photo_retriever.log'
 MAX_RETRIES = 3
 RETRY_DELAY = 1  # in seconds
 
-# --- Logging Setup ---
-logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# --- Logging Setup ---  Temp Disabled for the sake of cleaning
+#logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- Photo Retriever Class ---
 class PhotoRetriever:

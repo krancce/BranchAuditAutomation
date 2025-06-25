@@ -1,5 +1,7 @@
-openai
-pillow
-httpx
-python-dotenv
 pymysql
+openai
+Pillow
+fastapi
+uvicorn
+requests
+python-dotenv

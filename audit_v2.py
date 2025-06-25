@@ -194,7 +194,6 @@ def generate_summary(store_id, results, submission_time, evaluation_time, total_
         f"     ⏱️  Total Elapsed:   {total_time:.2f} sec\n"
 
     )
-    print(summary)
 
     with open("logs/summary_log.txt", "a", encoding="utf-8") as logf:
         logf.write(summary + "\n")
@@ -202,7 +201,11 @@ def generate_summary(store_id, results, submission_time, evaluation_time, total_
 # === Main Evaluation ===
 
 def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, section_code: str = None):
-    logging.info(f"Starting evaluation for Store {store_id:03d}, Q{quarter}, Model: {model}")
+    logging.info(f"{'='*60}\n")
+    if section_code:
+        logging.info(f"Starting evaluation for Store {store_id:03d}, Q{quarter}, Model: {model}, Section: {section_code.upper()}")
+    else:
+        logging.info(f"Starting evaluation for Store {store_id:03d}, Q{quarter}, Model: {model}, All Sections")
     retriever = PhotoRetriever(store_id, quarter)
     photo_start = time.time()
     photos_by_section = retriever.retrieve_all_photos()
@@ -316,9 +319,14 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
         json.dump(existing_data, f, indent=2)
     
     # === Compute store score and pass to uploader ===
+        # === Compute store score and pass to uploader ===
     try:
-        total_sections = len(formatted_results)
-        passed_sections = sum(1 for sec in formatted_results.values() if sec.get("pass") is True)
+        # After writing, reload the whole output file so we have ALL results
+        with open(output_path, "r", encoding="utf-8") as f:
+            all_results = json.load(f)
+
+        total_sections = 25
+        passed_sections = sum(1 for sec in all_results.values() if sec.get("pass") is True)
         store_score = round((passed_sections / total_sections) * 100, 2) if total_sections else 0.0
 
         subprocess.run([
@@ -329,20 +337,29 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
         ], check=True)
     except Exception as e:
         log_warning(f"⚠️ Failed to compute or upload store score: {e}")
+    
+    logging.info(f"Results saved to {output_path}")
+    # track_cost(model, len(all_tasks))
+    # === Evaluation summary log ===
+    evaluation_end = time.time()
+    evaluation_time = evaluation_end - photo_end
+    total_time = evaluation_end - photo_start
+    generate_summary(store_id, all_results, submission_time, evaluation_time, total_time)
 
-
-        logging.info(f"Results saved to {output_path}")
-        track_cost(model, len(all_tasks))
 
     # NEW: Save reference image paths per section to a log file
-    reference_log_path = LOG_DIR / "reference_photo_log.txt"
-    with open(reference_log_path, "a", encoding="utf-8") as ref_log:
-        ref_log.write(f"\n=== Store {store_id:03d} Reference Image Log ===\n")
-        for section_code, submission_photos in photos_by_section.items():
-            ref_log.write(f"\n[Section {section_code}]\n")
-            for submission in submission_photos:
-                ref_log.write(f"  - DB Path: {submission.get('original_path', 'N/A')} → Renamed: {submission['filename']}\n")
-        ref_log.write("="*40 + "\n")
+    ENABLE_REFERENCE_LOG = False # temp disabled for now...
+    # ...
+    if ENABLE_REFERENCE_LOG:
+        reference_log_path = LOG_DIR / "reference_photo_log.txt"
+        with open(reference_log_path, "a", encoding="utf-8") as ref_log:
+            ref_log.write(f"\n=== Store {store_id:03d} Reference Image Log ===\n")
+            for section_code, submission_photos in photos_by_section.items():
+                ref_log.write(f"\n[Section {section_code}]\n")
+                for submission in submission_photos:
+                    ref_log.write(f"  - DB Path: {submission.get('original_path', 'N/A')} → Renamed: {submission['filename']}\n")
+            ref_log.write("="*40 + "\n")
+
 
 
 
