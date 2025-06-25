@@ -11,6 +11,8 @@ import openai
 from datetime import datetime
 import os
 import time
+import subprocess
+import sys
 
 from photoRetriever import PhotoRetriever
 
@@ -110,14 +112,24 @@ async def evaluate_section_async(client, task, model, start_date):
 
 
         except Exception as e:
-            log_warning(f"[Attempt {attempt}/3] API error for store {task['store_id']}, section {task['section']}: {e}")
+            error_type = type(e).__name__
+            http_status = getattr(e, 'http_status', None)
+
+            if http_status:
+                log_warning(
+                    f"[Attempt {attempt}/3] ❌ {error_type} (HTTP {http_status}) for store {task['store_id']}, section {task['section']}: {e}"
+                )
+            else:
+                log_warning(
+                    f"[Attempt {attempt}/3] ❌ {error_type} for store {task['store_id']}, section {task['section']}: {e}"
+                )
+
             if attempt == 3:
                 log_warning(f"❌ Failed after 3 retries: Store {task['store_id']}, Section {task['section']}")
                 return {
                     "section": task["section"],
                     "result": f"❌ API failure after 3 retries: {str(e)}"
                 }
-
 
 def submit_async_tasks(task_list, model: str, start_date: str):
     async def runner():
@@ -250,12 +262,7 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
         all_tasks.append(task)
 
     logging.info(f"Submitting {len(all_tasks)} tasks to OpenAI for evaluation...")
-    eval_start = time.time()
     results = submit_async_tasks(all_tasks, model=model, start_date=start_date)
-    eval_end = time.time()
-
-    evaluation_time = eval_end - eval_start
-    total_time = eval_end - photo_start
 
     logging.info(f"Completed evaluations for Store {store_id:03d}")
 
@@ -307,17 +314,25 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(existing_data, f, indent=2)
+    
+    # === Compute store score and pass to uploader ===
+    try:
+        total_sections = len(formatted_results)
+        passed_sections = sum(1 for sec in formatted_results.values() if sec.get("pass") is True)
+        store_score = round((passed_sections / total_sections) * 100, 2) if total_sections else 0.0
 
-    generate_summary(
-        store_id=store_id,
-        results=formatted_results,
-        submission_time=submission_time,
-        evaluation_time=evaluation_time,
-        total_time=total_time
-    )
+        subprocess.run([
+            sys.executable, "upLoader.py",
+            "--store_id", str(store_id),
+            "--quarter", str(quarter),
+            "--score", str(store_score)
+        ], check=True)
+    except Exception as e:
+        log_warning(f"⚠️ Failed to compute or upload store score: {e}")
 
-    logging.info(f"Results saved to {output_path}")
-    track_cost(model, len(all_tasks))
+
+        logging.info(f"Results saved to {output_path}")
+        track_cost(model, len(all_tasks))
 
     # NEW: Save reference image paths per section to a log file
     reference_log_path = LOG_DIR / "reference_photo_log.txt"
