@@ -1,0 +1,363 @@
+[
+  {
+    "store": "006",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure or remove loose cables under the desk to eliminate trip hazards: use cable ties or cable management solutions to keep cables off the floor."
+    ],
+    "visual_feedback": [
+      "Loose cables visible under the desk across the floor near the right side, creating a potential trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "012",
+    "failed_criteria": [
+      "Area under/behind desk: presence of loose cables posing trip hazards"
+    ],
+    "action_plan": [
+      "Secure or tidy cables under the desk using cable management solutions; reposition any items (like bags) to avoid trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible under the desk near the floor on the left side in timestamped image (2025/05/28)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure loose cables under the desk using cable ties or cable management solutions to remove trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on the floor under the desk in front of the CPU."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "016",
+    "failed_criteria": [
+      "Area under/behind desk must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure and organize cables under the desk: use cable ties or cable management clips to bundle cables to the side or behind the desk to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables and power strip are visible in the center under the desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "017",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure and organize cables under the desk using cable ties or cable management solutions to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on the floor under the desk near the CPU."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "020",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure or organize cables under the desk to eliminate trip hazards, for example by bundling them with ties or routing them along the desk frame."
+    ],
+    "visual_feedback": [
+      "Loose cables visible under the desk on the floor in the submission photo."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Drawer organization: items are not contained and orderly; loose piles are spilling out",
+      "Area under/behind desk: loose cables creating trip hazard"
+    ],
+    "action_plan": [
+      "Organize drawer contents into compartments or containers to eliminate loose piles; ensure all items are neatly contained",
+      "Secure or manage cables under desk to remove trip hazards; bundle cables or route them out of walkways"
+    ],
+    "visual_feedback": [
+      "Second drawer image shows loose papers on the drawer floor outside of containers",
+      "Under-desk area image shows loose cables on the floor creating potential trip hazard"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "033",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure or tuck away loose cables under and behind the desk to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables hanging and resting on the floor under the desk near the CPU pose a trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "040",
+    "failed_criteria": [
+      "Area under/behind desk: Loose cables present constituting a trip hazard"
+    ],
+    "action_plan": [
+      "Secure or organize cables under the desk using cable management solutions to keep them off the floor and eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Timestamped image (2025/05/15 11:31:51) lower left shows a loose red cable on the floor under the desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "041",
+    "failed_criteria": [
+      "Drawer organization"
+    ],
+    "action_plan": [
+      "Organize the drawer by using compartments or trays to contain loose items such as keys and the calculator; ensure papers are stacked flat within a folder or desk organizer instead of hanging or lying loosely."
+    ],
+    "visual_feedback": [
+      "Loose paper hanging from the top interior of the drawer",
+      "Calculator and keys lying loosely on the drawer bottom without containment"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "047",
+    "failed_criteria": [
+      "Area under/behind desk must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure cables under the desk using cable ties or cable management solutions to eliminate trip hazards while keeping necessary equipment accessible."
+    ],
+    "visual_feedback": [
+      "Loose cables and a power strip are visible under the desk floor, posing a potential trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "053",
+    "failed_criteria": [
+      "Area under/behind desk not free of trip-hazards (loose cables)"
+    ],
+    "action_plan": [
+      "Bundle and secure loose cables under/behind desk using cable ties or clips to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on floor under desk near left side."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "057",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure or organize cables under the desk to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on the floor under the desk area creating a potential trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "058",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure cables under/behind the desk to eliminate trip hazards (use cable clips or ties to route cords neatly)."
+    ],
+    "visual_feedback": [
+      "Visible loose cables from the phone and computer tower crossing the floor beneath the desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "060",
+    "failed_criteria": [
+      "Drawer organization: Drawers may contain pens, binder clips, notepads, or a handful of personal items, provided everything is contained and orderly (no loose piles spilling out).",
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize drawer contents using compartments or trays so items are neatly separated and no loose piles are present.",
+      "Secure or tuck away cables under the desk to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Items such as receipt rolls and staples boxes are scattered loosely at the bottom of the drawer without compartments.",
+      "Loose cables are visible on the floor under the desk crossing the open area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "062",
+    "failed_criteria": [
+      "Area under/behind desk not free of trip-hazards (loose cables visible)"
+    ],
+    "action_plan": [
+      "Secure and manage cables under the desk using cable ties or cable management trays to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables running under the desk across the floor (visible in photo with timestamp at 2025/05/15 13:08:11)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "064",
+    "failed_criteria": [
+      "Area under/behind desk not free of trip-hazards"
+    ],
+    "action_plan": [
+      "Organize and secure cables under the desk to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on floor beneath desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "070",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure loose cables under or behind the desk using cable management solutions (e.g., cable ties, clips, or cable trays) to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose blue data cable visible coiled and lying on the floor under the right side of the desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "075",
+    "failed_criteria": [
+      "Drawer organization: items not contained and orderly",
+      "Area under/behind desk not free of trip-hazards"
+    ],
+    "action_plan": [
+      "Reorganize drawer contents using dividers or containers to keep pens, scissors, and other items neatly separated and prevent loose piles",
+      "Secure or bundle cables under the desk to eliminate trip hazards and maintain clear floor space under/behind the desk"
+    ],
+    "visual_feedback": [
+      "Loose pens and scissors are visible mixed in the drawer without containment at the bottom-right of the drawer image",
+      "Multiple cables are seen loosely lying on the floor under the desk in the desk image"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "084",
+    "failed_criteria": [
+      "Drawer organization: Drawers may contain pens, binder clips, notepads, or a handful of personal items, provided everything is contained and orderly (no loose piles spilling out)."
+    ],
+    "action_plan": [
+      "Empty the drawer of unrelated packaging and clean any debris or sticky residue. Reorganize remaining items neatly within compartment trays to ensure orderly storage without loose piles."
+    ],
+    "visual_feedback": [
+      "Final drawer image (timestamp 2025/05/29 12:10:02) shows a random packaging box and sticky residues, indicating lack of orderly arrangement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "087",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure loose cables under/behind the desk to eliminate trip hazards, using cable ties or cable management solutions."
+    ],
+    "visual_feedback": [
+      "Loose cables visible beneath the desk near the CPU in the timestamped image."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure and organize cables and power strip under the desk to eliminate trip hazards (e.g., use cable management clips or tuck equipment to the side)."
+    ],
+    "visual_feedback": [
+      "Loose cables and a power strip are visible on the floor beneath the desk, creating a trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "097",
+    "failed_criteria": [
+      "Area under/behind desk: free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Bundle and secure loose cables under the desk to the side or against the wall to eliminate trip hazards."
+    ],
+    "visual_feedback": [
+      "Loose cables and power strip visible under the desk near the center floor area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "099",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure all cables under and behind the desk to eliminate trip hazards, using cable management solutions such as ties or cable trays."
+    ],
+    "visual_feedback": [
+      "Loose cables visible on the floor under the left side of the desk."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "100",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure all cables under the desk to eliminate trip hazards, using cable ties or a cable management system."
+    ],
+    "visual_feedback": [
+      "Loose cable running across the floor under the desk near the chair poses a trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Secure and organize cables under the desk to eliminate trip hazards, using cable ties or routing cables along the desk frame."
+    ],
+    "visual_feedback": [
+      "Loose cables visible under the desk on the left side near the CPU presenting a potential trip hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "107",
+    "failed_criteria": [
+      "Area under/behind desk: Must be free of trip-hazards (e.g. loose cables, boxes, or debris)."
+    ],
+    "action_plan": [
+      "Organize and secure loose cables under and behind the desk to eliminate trip hazards (e.g. use cable management solutions such as clips or ties)."
+    ],
+    "visual_feedback": [
+      "Loose cables are visible under the desk and across the floor, posing a trip hazard."
+    ],
+    "notes": ""
+  }
+]

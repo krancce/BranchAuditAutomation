@@ -1,0 +1,57 @@
+[
+  {
+    "store": "013",
+    "failed_criteria": [
+      "The surrounding area, including floor and walls, should be reasonably clean and tidy — no visible spills, major stains, or overflowing trash.",
+      "The restroom should give an overall impression of hygiene and readiness for use."
+    ],
+    "action_plan": [
+      "Clean and remove all visible stains and spills from the restroom floor and walls; maintain regular cleaning schedule to uphold hygiene.",
+      "Perform a final inspection to ensure the restroom gives an overall impression of cleanliness and readiness for use."
+    ],
+    "visual_feedback": [
+      "Major brown/orange stain visible on the floor adjacent to the toilet base.",
+      "Overall appearance detracted by floor staining, impacting perceived hygiene."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "047",
+    "failed_criteria": [
+      "Toilet and sink must be present, appear clean, and clearly functional"
+    ],
+    "action_plan": [
+      "Deep clean sink basin to remove visible stains and residue to meet cleanliness standards"
+    ],
+    "visual_feedback": [
+      "Yellowish/brownish stains visible around sink drain in submission photos"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "084",
+    "failed_criteria": [
+      "Sink appears stained and has visible grime around faucet and backsplash"
+    ],
+    "action_plan": [
+      "Thoroughly clean sink surface and backsplash to remove stains and grime, ensuring a spotless appearance"
+    ],
+    "visual_feedback": [
+      "Residual stains and discoloration observed around the faucet base and backsplash tile grout on the sink area"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "107",
+    "failed_criteria": [
+      "Toilet and sink must be present, appear clean, and clearly functional"
+    ],
+    "action_plan": [
+      "Clean the sink thoroughly to remove buildup and stains from around the faucet and basin."
+    ],
+    "visual_feedback": [
+      "Rust and mineral buildup around the sink faucet and basin visible in the close-up image."
+    ],
+    "notes": ""
+  }
+]

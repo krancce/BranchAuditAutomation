@@ -1,0 +1,193 @@
+[
+  {
+    "store": "002",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk"
+    ],
+    "action_plan": [
+      "Repair or fill the visible pothole/uneven surface in the parking area to ensure ground surfaces are even and safe"
+    ],
+    "visual_feedback": [
+      "Dark patch in the parking stall near bottom center of image indicating a pothole or uneven surface"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "015",
+    "failed_criteria": [
+      "Walkways and entrances are unobstructed. Fixed safety fixtures (e.g., bollards, signage) in designated positions are allowed if they do not pose a tripping hazard or block more than 25% of the path width."
+    ],
+    "action_plan": [
+      "Remove any obstacles (e.g., bicycle, garbage can) from the walkway to ensure clear access and compliance with unobstructed path requirements."
+    ],
+    "visual_feedback": [
+      "Bicycle and garbage can observed blocking walkway near lamppost on right side of the path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "027",
+    "failed_criteria": [
+      "Walkways and entrances are unobstructed."
+    ],
+    "action_plan": [
+      "Remove any temporary items (e.g., the blue bin) from the walkway and entrance area to ensure they are fully unobstructed."
+    ],
+    "visual_feedback": [
+      "Blue bin placed on the walkway near the front entrance obstructs pedestrian access."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "033",
+    "failed_criteria": [
+      "Walkways and entrances are unobstructed.",
+      "Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage."
+    ],
+    "action_plan": [
+      "Remove or reposition the yellow bins so they do not obstruct more than 25% of the pedestrian path.",
+      "If temporary obstacles are needed, clearly mark them (e.g., use cones or signage) and position them to guide safe passage along the walkway."
+    ],
+    "visual_feedback": [
+      "Two large yellow bins are placed on the sidewalk next to the storefront windows, partially blocking the walkway.",
+      "Bins are not marked or positioned to indicate a safe path around them."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "040",
+    "failed_criteria": [
+      "Walkways and entrances are unobstructed.",
+      "Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage."
+    ],
+    "action_plan": [
+      "Remove any temporary obstacles (e.g., bins) from the walkways and entrances, or position them off the path.",
+      "If temporary obstacles are necessary, clearly mark them with cones or signage and position them to guide safe passage."
+    ],
+    "visual_feedback": [
+      "Yellow bin located in the central walkway area blocking path (visible in third submission photo)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "045",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Repair or seal any major cracks or potholes to ensure a smooth, even surface free of safety hazards."
+    ],
+    "visual_feedback": [
+      "Visible large crack running across the parking lot surface in the foreground could present a tripping hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "058",
+    "failed_criteria": [
+      "Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage."
+    ],
+    "action_plan": [
+      "Remove or properly mark any temporary obstacles on the walkway; position caution cones or signage around the obstacle to guide safe passage."
+    ],
+    "visual_feedback": [
+      "Yellow container placed in front of store walkway is not marked and may pose a tripping hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "064",
+    "failed_criteria": [
+      "Ground surfaces are free of significant trash, debris, or litter that could impede safe passage. Small, non-hazardous debris (e.g., a few leaves, small pebbles) is acceptable."
+    ],
+    "action_plan": [
+      "Remove all trash, debris, and litter from the parking lot and walkway areas to ensure clear, safe passage."
+    ],
+    "visual_feedback": [
+      "Visible plastic bag debris near the left side of the walkway in front of the store windows.",
+      "Small red debris piece observed near the center of the walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "090",
+    "failed_criteria": [
+      "Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage."
+    ],
+    "action_plan": [
+      "Remove or reposition unmarked temporary obstacles (e.g., bins) from walkways or clearly mark and guide passage with cones or signage."
+    ],
+    "visual_feedback": [
+      "Unmarked bin located adjacent to entrance protruding into walkway area near the door."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "091",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk"
+    ],
+    "action_plan": [
+      "Repair or seal visible cracks and potholes in the parking lot surface to eliminate tripping hazards"
+    ],
+    "visual_feedback": [
+      "Prominent crack and pooled water visible in the center of the lot near the building entrance"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "097",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Repair or fill any major cracks or potholes in parking lot and walkway surfaces to ensure even, safe passage."
+    ],
+    "visual_feedback": [
+      "Large diagonal cracks and a shallow pothole visible near the center foreground of the parking surface that could pose tripping hazards."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "102",
+    "failed_criteria": [
+      "Ground surfaces are free of significant trash, debris, or litter that could impede safe passage. Small, non-hazardous debris (e.g., a few leaves, small pebbles) is acceptable.",
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Remove all trash items (e.g., discarded beverage cup) from the ground surface before taking the photo to ensure no litter is present.",
+      "Repair or patch any major cracks or potholes in the parking lot surface to eliminate safety risks."
+    ],
+    "visual_feedback": [
+      "A discarded beverage cup is visible on the ground near the gas pump in the third photo, indicating litter on the ground surface.",
+      "Several cracks and patched potholes are visible in the parking lot surface in the third photo, indicating uneven ground."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Repair cracks and potholes in the parking lot to ensure even surfaces and eliminate safety hazards."
+    ],
+    "visual_feedback": [
+      "Visible cracks and small pothole in the parking area near the center of the lot (seen in submission photos with timestamps 06:25:58 and 06:26:03)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "108",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Repair or resurface the walkway/parking area to eliminate major cracks or potholes, ensuring an even, safe surface."
+    ],
+    "visual_feedback": [
+      "Significant spidering cracks and uneven pavement visible across the parking area, notably in the central expanse and near the entrance slab."
+    ],
+    "notes": ""
+  }
+]

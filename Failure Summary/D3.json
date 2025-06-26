@@ -1,0 +1,435 @@
+[
+  {
+    "store": "004",
+    "failed_criteria": [
+      "Box stacking neatness",
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Re-stack all boxes squarely and tightly to eliminate unstable or haphazard piles.",
+      "Clear a defined walking path through the operational area by relocating boxes away from the center and doorways."
+    ],
+    "visual_feedback": [
+      "Several stacks on the left and center are leaning and have open lids, indicating unstable stacking.",
+      "Boxes fill the floor space with no clear walking path visible through the room."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "014",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for D3: Archive Box Storage & Workspace Clearance: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo is too blurry or improperly framed to assess standard compliance. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "015",
+    "failed_criteria": [
+      "Box stacking not neat; unstable/haphazard piles",
+      "Workspace circulation blocked; no clear walking path",
+      "Debris or trash visible on floor near boxes"
+    ],
+    "action_plan": [
+      "Restack boxes squarely and tightly to eliminate unstable piles",
+      "Clear walkway by relocating boxes away from desk zones and doorways",
+      "Remove any trash, debris, or expired materials from floor and work surfaces"
+    ],
+    "visual_feedback": [
+      "Top-right corner pile shows boxes unevenly stacked",
+      "Chair and boxes under desk obstruct the walking path",
+      "Loose paper fragments visible on floor near box stacks"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "016",
+    "failed_criteria": [
+      "Workspace circulation: no clear walking path through operational area"
+    ],
+    "action_plan": [
+      "Reorganize boxes to create a clear, unobstructed walking path through the area by repositioning stacks against walls and ensuring at least 36 inches of clearance."
+    ],
+    "visual_feedback": [
+      "Stacks of boxes block the central floor area, preventing passage between shelves and doorway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "024",
+    "failed_criteria": [
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Rearrange boxes to ensure a clear walking path through the operational area, keeping stacks contained against walls without blocking movement."
+    ],
+    "visual_feedback": [
+      "Boxes occupy the central aisle leaving insufficient space for a walkway, blocking normal movement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "026",
+    "failed_criteria": [
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes."
+    ],
+    "action_plan": [
+      "Remove all trash, debris, and expired materials from the floor and work surfaces near the boxes."
+    ],
+    "visual_feedback": [
+      "Plastic wrapper visible on top of box next to desk at right side of image."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "027",
+    "failed_criteria": [
+      "Box stacking neatness: All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles.",
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways).",
+      "Labels (if required by your gold standard) remain legible and unobstructed on the majority of visible boxes."
+    ],
+    "action_plan": [
+      "Re-stack boxes squarely and tightly, ensuring all stacks are stable and aligned.",
+      "Rearrange boxes to create a clear, unobstructed walking path through the operational area.",
+      "Adjust or reapply labels so that the majority of them are legible and facing outward without obstruction."
+    ],
+    "visual_feedback": [
+      "Left stack shows tilted and misaligned boxes with uneven piles.",
+      "Boxes are positioned too close together, narrowing the floor space and obstructing movement.",
+      "Several box labels are covered by lids or handwriting, making them unreadable on the right-side stack."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways)."
+    ],
+    "action_plan": [
+      "Reorganize boxes to ensure a clear path through the operational area, moving stacks against walls without blocking doorways or desk zones."
+    ],
+    "visual_feedback": [
+      "Central aisle and doorway area completely blocked by stacked boxes in the submission photo."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "037",
+    "failed_criteria": [
+      "Workspace circulation: clear walking path through the operational area"
+    ],
+    "action_plan": [
+      "Ensure a clear walking path through the operational area by reorganizing shelves or removing obstacles to allow normal movement."
+    ],
+    "visual_feedback": [
+      "No clear walkway visible in the image; shelves with boxes appear packed without accessible path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "043",
+    "failed_criteria": [
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes."
+    ],
+    "action_plan": [
+      "Remove any trash, debris, or packaging materials from the storage area to ensure a clean workspace."
+    ],
+    "visual_feedback": [
+      "White packaging bag on the shelf near the back should be removed as it constitutes debris."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "046",
+    "failed_criteria": [
+      "Box stacking neatness",
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Restack all visible boxes squarely and tightly to eliminate unstable or haphazard piles.",
+      "Clear a designated walking path through the operational area by rearranging boxes so doorways and desk zones are unobstructed."
+    ],
+    "visual_feedback": [
+      "Left side of photo shows boxes leaning and unevenly stacked with gaps between boxes.",
+      "Center foreground of photo shows no clear walking path, with boxes blocking potential circulation area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "047",
+    "failed_criteria": [
+      "Box stacking neatness: All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles",
+      "Workspace circulation: There must be a clear walking path through the operational area"
+    ],
+    "action_plan": [
+      "Restack boxes squarely and tightly to remove any unstable or haphazard piles",
+      "Remove chairs and equipment from the walking path to ensure clear workspace circulation"
+    ],
+    "visual_feedback": [
+      "Left stack of boxes is leaning and not tightly stacked, indicating unstable pile",
+      "Chair and vacuum are obstructing the walking path in the center of the room"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "052",
+    "failed_criteria": [
+      "Workspace circulation: clear walking path through the operational area is blocked"
+    ],
+    "action_plan": [
+      "Rearrange boxes to create a clear walking path through the operational area, ensuring normal movement is not obstructed."
+    ],
+    "visual_feedback": [
+      "Boxes stacked densely on the floor corner leaving no visible walking path in the central area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "055",
+    "failed_criteria": [
+      "Box stacking neatness: All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles.",
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways).",
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes."
+    ],
+    "action_plan": [
+      "Re-stack boxes squarely and tightly to eliminate unstable or haphazard piles.",
+      "Ensure a clear walking path through the operational area by organizing boxes and clearing the floor space.",
+      "Remove all trash, debris, and expired materials from floors and work surfaces near the boxes."
+    ],
+    "visual_feedback": [
+      "Submitted boxes are lying open and not stacked, showing unstable arrangement.",
+      "No unobstructed walking path visible; boxes and papers cover the floor area.",
+      "Paper scraps and debris visible on the floor around boxes."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "056",
+    "failed_criteria": [
+      "Box stacking neatness: All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles."
+    ],
+    "action_plan": [
+      "Re-stack boxes ensuring all are squarely aligned and tightly packed without any slanted or damaged boxes to maintain neatness."
+    ],
+    "visual_feedback": [
+      "The right stack of boxes shows some crushed and misaligned boxes causing an uneven appearance and potential instability."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "057",
+    "failed_criteria": [
+      "Workspace circulation",
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes"
+    ],
+    "action_plan": [
+      "Rearrange boxes to create a clear walking path through the operational area, ensuring aisles and doorways are unobstructed.",
+      "Remove any debris or loose items from the floor and around the boxes, disposing of trash and keeping work surfaces clear."
+    ],
+    "visual_feedback": [
+      "Boxes occupy entire floor space with no clear walkway between stacks, particularly near the room entrance.",
+      "Small piece of paper/debris visible on the floor in front of box stacks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "058",
+    "failed_criteria": [
+      "Workspace circulation",
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes"
+    ],
+    "action_plan": [
+      "Reorganize boxes to maintain a clear walking path through the operational area, ensuring no obstruction to desk zones or doorways.",
+      "Remove any trash, debris, and outdated materials (e.g., boxes labeled 2019–2020) from the floor and work surfaces."
+    ],
+    "visual_feedback": [
+      "Boxes cover the entire floor space with no visible clear path, potentially obstructing normal movement.",
+      "Presence of boxes labeled with dates from 2019–2020 indicates expired materials still stored and visible."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "062",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area; boxes are blocking normal movement."
+    ],
+    "action_plan": [
+      "Reorganize boxes by pushing all stacks fully against walls and away from the center to open a clear walking path from the doorway through the room."
+    ],
+    "visual_feedback": [
+      "The front-left box stack protrudes into the center of the room, obstructing the walking path from the doorway to the storage area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "066",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways)."
+    ],
+    "action_plan": [
+      "Rearrange boxes to open a clear walkway: push stacks against walls or under desks and keep doorways and desk zones unobstructed."
+    ],
+    "visual_feedback": [
+      "Boxes are stacked directly in front of the doorway, blocking normal movement into the room."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "072",
+    "failed_criteria": [
+      "Workspace circulation: boxes blocking walking path"
+    ],
+    "action_plan": [
+      "Reorganize archive boxes to ensure a clear walking path through the workspace, moving stacks from floor into shelves or along walls without obstructing doorways or desk zones."
+    ],
+    "visual_feedback": [
+      "Stacked boxes are blocking the entry/clear walkway area at the room's entrance, preventing unobstructed movement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "075",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways)."
+    ],
+    "action_plan": [
+      "Rearrange or remove boxes to create and maintain a clear walking path through the operational area."
+    ],
+    "visual_feedback": [
+      "Boxes are stacked across the floor with no visible aisle or pathway for normal movement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "087",
+    "failed_criteria": [
+      "All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles."
+    ],
+    "action_plan": [
+      "Ensure all visible boxes are restacked squarely and tightly, aligning edges and securing lids to eliminate unstable piles."
+    ],
+    "visual_feedback": [
+      "Top boxes in the center stack are misaligned and lids are bent, indicating unstable and haphazard piles."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
+    "failed_criteria": [
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Reorganize boxes to create a clear walking path through the operational area as per policy guidelines."
+    ],
+    "visual_feedback": [
+      "Boxes are stacked across the floor space blocking access to the doorway and workspace, impeding normal movement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "092",
+    "failed_criteria": [
+      "Box stacking neatness: All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles.",
+      "Labels (if required by your gold standard) remain legible and unobstructed on the majority of visible boxes."
+    ],
+    "action_plan": [
+      "Re-stack boxes squarely and tightly, replacing any bulging or damaged boxes to ensure stable, orderly piles.",
+      "Ensure a legible label is affixed and unobstructed on the majority of visible boxes; reposition or add labels where missing."
+    ],
+    "visual_feedback": [
+      "Bulging and misaligned boxes at the bottom of the stack (center and left side of photo) indicating unstable piling.",
+      "Several boxes in the center and bottom right of the stack lack visible or legible labels."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "Box stacking neatness: unstable or haphazard piles",
+      "Workspace circulation: no clear walking path"
+    ],
+    "action_plan": [
+      "Re-stack boxes squarely and tightly; ensure no unstable or haphazard piles.",
+      "Reorganize boxes to clear a defined walking path through the operational area; stack boxes against walls without blocking doorways or desk zones."
+    ],
+    "visual_feedback": [
+      "Right stack of Staples boxes shows tilting boxes indicating instability.",
+      "Boxes positioned directly at the doorway blocking clear walking path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "100",
+    "failed_criteria": [
+      "Workspace circulation",
+      "No trash, debris, or expired materials visible on floor or work surfaces near the boxes"
+    ],
+    "action_plan": [
+      "Remove all obstacles, such as ladders, to ensure clear walking paths through the operational area.",
+      "Clear any trash, debris, or packaging materials from the floor and work surfaces near the boxes."
+    ],
+    "visual_feedback": [
+      "Ladder positioned in front of box stacks blocking the walking path.",
+      "Small piece of paper/debris visible on the floor near the ladder."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "102",
+    "failed_criteria": [
+      "Box stacking neatness",
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Re-stack boxes so they are squarely and tightly aligned, eliminating any unstable or haphazard piles.",
+      "Ensure a clear walking path by relocating boxes away from the operational area to maintain unobstructed access through desk zones and doorways."
+    ],
+    "visual_feedback": [
+      "Stacks on the right side are uneven and some boxes are leaning outside the alignment of the pile.",
+      "Boxes are placed directly on the floor and under the cubby area, blocking normal movement through the workspace entrance."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "106",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways)."
+    ],
+    "action_plan": [
+      "Rearrange boxes to create a clear walkway through the operational area, ensuring doorways and desk zones remain accessible."
+    ],
+    "visual_feedback": [
+      "Boxes are densely packed in the doorway and central floor area, blocking normal movement through the room."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "108",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways)."
+    ],
+    "action_plan": [
+      "Rearrange boxes to create a clear walking path through the operational area, ensuring normal movement isn't obstructed."
+    ],
+    "visual_feedback": [
+      "Boxes fill the central floor space against walls on both sides, leaving no unobstructed walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "110",
+    "failed_criteria": [
+      "Workspace circulation: There must be a clear walking path through the operational area (e.g. desk zones, doorways). Boxes pushed against walls or under desks—even in the open office—are fine so long as they don’t block normal movement."
+    ],
+    "action_plan": [
+      "Rearrange boxes so they are contained against walls or under desks, ensuring a clear walking path through the operational area."
+    ],
+    "visual_feedback": [
+      "Boxes are stacked in the center of the floor space, obstructing the walking path."
+    ],
+    "notes": ""
+  }
+]

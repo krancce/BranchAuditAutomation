@@ -1,0 +1,105 @@
+[
+  {
+    "store": "022",
+    "failed_criteria": [
+      "Promotional posters may be multiple if evenly spaced (min 2 inches apart) and secured flat with consistent alignment.",
+      "Posters should not overlap or obscure each other; all key information must be fully visible."
+    ],
+    "action_plan": [
+      "Re-space poster frames to ensure a minimum of 2 inches gap between each poster.",
+      "Remove or reposition the printer obstructing the poster to ensure all key information is fully visible."
+    ],
+    "visual_feedback": [
+      "Gap between the two Borrow Online posters appears to be less than the required 2 inches.",
+      "Bottom portion of the right Borrow Online poster is obscured by the printer."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Promotional posters (window or wall) may be multiple if evenly spaced (min 2 inches apart) and secured flat with consistent alignment."
+    ],
+    "action_plan": [
+      "Re-space promotional posters ensuring at least 2 inches between each frame and verify consistent alignment before retaking the photo."
+    ],
+    "visual_feedback": [
+      "The two 'Borrow Online 24/7' posters mounted side by side near the printer are placed with virtually no gap between frames, violating the minimum 2-inch spacing requirement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "039",
+    "failed_criteria": [
+      "Promotional posters are not spaced at least 2 inches apart"
+    ],
+    "action_plan": [
+      "Reposition multiple promotional posters so that there is a minimum of 2 inches gap between each poster."
+    ],
+    "visual_feedback": [
+      "The two circular promotional posters on the front window are touching at the edges with no visible gap, violating spacing requirement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "049",
+    "failed_criteria": [
+      "No posters are torn, wrinkled, or damaged."
+    ],
+    "action_plan": [
+      "Replace wrinkled or damaged posters ensuring all posters are flat and free of wrinkles or tears."
+    ],
+    "visual_feedback": [
+      "Wrinkling observed on the yellow 'Cost per $100 Borrowed' poster's top-right corner in interior photo with timestamp 2025/05/29 14:15:05."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "062",
+    "failed_criteria": [
+      "No personal postings."
+    ],
+    "action_plan": [
+      "Remove any personal postings such as the holiday notice on the front door; ensure only approved promotional materials are displayed."
+    ],
+    "visual_feedback": [
+      "The Victoria Day holiday notice affixed to the front door window constitutes a personal posting and is visible in the lower center of the window."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "068",
+    "failed_criteria": [
+      "Posters should not overlap or obscure each other; all key information must be fully visible."
+    ],
+    "action_plan": [
+      "Move or remove objects blocking posters (e.g., relocate printer) to ensure all key information on posters is fully visible."
+    ],
+    "visual_feedback": [
+      "Bottom of the left 'Borrow Online 24/7' wall poster is partially obscured by the printer."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for B2: Marketing: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for B2: Marketing; expected view of promotional materials, received images of unrelated items. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "106",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for B2: Marketing: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for B2: Marketing; expected view of promotional materials, received view of a door."
+  }
+]

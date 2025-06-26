@@ -1,0 +1,337 @@
+[
+  {
+    "store": "004",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure the cleaning log is signed on each regular weekday (Mon–Fri) without gaps; update and maintain daily sign-offs for the entire week."
+    ],
+    "visual_feedback": [
+      "Missing signatures for Tuesday through Friday visible in the log grid."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "006",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Complete and initial the cleaning log for all regular weekdays to avoid multiple consecutive unsigned days."
+    ],
+    "visual_feedback": [
+      "No initials visible in Wednesday, Thursday, and Friday columns on the current week's log sheet."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "010",
+    "failed_criteria": [
+      "Sign-offs missing for multiple consecutive regular weekdays (Thursday, Friday)"
+    ],
+    "action_plan": [
+      "Add signatures for missing regular weekdays (Thursday and Friday) on the cleaning schedule; ensure majority of weekdays are signed."
+    ],
+    "visual_feedback": [
+      "Thursday and Friday columns on the log sheet are empty with no initials."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates (multiple consecutive weekdays missing signatures)"
+    ],
+    "action_plan": [
+      "Ensure the cleaning log is signed off on all regular weekdays so that at least three weekday entries have initials. Retake and resubmit the photo showing the completed signatures."
+    ],
+    "visual_feedback": [
+      "Monday and Tuesday are initialed, but Wednesday, Thursday, and Friday entries are blank."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "016",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates: multiple consecutive regular weekdays (Thursday and Friday) are missing signatures."
+    ],
+    "action_plan": [
+      "Complete missing sign-offs for Thursday and Friday on the cleaning log and resubmit the photo showing all required weekday signatures."
+    ],
+    "visual_feedback": [
+      "Thursday and Friday columns on the schedule sheet are blank, indicating missing signatures."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "020",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure signatures are provided for the majority of regular weekdays; obtain initials for missing days (Wednesday, Thursday, Friday) for all tasks."
+    ],
+    "visual_feedback": [
+      "No signatures detected in the Wednesday, Thursday, and Friday columns for each task."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "021",
+    "failed_criteria": [
+      "Sign-offs are not present for the majority of required dates: multiple consecutive weekdays missing signatures."
+    ],
+    "action_plan": [
+      "Ensure that staff initial the cleaning log on each regular weekday without gaps; retrain staff and monitor daily sign-offs."
+    ],
+    "visual_feedback": [
+      "Missing initials in the Wednesday, Thursday, and Friday columns across multiple tasks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "022",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for E1: Posted Cleaning & Daily Log: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo is too distant and unclear to assess standard compliance. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Sign-offs are missing for multiple consecutive regular weekdays (Thursday and Friday)"
+    ],
+    "action_plan": [
+      "Ensure sign-offs are completed for all weekdays; fill in signatures for Thursday and Friday on the log sheet"
+    ],
+    "visual_feedback": [
+      "Thursday and Friday columns are blank with no signatures"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "033",
+    "failed_criteria": [
+      "Sign-offs are missing for multiple consecutive regular weekdays"
+    ],
+    "action_plan": [
+      "Ensure all required weekday fields are signed; resubmit photo showing signatures for the majority of regular weekdays"
+    ],
+    "visual_feedback": [
+      "Blank entries visible in the Tuesday, Wednesday, and Thursday columns for multiple tasks"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "040",
+    "failed_criteria": [
+      "Sign-offs missing for multiple consecutive weekdays",
+      "Area around log not tidy (loose papers behind schedule)"
+    ],
+    "action_plan": [
+      "Ensure all required weekdays have signatures; verify log is signed daily for each regular weekday without gaps.",
+      "Clear the area around the log: remove loose papers or debris and ensure the schedule is displayed on its own, unobstructed."
+    ],
+    "visual_feedback": [
+      "Bottom tasks on the log sheet have blank entries for Tuesday and Thursday, indicating missing consecutive weekday sign-offs.",
+      "Loose sheets and other papers are visible behind and beneath the log sheet, cluttering the area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "043",
+    "failed_criteria": [
+      "Sign-offs are not present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure individual sign-offs (initials and date) are recorded on each weekday field of the cleaning log; do not use diagonal lines to indicate completion"
+    ],
+    "visual_feedback": [
+      "No individual initials visible in the weekday columns; sheet marked with a single diagonal line instead of daily sign-offs"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "046",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure daily sign-offs are completed for all regular weekdays, particularly adding signatures for Thursday and Friday tasks."
+    ],
+    "visual_feedback": [
+      "Thursday and Friday columns are blank for multiple tasks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "052",
+    "failed_criteria": [
+      "Multiple consecutive regular weekdays missing signatures"
+    ],
+    "action_plan": [
+      "Ensure signatures are provided for each regular weekday; add initials for Wednesday, Thursday, and Friday to complete the log for the week."
+    ],
+    "visual_feedback": [
+      "Columns for Wednesday, Thursday, and Friday are blank with no initials."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "053",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure signatures are added for all regular weekdays; update the log with missing signatures for Thursday and Friday"
+    ],
+    "visual_feedback": [
+      "Thursday and Friday columns are blank with no signatures"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "057",
+    "failed_criteria": [
+      "Cleaning schedule or log sheet is not clearly posted",
+      "Sign-offs are missing for multiple consecutive regular weekdays",
+      "Unrelated papers are overlapping or taped over the schedule",
+      "Area around the log is not tidy; loose sheets present"
+    ],
+    "action_plan": [
+      "Ensure the cleaning schedule is prominently posted on a wall or bulletin board so it is clearly visible",
+      "Complete and initial the log for the majority of regular weekdays with no extended gaps",
+      "Remove any unrelated papers or notices from the schedule area",
+      "Maintain a tidy area around the log, removing loose sheets and debris"
+    ],
+    "visual_feedback": [
+      "Sheet is laid flat on a desk rather than posted",
+      "Only two weekday initials are present, multiple blanks observed",
+      "Additional loose papers visible behind/beside the log",
+      "Desk surface has stacked documents around the schedule"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "060",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates: multiple consecutive regular weekdays are missing signatures"
+    ],
+    "action_plan": [
+      "Ensure sign-offs are present for all regular weekdays (e.g., Wednesday, Thursday, Friday) and resubmit a fully initialed log with no more than one unsigned weekday."
+    ],
+    "visual_feedback": [
+      "Wednesday, Thursday, and Friday columns are blank with no initials."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "061",
+    "failed_criteria": [
+      "Sign-offs are missing for multiple consecutive regular weekdays"
+    ],
+    "action_plan": [
+      "Ensure all regular weekdays (Thursday and Friday) are signed off on the log sheet; retake and submit a clear photo showing initials in those columns."
+    ],
+    "visual_feedback": [
+      "No initials visible in the Thursday and Friday columns across the tasks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "062",
+    "failed_criteria": [
+      "No unrelated papers or notices are taped over the schedule."
+    ],
+    "action_plan": [
+      "Remove any unrelated papers or notices covering the log sheet to ensure it is fully visible."
+    ],
+    "visual_feedback": [
+      "A sheet pinned above the schedule overlaps the top edge of the log sheet."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "064",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure sign-offs are completed for the majority of regular weekdays; add initials for missing dates (Wednesday, Thursday, Friday)."
+    ],
+    "visual_feedback": [
+      "Only signatures present for Monday and Tuesday; Wednesday through Friday are missing."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "070",
+    "failed_criteria": [
+      "Sign-offs are missing for multiple consecutive regular weekdays."
+    ],
+    "action_plan": [
+      "Ensure the schedule is signed off for all regular weekdays, including Thursday and Friday, to avoid consecutive missing signatures."
+    ],
+    "visual_feedback": [
+      "Missing signatures in the Thursday and Friday columns across all tasks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "074",
+    "failed_criteria": [
+      "No unrelated papers or notices are taped over the schedule."
+    ],
+    "action_plan": [
+      "Remove any unrelated papers or notices from overlapping the schedule to ensure full visibility of the cleaning log."
+    ],
+    "visual_feedback": [
+      "Unrelated white sheet pinned above overlaps the top left corner of the log sheet."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "Cleaning schedule or log sheet is not posted and affixed as required"
+    ],
+    "action_plan": [
+      "Post the cleaning schedule/log sheet in the designated area on the wall using proper clip or tape so it is clearly visible and fully displayed."
+    ],
+    "visual_feedback": [
+      "The log sheet is laid flat on a table rather than posted upright on the designated wall area."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates: multiple consecutive regular weekdays missing signatures"
+    ],
+    "action_plan": [
+      "Complete and update the sign-offs for all required weekdays in the Collections Follow-up Report row to avoid multiple consecutive missing signatures"
+    ],
+    "visual_feedback": [
+      "The Collections Follow-up Report row shows no signatures from Monday through Friday, indicating multiple consecutive weekday sign-offs are missing"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "110",
+    "failed_criteria": [
+      "Cleaning schedule or log sheet is clearly posted and fully visible."
+    ],
+    "action_plan": [
+      "Post the cleaning schedule or log sheet in its designated visible location (e.g., on the wall near the work area) and ensure it remains fully visible when taking the photo."
+    ],
+    "visual_feedback": [
+      "Log sheet is placed flat on the desk rather than mounted or posted; no visible hanging mechanism"
+    ],
+    "notes": ""
+  }
+]

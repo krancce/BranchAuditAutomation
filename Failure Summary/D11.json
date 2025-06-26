@@ -1,0 +1,148 @@
+[
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)."
+    ],
+    "action_plan": [
+      "Empty the bin completely before photographing, ensuring no bottles, paper, or other items remain inside."
+    ],
+    "visual_feedback": [
+      "Submission photo timestamped 2025/05/27 16:13:30 shows a water bottle and paper inside the bin, indicating it is not empty."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "016",
+    "failed_criteria": [
+      "The area immediately around each bin should be free of litter, spills, or debris."
+    ],
+    "action_plan": [
+      "Remove all litter, spills, or debris from the area immediately around each bin to ensure compliance with cleanliness standards."
+    ],
+    "visual_feedback": [
+      "Debris visible on the floor next to the washroom sink bin in the photo with timestamp 2025/05/28 12:13:50."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "017",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)"
+    ],
+    "action_plan": [
+      "Empty and clean the bin; ensure bins are emptied and free of waste before photographing."
+    ],
+    "visual_feedback": [
+      "Bottom of washroom bin shows crumpled paper towel pieces inside the bin."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "021",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)."
+    ],
+    "action_plan": [
+      "Empty the bin of all contents before inspection and retake the photo showing the bin completely empty."
+    ],
+    "visual_feedback": [
+      "Bin in photo timestamped 2025/05/16 13:00:10 contains a water bottle at the bottom."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)."
+    ],
+    "action_plan": [
+      "Remove all trash from bins so they are empty at time of photo submission."
+    ],
+    "visual_feedback": [
+      "Image 11: Paper scrap visible inside bin under toilet in restroom."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "038",
+    "failed_criteria": [
+      "Bins should look well-maintained (lid/liner in place, no torn bags visible)"
+    ],
+    "action_plan": [
+      "Replace torn or unsuitable bag liner with a proper intact liner fully fitted inside the bin."
+    ],
+    "visual_feedback": [
+      "Dome-lid bin in the last submission photo shows a torn plastic bag liner draped over the edges."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "047",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)"
+    ],
+    "action_plan": [
+      "Empty the garbage bin completely and remove all trash; ensure bins remain empty and clean before photographing."
+    ],
+    "visual_feedback": [
+      "Scraps of paper and debris visible inside the bin in the back office photo (timestamp 2025/05/29 15:20:04)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "049",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)."
+    ],
+    "action_plan": [
+      "Empty and clean the trash bin under the teller counter: remove overflowing paper scraps and ensure bin remains empty."
+    ],
+    "visual_feedback": [
+      "Paper scraps visible inside the trash bin under the teller counter, indicating it is not empty."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "057",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage)."
+    ],
+    "action_plan": [
+      "Remove all items from the bin to ensure it is empty and clean."
+    ],
+    "visual_feedback": [
+      "Photo timestamped 2025/06/04 11:50:34 shows pens inside the bin, indicating debris present."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "060",
+    "failed_criteria": [
+      "Bins must be clean and empty (no overflowing garbage).",
+      "Bins should look well-maintained (lid/liner in place, no torn bags visible)."
+    ],
+    "action_plan": [
+      "Empty all garbage bins and ensure no visible trash remains inside.",
+      "Replace torn liners and ensure all bins have properly in-place liners."
+    ],
+    "visual_feedback": [
+      "In the timestamped photo dated 2025/05/27 17:57:21, visible cardboard pieces are inside the bin, indicating it is not empty.",
+      "In the timestamped photo dated 2025/05/28 12:19:29, the black liner appears torn and improperly fitted around the bin."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "090",
+    "failed_criteria": [
+      "Bins should look well-maintained (lid/liner in place, no torn bags visible)"
+    ],
+    "action_plan": [
+      "Install a clean liner inside the bin and ensure it is properly fitted."
+    ],
+    "visual_feedback": [
+      "The bin in the image with the timestamp 2025/05/15 13:14:28 lacks any liner, appearing without a proper bag."
+    ],
+    "notes": ""
+  }
+]
