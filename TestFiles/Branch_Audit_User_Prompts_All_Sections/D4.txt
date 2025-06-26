@@ -1,0 +1,13 @@
+standard_name: D4: File Shelving & Workspace Tidiness
+
+requirements_checklist:
+- All documents are stored on shelves (no loose paper stacks on desks or the floor).
+- Shelves appear generally tidy and orderly:
+  • Documents may lean slightly or vary in height, but no piles are spilling out or uncontained.  
+  • You do **not** need to see alphabetic dividers or perfectly level rows—just overall neatness.  
+- Shelves should only contain files and essential office-related items. Minor use of available shelf space for extra boxed supplies is acceptable as long as it does not create visual clutter, is not hazardous, and the main document storage appears tidy and organized.
+
+note: Ignore the presence of empty space or boxed office items on unused parts of shelves if they are neatly placed and not interfering with document organization.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

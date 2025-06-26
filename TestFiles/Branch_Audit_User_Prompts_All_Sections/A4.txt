@@ -1,0 +1,10 @@
+standard_name: A4: Front Door & Entrance
+
+requirements_checklist:
+- Glass on doors is free of heavy dirt or debris; minor reflections or cash4you related promotional signage are acceptable.
+- Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable.
+- Hours-of-operation sign must be present but may be slightly skewed or off-center if securely affixed.
+- safety, legal compliance, or accessibility stickers/signage (such as “Automatic Caution Door” or ADA decals) are permitted on the door; tape residue is acceptable if it does not impede visibility.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

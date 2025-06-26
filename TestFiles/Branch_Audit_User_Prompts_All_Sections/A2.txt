@@ -1,0 +1,12 @@
+standard_name: A2: Store Signage & Lighting
+
+requirements_checklist:
+- Exterior signage is fully illuminated:
+  • Confirm that sign bulbs or back-lighting are actually turned on (i.e. you can see the light source glowing).  
+  • Do **not** count natural daylight or bright-font-on-dark-background contrast as “illumination.”  
+- All sign letters are intact (none missing or broken).  
+- Sign is clean and free of dirt or stains.  
+- Photo framing: the entire sign face is clearly visible and centered.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

@@ -1,0 +1,13 @@
+standard_name: D2: Storage Boxes & Aisle Clearance
+
+requirements_checklist:
+- Stacking neatness:
+  • Boxes must be stacked squarely and tightly with no loose, toppled, or haphazard piles.
+- Aisle/storage-area clearance:
+  • In a dedicated storage room, you only need enough space to walk safely—no need for a full “aisle” like in a retail area.
+  • If boxes are pushed up against walls or shelves without blocking a sensible foot-path, consider this pass.
+- Do **not** fail for boxes tucked neatly to the side or against walls in a storage room—only flag when piles are unstable or they truly obstruct normal access.
+
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

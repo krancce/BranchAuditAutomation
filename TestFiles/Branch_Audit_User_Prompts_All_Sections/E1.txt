@@ -1,0 +1,13 @@
+standard_name: E1: Posted Cleaning & Daily Log
+
+requirements_checklist:
+- Cleaning schedule or log sheet is clearly posted and fully visible.
+- Sign-offs are present for the majority of required dates:
+  • It’s fine if weekend or holiday fields are blank or unsigned.  
+  • Only flag if multiple consecutive regular weekdays are missing signatures.  
+- The sheet is legible, undamaged, and free of tears or watermarks that obscure entries.
+- No unrelated papers or notices are taped over the schedule.
+- The area around the log remains tidy (no loose sheets or debris covering the schedule).
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

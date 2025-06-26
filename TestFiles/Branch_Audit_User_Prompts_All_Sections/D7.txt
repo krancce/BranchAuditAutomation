@@ -1,0 +1,17 @@
+standard_name: D7: Restroom Cleanliness & Accessibility
+
+definition: |
+Evaluate whether the restroom appears clean, functional, and in a generally acceptable condition for regular use.
+
+requirements_checklist:
+
+- Toilet and sink must be present, appear clean, and clearly functional.
+- The surrounding area, including floor and walls, should be reasonably clean and tidy — no visible spills, major stains, or overflowing trash.
+- The restroom should give an overall impression of hygiene and readiness for use.
+
+notes: |
+Do not fail a photo for missing grab bars, toilet paper, soap, or similar minor details. This section prioritizes real-world cleanliness and functional presentation, not idealized or fully-stocked restrooms. Assume intelligent workplace practices where supplies may be replenished as needed. If the restroom looks clean, functional, and presentable overall, it should be considered a pass.
+
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

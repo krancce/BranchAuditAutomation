@@ -1,0 +1,27 @@
+C2: Equipment Functionality
+
+Standard: Desktop station should be equipped with all functional equipment.
+
+Requirements Checklist:
+- Desktop computer (at least one) must be present and visibly intact. Do not fail if the screen appears off, unless there is visible physical damage (e.g., cracks, broken parts).
+- Printer, phone, and card machine must all be visible in the photo and generally appear undamaged.
+- Do not penalize for powered-off screens or devices unless physical damage is clearly shown.
+- The setup must look orderly and not show obvious signs of disrepair.
+
+Pass:
+- Desktop, printer, phone, and card machine are all visible.
+- All devices appear physically intact and in usable condition.
+- Setup is tidy and reasonably organized.
+
+Fail:
+- One or more required items is completely missing or not visible.
+- Any item shows clear physical damage (e.g., broken screen, detached wires).
+- Setup is extremely messy or appears non-functional overall.
+
+Notes:
+- Do not assume a device is broken simply because it's powered off or has a blank screen.
+- This section checks for the presence and physical condition of required equipment only. No assumptions about software or device status.
+
+
+gold_standard_photo_status: [Attached/Not Available]
+submission_photo_status: [Attached]

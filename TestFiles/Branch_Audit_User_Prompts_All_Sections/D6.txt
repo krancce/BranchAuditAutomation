@@ -1,0 +1,11 @@
+standard_name: D6: Kitchen / Break Room
+
+requirements_checklist:
+ - Microwave and fridge interiors should appear clean and hygienic. Some minor discoloration or stains from long-term use is acceptable as long as no food residue or debris is present.
+
+ - No food particles, spills, or leftover items visible inside appliances or on surfaces.
+
+Note: Focus on hygiene and usability. Do not penalize minor, unremovable discoloration or staining if the appliance is otherwise clean and ready for use.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

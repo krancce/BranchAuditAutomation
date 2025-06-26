@@ -1,0 +1,15 @@
+
+standard_name: D3: Archive Box Storage & Workspace Clearance
+
+requirements_checklist:
+- Box stacking neatness:
+  • All visible boxes are stacked squarely and tightly, with no unstable or haphazard piles.  
+  • It does **not** matter whether stacks live in a separate storage room or in a corner of the main workspace—as long as they’re contained and orderly.
+- Workspace circulation:
+  • There must be a clear walking path through the operational area (e.g. desk zones, doorways).  
+  • Boxes pushed against walls or under desks—even in the open office—are fine so long as they don’t block normal movement.
+- No trash, debris, or expired materials visible on floor or work surfaces near the boxes.
+- Labels (if required by your gold standard) remain legible and unobstructed on the majority of visible boxes.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

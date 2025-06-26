@@ -2,8 +2,7 @@
 myEnv/
 
 # Files
-TestFiles/
-logs/
+TestFiles/GoldStandards
 outputs/
 
 # Python cache

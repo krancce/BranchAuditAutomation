@@ -1,0 +1,16 @@
+standard_name: D11: Garbage Bin Guidelines
+
+requirements_checklist:
+- Bins must be clean and empty (no overflowing garbage).
+- Bins may be located anywhere in the workspace—lobby, teller area, back office, washroom, or storage—as long as they’re within reasonable reach.
+- The area immediately around each bin should be free of litter, spills, or debris.
+- Bins should look well-maintained (lid/liner in place, no torn bags visible).
+
+notes:
+- Location of bin is not a concern as long as it is not visibly unhygienic or hazardous.
+- Blocking walkways or access is no longer considered a failing issue.
+- Pass as long as the bin is reasonably clean, empty, and presentable.
+
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

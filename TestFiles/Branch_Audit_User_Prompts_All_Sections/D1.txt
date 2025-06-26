@@ -1,0 +1,12 @@
+standard_name: D1: Overall Floor & Workspace Clearance
+
+requirements_checklist:
+- The central circulation area (the main walking path through the room) is free of any major obstructions or trip hazards.
+  • Small, stationary items against walls or under desks (e.g. service buckets tucked to the side) may be ignored.  
+  • Only remove or relocate items that intrude into the primary open space.
+- No loose debris, litter, or spill hazards on the floor.
+- Workspace surfaces and aisles are clear enough to allow unimpeded passage of one person.
+- Any necessary equipment storage (e.g. chairs, carts, bins) is neatly stowed out of the main walking zone.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

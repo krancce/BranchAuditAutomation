@@ -1,0 +1,15 @@
+standard_name: B2: Marketing
+
+definition: |
+Assesses the display of promotional materials ensuring they are organized, balanced, and aligned for clear visibility without excessive clutter.
+
+requirements_checklist:
+- Promotional posters (window or wall) may be multiple if evenly spaced (min 2 inches apart) and secured flat with consistent alignment.
+- Posters should not overlap or obscure each other; all key information must be fully visible.
+- No posters are torn, wrinkled, or damaged.
+- No personal postings.
+
+**No requirement on how many posters are present, or what their specific content is.** Posters may be duplicated or varied freely, provided they meet the other bullets above.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

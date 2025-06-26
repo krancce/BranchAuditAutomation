@@ -1,0 +1,10 @@
+standard_name: B4: Customer Privacy & Sight Lines
+
+requirements_checklist:
+- No confidential info, passwords, or personal data visible to customers.
+- Counters are tidy (no loose documents or personal items).
+- Pens and supplies organized.
+- No screens displaying sensitive information toward public area.
+
+gold_standard_photo_status: [Attached/Not Available]
+submission_photo_status: [Attached]

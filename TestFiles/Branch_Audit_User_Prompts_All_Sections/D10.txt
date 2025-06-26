@@ -1,0 +1,18 @@
+standard_name: D10: Desk & Drawer Organization
+
+requirements_checklist:
+- Desk surface:
+  • Must look generally tidy and free of excessive clutter.  
+  • It’s fine to have a small number of functional items (e.g. one water bottle, a pen cup, a notepad, or a mug) as long as they’re grouped neatly.  
+  • Do **not** penalize for a single tissue box, hand sanitizer, or essential work tools—only flag if the surface is overwhelmingly crowded with personal or unrelated items.
+- Drawer organization:
+  • Drawers may contain pens, binder clips, notepads, or a handful of personal items, provided everything is contained and orderly (no loose piles spilling out).  
+  • It’s acceptable for mixed office and personal items, so long as they’re arranged in a clear, purposeful way.
+- Area under/behind desk:
+  • Must be free of trip-hazards (e.g. loose cables, boxes, or debris).  
+  • A small waste bin or necessary equipment tucked to the side is fine.
+- Overall usability:
+  • The workspace should feel ready for work—surfaces and storage look consciously arranged, not haphazard or overflowing.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

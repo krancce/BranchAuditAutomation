@@ -1,0 +1,11 @@
+standard_name: A1: Road Signs / Lawn Signs / A-Frames
+
+requirements_checklist:
+- All signs are upright (not leaning or fallen).
+- All signs are clean (no visible dirt, stains, or damage).
+- No expired promotions visible.
+- No signs blocking walkways.
+- Lighting works at dusk (if applicable).
+
+gold_standard_photo_status: [Attached/Not Available]
+submission_photo_status: [Attached]

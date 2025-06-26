@@ -1,0 +1,15 @@
+standard_name: D8: Security Office / DVR Area
+
+requirements_checklist:
+- DVR placement:
+  • DVR may sit on a desk, on a shelf, on the floor, on a chair, or box—location flexibility is OK, regardless of surface material (e.g. wood, carpet, metal).
+  • Monitors or networking equipment may be stacked with the DVR, provided they’re stable.
+- Obstruction & heat dissipation:
+  • No non-essential items (e.g. personal clutter, loose papers, cleaning supplies) placed on or immediately covering the DVR.
+  • DVR vents and heat sinks must be unobstructed—allow at least a few inches of clearance around all **exposed** sides (top and side panels); bottom surface contact with the resting surface is acceptable.
+- Accessibility & cleanliness:
+  • DVR and associated cables must remain accessible for maintenance (not buried under items).
+  • Area should be free of **excessive** dust piles or debris that could interfere with equipment. Light dust accumulation is acceptable as long as it does not impair operation.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

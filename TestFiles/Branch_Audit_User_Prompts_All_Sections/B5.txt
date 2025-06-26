@@ -1,0 +1,13 @@
+standard_name: B5: Dress Code & Name Tags
+
+definition: |
+Evaluates visible upper-body attire and name tag placement. Bottom garments (e.g., slacks, skirts) are not assessed under this standard.
+
+requirements_checklist:
+- All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles. **Exception:** Cash 4 You branded tops are acceptable, including all-black shirts with a white flat circle logo on the upper left chest (as shown in the gold standard photo).
+- Bottoms (pants, skirts, etc.) are not evaluated under this standard.
+- Name tags are worn above the chest, clearly visible.
+- No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

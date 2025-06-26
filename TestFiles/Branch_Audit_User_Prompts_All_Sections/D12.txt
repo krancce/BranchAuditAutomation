@@ -1,0 +1,17 @@
+standard_name: D12: Filing Drawer Organization Guidelines
+
+definition: |
+  Evaluates the organization and labeling of hanging file drawers for easy retrieval and orderly appearance.
+
+requirements_checklist:
+- Hanging files are arranged in a generally tidy and accessible manner. Minor variations in spacing or alignment are acceptable as long as they don’t obstruct usability.
+- Clear, descriptive labels on at least one file tab per section are preferred but not mandatory, as long as some visible grouping or organization is apparent.
+- Drawer interior should not contain excessive debris or unrelated clutter. A few loose papers are acceptable if the overall drawer appears clean, tidy, and usable.
+
+notes: |
+  Do not penalize for isolated loose papers or minor labeling inconsistencies as long as the drawer appears functionally organized and tidy.
+  Some drawers may follow non-uniform organization styles—this is acceptable if usability is preserved.
+  Emphasize general tidiness, functional order, and accessibility over strict folder-by-folder consistency.
+
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

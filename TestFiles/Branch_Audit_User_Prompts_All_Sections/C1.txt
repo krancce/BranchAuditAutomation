@@ -1,0 +1,10 @@
+standard_name: C1: Teller Station Organization
+
+requirements_checklist:
+- No excessive paper or personal items visible.
+- Only official materials present (forms, stamps, etc.).
+- No cleaning supplies left out.
+- All items neatly arranged.
+
+gold_standard_photo_status: [Attached/Not Available]
+submission_photo_status: [Attached]

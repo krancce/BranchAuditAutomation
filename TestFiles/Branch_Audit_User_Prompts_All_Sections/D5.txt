@@ -1,0 +1,17 @@
+standard_name: D5: Cleaning Supplies & Cabinet Organization
+
+requirements_checklist:
+- At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.
+- All cleaning supplies and related chemicals are stored inside the designated cabinet.
+- Shelves may mix cleaning supplies with office items (pens, flashlights, stationery) **only if** they are grouped by level:
+  • It’s fine to have non-cleaning items on one shelf and cleaning chemicals on another—no need to purge all mixed levels.  
+  • Ignore individual bottle spacing or overlap as long as each shelf looks generally tidy.
+- No loose items or debris inside the cabinet—everything must rest stably on a shelf or in a bin.
+- No personal or unrelated clutter (e.g. snacks, decorative items) mixed in with cleaning supplies.
+
+additional_notes:
+- It is acceptable for unrelated images to appear in this section as long as at least one photo clearly shows the correct cleaning cabinet setup.
+- Do not fail the submission just because some of the images are not relevant.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

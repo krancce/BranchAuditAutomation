@@ -1,0 +1,20 @@
+standard_name: A3: Parking Lot & Walkways
+
+definition: |
+Evaluates the cleanliness and clear access of visible ground surfaces in parking and walkway areas, focusing on safety and hazard obstruction.
+
+requirements_checklist:
+- Ground surfaces are free of significant trash, debris, or litter that could impede safe passage. Small, non-hazardous debris (e.g., a few leaves, small pebbles) is acceptable.
+
+- Walkways and entrances are unobstructed. Fixed safety fixtures (e.g., bollards, signage) in designated positions are allowed if they do not pose a tripping hazard or block more than 25% of the path width.
+
+- Surfaces are even and free of major cracks or potholes that present a safety risk.
+
+- Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage.
+- Exception: Vehicles fully contained within a marked parking stall—i.e., entirely behind the visible curb, bumper, or painted stall boundary—are **not** considered obstacles on the pedestrian walk path.
+- Ground-surface visibility:
+  • The photo must show **at least one clear expanse of ground** in front of the store—whether that’s a sidewalk, parking lot, curb strip, or a combined pavement area.  
+  • Do **not** require separate shots of “sidewalk” vs. “parking lot.” Any continuous ground area counts.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

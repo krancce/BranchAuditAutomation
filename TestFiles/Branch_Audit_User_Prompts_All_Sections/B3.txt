@@ -1,0 +1,26 @@
+standard_name: B3: Licensing Displays
+
+# ——— Submission Photos Handling ———
+- Treat all submitted images as one set; you do not need to see every license in a single frame.
+- For each image, identify which license it shows by reading the title/header (e.g. “Municipal Business License” vs. “Provincial Regulatory License”).
+
+requirements_checklist:
+- Exactly two distinct license types must be shown across the photo set:
+    • One municipal license and one provincial license (order doesn’t matter).  
+    • It’s okay if you see duplicates of the same license—just ensure you have both types somewhere.
+- For each identified license:  • Locate the expiration date printed on each license.  
+  • If **no expiration date is visible** on a license:
+      – Set `"pass": false`.  
+      – Add `"Missing expiration date on license"` to `failed_criteria`.  
+      – Add `"Ensure expiration date is clearly printed and legible"` to `action_plan`.  
+  • Else if **expiration date < current date**:
+      – Set `"pass": false`.  
+      – Add `"License expired"` to `failed_criteria`.  
+      – Add `"Replace with a valid, unexpired license"` to `action_plan`.  
+  • Otherwise (expiration date ≥ submission date), treat as passing this check.
+- Items are framed or neatly arranged.
+- All licenses are visible at eye level (not blocked or hidden).
+- No clutter in the display area.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]

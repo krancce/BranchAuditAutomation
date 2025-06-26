@@ -1,0 +1,18 @@
+standard_name: D9: Ladder Storage & Safety
+
+requirements_checklist:
+- Ladder placement:
+  • Ladder may lean vertically or upright against any solid surface (wall, cabinet, etc.) so long as it is stable.
+  • It may rest on the floor, tucked out of the main workspace.
+  • It may also lie horizontally on a shelf or rack as long as it is steady, secure, and does not pose a hazard or risk of falling.
+- Obstruction & hazard check:
+  • Ladder must not block any primary walkway.
+  • It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment.
+- Surrounding environment:
+  • Allow any small adjacent fixtures or equipment (e.g., posters, signage) so long as they do not compromise ladder stability or access.
+  • Do **not** penalize for benign background elements—only flag true trip-hazards or unsafe heat/electrical exposures.
+- Overall safety:
+  • The ladder setup should look intentional and safe—no loose tools or debris under it, and no obvious risk of falling or sliding.
+
+gold_standard_photo_status: [Attached]  
+submission_photo_status: [Attached]
