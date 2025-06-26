@@ -65,7 +65,7 @@ def insert_audit_result(conn, audit):
         ))
     conn.commit()
 
-def main(store_id, quarter, output_dir, auditor_id, score):
+def main(store_id, quarter, output_dir, auditor_id, score, month, year):
     try:
         # 1. Build the file path - Use absolute path
         if not os.path.isabs(output_dir):
@@ -128,8 +128,8 @@ def main(store_id, quarter, output_dir, auditor_id, score):
                 """, (inspection_id,))
 
                 # Determine status
-                status = "Completed" if score >= 90 else "In Progress"
-                e_sign_off = "YXY"
+                status = "Completed" if score >= 88 else "In Progress"
+                e_sign_off = datetime.now().strftime("YXY %m/%d/%Y %I:%M:%S %p")
                 e_signoff_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
                 cur.execute("""
@@ -156,6 +156,24 @@ def main(store_id, quarter, output_dir, auditor_id, score):
         except Exception as store_score_err:
             print(f"❌ Failed to insert store-level score: {store_score_err}")
 
+        # === Insert/Update branch_inspection_automation (AFTER all other DB work, before conn.close) ===
+        try:
+            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            with conn.cursor() as cur:
+                cur.execute("""
+                    INSERT INTO branch_inspection_automation
+                        (store_id, month, year, created_at, updated_at)
+                    VALUES (%s, %s, %s, %s, %s)
+                    ON DUPLICATE KEY UPDATE
+                        updated_at = VALUES(updated_at)
+                """, (
+                    store_id, month, year, now, now
+                ))
+                conn.commit()
+                print(f"✅ Automation record inserted/updated for store {store_id} ({month}/{year})")
+        except Exception as e:
+            print(f"❌ Failed to insert/update automation tracking: {e}")
+
         conn.close()
         print("Import finished.")
 
@@ -169,6 +187,8 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", type=str, default='outputs\\o4-mini')
     parser.add_argument("--auditor_id", type=int, default=00000)
     parser.add_argument("--score", type=float, default=0.0)
+    parser.add_argument("--month", type=int, required=True, help="Month of automated evaluation (1-12)")
+    parser.add_argument("--year", type=int, required=True, help="Year of automated evaluation (e.g., 2025)")
     args = parser.parse_args()
 
     main(
@@ -176,5 +196,7 @@ if __name__ == "__main__":
         quarter=args.quarter,
         output_dir=args.output_dir,
         auditor_id=args.auditor_id,
-        score=args.score
+        score=args.score,
+        month=args.month,
+        year=args.year
     )

@@ -163,7 +163,6 @@ class PhotoRetriever:
 
         return self.photos_by_section
 
-
 # --- Example Usage ---
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Retrieve branch submission photos by store and quarter.')
@@ -180,3 +179,43 @@ if __name__ == '__main__':
         logging.info(f"Store {args.store_id:03d} - Section {section} has {len(photos)} photos.")
         for photo in photos:
             logging.info(f"- {photo['filename']}")
+
+# --- Helper Function for API ---
+def get_failed_section_codes(store_id, quarter):
+        DB_CONFIG = {
+            'host': '192.168.250.15',
+            'user': 'c4y_portal',
+            'password': 'p2rt@1',
+            'database': 'ePortaldb'
+        }
+        conn = pymysql.connect(**DB_CONFIG)
+        try:
+            with conn.cursor() as cur:
+                # 1. Get inspection_id for this store and quarter
+                cur.execute(
+                    "SELECT inspection_id FROM inspection WHERE store_id=%s AND quarter_no=%s",
+                    (store_id, quarter)
+                )
+                row = cur.fetchone()
+                if not row:
+                    return []
+                inspection_id = row[0]
+
+                # 2. Get failed section_ids
+                cur.execute(
+                    "SELECT section_id FROM submission_audit_automation WHERE inspection_id=%s AND result='Fail'",
+                    (inspection_id,)
+                )
+                failed_section_ids = [r[0] for r in cur.fetchall()]
+                if not failed_section_ids:
+                    return []
+
+                # 3. Map section_id to section_code
+                cur.execute(
+                    f"SELECT section_id, section_code FROM section WHERE section_id IN ({','.join(['%s']*len(failed_section_ids))})",
+                    tuple(failed_section_ids)
+                )
+                id_code_map = {row[0]: row[1] for row in cur.fetchall()}
+                return [id_code_map[sec_id] for sec_id in failed_section_ids if sec_id in id_code_map]
+        finally:
+            conn.close()

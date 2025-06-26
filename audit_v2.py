@@ -8,7 +8,6 @@ import io
 import asyncio
 from PIL import Image
 import openai
-from datetime import datetime
 import os
 import time
 import subprocess
@@ -200,7 +199,7 @@ def generate_summary(store_id, results, submission_time, evaluation_time, total_
 
 # === Main Evaluation ===
 
-def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, section_code: str = None):
+def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, month: int, year: int, section_code: str = None):
     logging.info(f"{'='*60}\n")
     if section_code:
         logging.info(f"Starting evaluation for Store {store_id:03d}, Q{quarter}, Model: {model}, Section: {section_code.upper()}")
@@ -319,7 +318,7 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
         json.dump(existing_data, f, indent=2)
     
     # === Compute store score and pass to uploader ===
-        # === Compute store score and pass to uploader ===
+
     try:
         # After writing, reload the whole output file so we have ALL results
         with open(output_path, "r", encoding="utf-8") as f:
@@ -327,14 +326,17 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
 
         total_sections = 25
         passed_sections = sum(1 for sec in all_results.values() if sec.get("pass") is True)
-        store_score = round((passed_sections / total_sections) * 100, 2) if total_sections else 0.0
+        store_score = round((passed_sections / total_sections) * 100, 2) if total_sections else 0.0  
 
         subprocess.run([
             sys.executable, "upLoader.py",
             "--store_id", str(store_id),
             "--quarter", str(quarter),
-            "--score", str(store_score)
+            "--score", str(store_score),
+            "--month", str(month),
+            "--year", str(year)
         ], check=True)
+
     except Exception as e:
         log_warning(f"⚠️ Failed to compute or upload store score: {e}")
     
@@ -361,16 +363,17 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, sec
             ref_log.write("="*40 + "\n")
 
 
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--store_id", type=int, help="Store ID (optional)")
-    parser.add_argument("--quarter", type=int, default=2, help="Quarter number")
-    parser.add_argument("--model", type=str, default="gpt-4o")
+    parser.add_argument("--model", type=str, default="o4-mini")
     parser.add_argument("--start-date", type=str, default=datetime.now().strftime("%Y-%m-%d"))
     parser.add_argument("--auto", action="store_true", help="Run evaluation for all qualifying stores automatically")
     parser.add_argument("--section", type=str, help="Evaluate a single section (e.g., B2, D4)")
+    parser.add_argument("--month", type=int, required=True, help="Month of automated evaluation (1-12)")
+    parser.add_argument("--year", type=int, required=True, help="Year of evaluation (e.g. 2025)")
+    parser.add_argument("--quarter", type=int, default=3, help="Quarter number (1-4, default: 3)")
+
     args = parser.parse_args()
 
     if args.auto:
@@ -382,7 +385,9 @@ if __name__ == "__main__":
                 store_id=store_id,
                 quarter=args.quarter,
                 model=args.model,
-                start_date=args.start_date
+                start_date=args.start_date,
+                month = args.month,
+                year = args.year
             )
 
     elif args.store_id and args.section:
@@ -392,7 +397,9 @@ if __name__ == "__main__":
             quarter=args.quarter,
             model=args.model,
             start_date=args.start_date,
-            section_code=args.section.upper()
+            section_code=args.section.upper(),
+            month=args.month,
+            year=args.year
         )
     elif args.store_id:
         # Existing: Full-store evaluation mode
@@ -400,7 +407,9 @@ if __name__ == "__main__":
             store_id=args.store_id,
             quarter=args.quarter,
             model=args.model,
-            start_date=args.start_date
+            start_date=args.start_date,
+            month=args.month,
+            year=args.year
         )
     else:
         print("❌ Please provide either --auto or --store_id [and optionally --section].")
