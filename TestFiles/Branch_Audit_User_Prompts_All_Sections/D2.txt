@@ -2,12 +2,18 @@ standard_name: D2: Storage Boxes & Aisle Clearance
 
 requirements_checklist:
 - Stacking neatness:
-  • Boxes must be stacked squarely and tightly with no loose, toppled, or haphazard piles.
-- Aisle/storage-area clearance:
-  • In a dedicated storage room, you only need enough space to walk safely—no need for a full “aisle” like in a retail area.
-  • If boxes are pushed up against walls or shelves without blocking a sensible foot-path, consider this pass.
-- Do **not** fail for boxes tucked neatly to the side or against walls in a storage room—only flag when piles are unstable or they truly obstruct normal access.
+  • Boxes should be generally stacked in a way that appears stable and will not immediately fall over. **Minor leaning, slightly uneven edges, or open flaps are acceptable if the stack is not about to fall. Only fail if there is a large, clearly toppled or collapsing pile that is an obvious hazard.**
+- Proper storage:
+  • Boxes should be stored together, generally organized, and not obviously collapsing or unsafe. **It is acceptable if boxes are pushed against walls, shelves, or touch each other, with no need for any visible aisle, path, or space for access. Only fail if the stack is clearly unstable, falling, or boxes are obviously at risk of injury or damage.**
+- The presence of other items (chairs, desks, equipment, etc.) near or around the box stacks is irrelevant and does **not** affect compliance for this standard.
+- There is **no requirement** for visible access, walkway, or path to or around the boxes for this section. **Do not fail a submission for lack of clearance, path, or space between, behind, or beside boxes.**
+- Only evaluate the *boxes themselves* for neatness, safety, and overall proper storage—not room layout or general storage room access.
 
+clarification_notes: |
+  - As long as boxes are safely stacked and not collapsing, fail **only** if a pile is a real safety risk.
+  - Ignore any issue regarding access, clearance, or the ability to walk behind or between box stacks.
+  - Ignore unrelated items or general storage room arrangement—only the *state of the boxes* matters.
+  - If in doubt, pass.
 
-gold_standard_photo_status: [Attached]  
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

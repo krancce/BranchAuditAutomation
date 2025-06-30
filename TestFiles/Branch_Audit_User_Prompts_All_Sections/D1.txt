@@ -2,11 +2,21 @@ standard_name: D1: Overall Floor & Workspace Clearance
 
 requirements_checklist:
 - The central circulation area (the main walking path through the room) is free of any major obstructions or trip hazards.
-  • Small, stationary items against walls or under desks (e.g. service buckets tucked to the side) may be ignored.  
-  • Only remove or relocate items that intrude into the primary open space.
+  • Small, stationary items against walls or under desks (e.g. service buckets tucked to the side) are acceptable and do NOT cause a fail.
+  • Only fail if a large item (e.g., safe, ladder, heavy box, many stacked items) is left directly in the middle of the walkway blocking normal passage. If in doubt, pass.
 - No loose debris, litter, or spill hazards on the floor.
+  **Minor dry stains, discoloration, shadows, or light color differences in the floor are *not* considered spills and do NOT cause a fail. Only fail if there is obvious trash, multiple pieces of debris, or a clearly visible large, *wet* spill in the main walking zone. Stains or marks that do not create a real slip hazard or are not obviously wet should be ignored.**
 - Workspace surfaces and aisles are clear enough to allow unimpeded passage of one person.
+  **Minor clutter, slightly narrow aisles, or one small item slightly in the way is acceptable as long as a person can reasonably walk through. Only fail if the aisle is fully blocked, or passage is not possible without moving something substantial.**
 - Any necessary equipment storage (e.g. chairs, carts, bins) is neatly stowed out of the main walking zone.
+  **A chair, bin, or cart near a wall or tucked under a desk is acceptable and does NOT cause a fail. Only fail if equipment is left in the center of the main path, or there is clear disorder that blocks walking.**
+
+clarification_notes: |
+  - Do not fail for differences in floor color, old stains, dry marks, faded areas, or patches that appear different but are not *clearly wet*.
+  - Only an *obviously wet spill or puddle* in the main walking area is a fail.
+  - If unsure whether a spot is truly wet, pass.
+  - The intent is to catch *actual slip hazards*—not old stains, cleaning marks, or natural variations in carpet/flooring color.
+  - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]  
 submission_photo_status: [Attached]

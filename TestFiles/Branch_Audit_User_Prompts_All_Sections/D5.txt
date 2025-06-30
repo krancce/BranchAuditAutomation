@@ -2,16 +2,24 @@ standard_name: D5: Cleaning Supplies & Cabinet Organization
 
 requirements_checklist:
 - At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.
+  **It is acceptable if other images in this section do not show the cabinet, as long as one photo is clear. Minor disorder, some bottles or items turned sideways, or a shelf not perfectly organized is fine. Only fail if the entire cabinet is missing or there is obvious, severe mess.**
 - All cleaning supplies and related chemicals are stored inside the designated cabinet.
-- Shelves may mix cleaning supplies with office items (pens, flashlights, stationery) **only if** they are grouped by level:
-  • It’s fine to have non-cleaning items on one shelf and cleaning chemicals on another—no need to purge all mixed levels.  
+  **A single cleaning item left out or a large bottle on the floor is acceptable if the majority of supplies are inside the cabinet and area is generally tidy. Only fail if many cleaning products are stored outside, or the storage is obviously incomplete or hazardous.**
+- Shelves may mix cleaning supplies with office items (pens, flashlights, stationery) only if they are grouped by level:
+  • It’s fine to have non-cleaning items on one shelf and cleaning chemicals on another—no need to purge all mixed levels.
+  **Ignore minor mixing on a shelf if the majority of items are still organized and the shelf is not overcrowded. Only fail if cleaning chemicals and non-cleaning items are jumbled together all over multiple shelves with no visible grouping, or if the mess is severe.**
   • Ignore individual bottle spacing or overlap as long as each shelf looks generally tidy.
 - No loose items or debris inside the cabinet—everything must rest stably on a shelf or in a bin.
+  **A few small loose items or minor dust is fine if everything appears safe and the cabinet is not obviously cluttered. Only fail for piles of debris, large loose objects, or obvious safety hazards.**
 - No personal or unrelated clutter (e.g. snacks, decorative items) mixed in with cleaning supplies.
+  **A mug, single snack, or minor unrelated item is acceptable if the cabinet is otherwise organized and not crowded. Only fail if personal items or unrelated clutter dominate the shelves, block access to cleaning supplies, or create visible disorder.**
 
 additional_notes:
 - It is acceptable for unrelated images to appear in this section as long as at least one photo clearly shows the correct cleaning cabinet setup.
 - Do not fail the submission just because some of the images are not relevant.
+- The main point is that the cabinet exists, most cleaning supplies are inside, and things are basically safe and presentable.
+- Do not penalize for non-cleaning items, minor clutter, or a few loose bottles as long as overall appearance is neat and not hazardous.
+- If in doubt, pass.
 
-gold_standard_photo_status: [Attached]  
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

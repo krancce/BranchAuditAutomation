@@ -1,11 +1,19 @@
 standard_name: D6: Kitchen / Break Room
 
 requirements_checklist:
- - Microwave and fridge interiors should appear clean and hygienic. Some minor discoloration or stains from long-term use is acceptable as long as no food residue or debris is present.
+- Microwave and fridge interiors should appear clean and hygienic.
+  **Minor discoloration, old staining, or normal marks from long-term use are acceptable if there’s no major, recent, or sticky mess. Only fail if there is an obvious, fresh food spill, large sticky residue, or visible fresh mess inside the appliance.**
+- Food, drinks, and containers may be stored in the fridge or on shelves, as long as the area remains generally tidy and free of major mess.
+  **It is acceptable for multiple food or drink items to be visible in the fridge, including open or sealed containers, as long as nothing is leaking or creating an obvious mess. Only fail for actual spills, heavy debris, or spoiled/rotten food visible in the photo.**
+- No requirement to limit the number of food or drink items, sealed or unsealed, as long as overall hygiene and cleanliness are maintained.
+  **A few crumbs, a single sticky spot, or very light debris is acceptable if the appliance otherwise appears ready for use. Only fail for large or multiple obvious spills, sticky residue, or significant food debris.**
 
- - No food particles, spills, or leftover items visible inside appliances or on surfaces.
-
-Note: Focus on hygiene and usability. Do not penalize minor, unremovable discoloration or staining if the appliance is otherwise clean and ready for use.
+notes:
+- The purpose of the fridge is to store food, drinks, and containers. Do not fail for storing such items.
+- Focus only on obvious hygiene issues—ignore regular food, containers, or drinks.
+- Do not penalize minor old stains, food containers, water bottles, or a normal mix of items inside the fridge or microwave.
+- Only fresh, large, or sticky mess, or an obviously dirty appliance, should ever fail.
+- If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

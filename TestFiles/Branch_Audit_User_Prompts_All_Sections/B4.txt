@@ -1,10 +1,14 @@
 standard_name: B4: Customer Privacy & Sight Lines
 
 requirements_checklist:
-- No confidential info, passwords, or personal data visible to customers.
-- Counters are tidy (no loose documents or personal items).
-- Pens and supplies organized.
-- No screens displaying sensitive information toward public area.
+- No confidential info, passwords, or personal data visible to customers.  
+  **Do not fail for generic, non-identifiable forms, or for documents that cannot be read/identified as confidential from the customer’s view. Only fail if actual sensitive information, names, or private data are clearly visible and readable.**
+- Counters are tidy (no loose documents or personal items).  
+  **Minor items (e.g., a single pen, post-it, or neatly stacked forms) are acceptable as long as the counter appears organized overall and there’s no obvious clutter. Only fail if the area is messy or there are multiple personal/non-work items visible.**
+- Pens and supplies organized.  
+  **A small number of pens, notepads, or supplies are acceptable if they are grouped or in a holder. Only fail if supplies are scattered, uncontained, or the counter appears untidy.**
+- No screens displaying sensitive information toward public area.  
+  **Do not fail if the screen is blank, on a login page, or displaying non-sensitive/general information. Only fail if personal/customer information, transactions, or internal data are *clearly* visible from the public side.**
 
 gold_standard_photo_status: [Attached/Not Available]
 submission_photo_status: [Attached]

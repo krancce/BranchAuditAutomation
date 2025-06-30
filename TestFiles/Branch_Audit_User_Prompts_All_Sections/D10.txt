@@ -2,17 +2,22 @@ standard_name: D10: Desk & Drawer Organization
 
 requirements_checklist:
 - Desk surface:
-  • Must look generally tidy and free of excessive clutter.  
-  • It’s fine to have a small number of functional items (e.g. one water bottle, a pen cup, a notepad, or a mug) as long as they’re grouped neatly.  
-  • Do **not** penalize for a single tissue box, hand sanitizer, or essential work tools—only flag if the surface is overwhelmingly crowded with personal or unrelated items.
+  • Must look generally tidy and free of excessive clutter.
+  • A small number of functional items (e.g. one water bottle, pen cup, notepad, mug, tissue box, hand sanitizer, or essential work tools) are all acceptable as long as they’re grouped reasonably and do not dominate the surface. **Only fail if the surface is overwhelmingly crowded with personal or unrelated items, or is clearly neglected.**
 - Drawer organization:
-  • Drawers may contain pens, binder clips, notepads, or a handful of personal items, provided everything is contained and orderly (no loose piles spilling out).  
-  • It’s acceptable for mixed office and personal items, so long as they’re arranged in a clear, purposeful way.
+  • Drawers may contain pens, binder clips, notepads, or a handful of personal items, provided everything is contained and orderly (no loose piles spilling out). **Ignore minor mixing of personal and office items as long as nothing is spilling out and the contents appear mostly grouped. Only fail if the drawer is completely chaotic, items are clearly loose everywhere, or sticky residue/garbage is visible.**
+  **Permanent white residue, old paint chips, wear-and-tear, or fixed stains do NOT count as garbage or sticky residue and do not cause a fail. If white specks, residue, or damage cannot be cleaned by normal means, pass. Only fail if actual, removable garbage, loose food, crumbs, or dirt is visible, or if there is obvious fresh sticky residue that can and should be wiped away. If in doubt, pass.**
 - Area under/behind desk:
-  • Must be free of trip-hazards (e.g. loose cables, boxes, or debris).  
-  • A small waste bin or necessary equipment tucked to the side is fine.
+  • Must be free of *dangerous* trip-hazards (e.g. large loose boxes, substantial debris, or piles of cables). **Do not fail for a few loose cables or minor, isolated clutter under/behind the desk if it is safe to walk and sit. Only fail if there are so many cables or boxes that a real trip hazard is obvious or it is hard to access the desk.**
+  • A small waste bin, computer, power strip, or necessary equipment tucked to the side is always fine.
 - Overall usability:
-  • The workspace should feel ready for work—surfaces and storage look consciously arranged, not haphazard or overflowing.
+  • The workspace should feel ready for work—surfaces and storage look consciously arranged, not haphazard or overflowing. **Small pockets of mess or a bit of “real life” disorder are acceptable if the area is overall usable and not unsafe. If in doubt, pass.**
 
-gold_standard_photo_status: [Attached]  
+clarification_notes: |
+  - Do NOT fail for permanent white stains, paint chips, discoloration, or non-removable marks.
+  - Only fresh, removable dirt or crumbs count as "garbage" or "residue."
+  - Assume staff have cleaned surfaces before photographing for audit—if something looks like old paint, chips, or cannot be wiped away, it is acceptable.
+  - If in doubt, pass.
+
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

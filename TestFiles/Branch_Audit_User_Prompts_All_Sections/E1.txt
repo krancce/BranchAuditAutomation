@@ -2,12 +2,24 @@ standard_name: E1: Posted Cleaning & Daily Log
 
 requirements_checklist:
 - Cleaning schedule or log sheet is clearly posted and fully visible.
+  **A log posted on a wall, door, notice board, or even resting clearly on a flat surface is acceptable if it is fully readable in the image. Only fail if the log is missing, mostly covered, or so blurry it cannot be read.**
 - Sign-offs are present for the majority of required dates:
-  • It’s fine if weekend or holiday fields are blank or unsigned.  
-  • Only flag if multiple consecutive regular weekdays are missing signatures.  
+  • It’s fine if weekend or holiday fields are blank or unsigned.
+  • Only fail if *most* regular weekdays are missing signatures, or there is a week-long gap with no sign-off. A couple of missing days in a row is acceptable if the log is otherwise complete.
+  **For the current week, sign-offs are only required up to (and including) the day shown by the timestamp in the audit photo. Blank entries for future days (after the timestamp date) are acceptable and should not be failed. Sunday (or other regularly closed days) may remain blank. Only fail if multiple prior days in the week are blank, or if all days up to the photo date are unsigned.**
 - The sheet is legible, undamaged, and free of tears or watermarks that obscure entries.
+  **Minor tears, folds, stains, or watermarks that do not cover the main table/log area are acceptable. Only fail if the log cannot be read, or entries are completely hidden by damage.**
 - No unrelated papers or notices are taped over the schedule.
+  **A small corner or edge overlap by another sheet is fine if the log is still readable and sign-offs are visible. Only fail if most of the log is covered or if the sign-off section is hidden.**
 - The area around the log remains tidy (no loose sheets or debris covering the schedule).
+  **Ignore small stacks or minor desk clutter nearby as long as the cleaning log is not buried or mostly covered. Only fail if the log is fully buried under papers, or impossible to access or see.**
 
-gold_standard_photo_status: [Attached]  
+clarification_notes: |
+  - When evaluating sign-offs, check the timestamp date shown in the submission photo. Only require completed signatures for days up to (and including) that date in the current week. It is normal for future days (after the photo date) to be blank.
+  - It is also normal for Sundays or branch closed days to be blank.
+  - Minor gaps, missing days, or short interruptions are acceptable if most log entries are present up to the photo date.
+  - Only fail if there is a total lack of sign-offs, a week-long gap, or all days before the photo date are blank.
+  - If in doubt, pass.
+
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

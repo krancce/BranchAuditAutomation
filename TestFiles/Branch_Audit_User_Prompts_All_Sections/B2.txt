@@ -1,13 +1,13 @@
 standard_name: B2: Marketing
 
 definition: |
-Assesses the display of promotional materials ensuring they are organized, balanced, and aligned for clear visibility without excessive clutter.
+  Assesses the display of promotional materials ensuring they are organized, balanced, and aligned for clear visibility without excessive clutter.
 
 requirements_checklist:
-- Promotional posters (window or wall) may be multiple if evenly spaced (min 2 inches apart) and secured flat with consistent alignment.
-- Posters should not overlap or obscure each other; all key information must be fully visible.
-- No posters are torn, wrinkled, or damaged.
-- No personal postings.
+- Promotional posters (window or wall) may be multiple if evenly spaced (min 2 inches apart) and secured flat with consistent alignment. **Minor variations in spacing or alignment (e.g., small deviation from 2 inches, not perfectly flat, or slight angle) are acceptable if the overall display looks neat, uncluttered, and professional. Only fail if posters are obviously crowded or look messy.**
+- Posters should not overlap or obscure each other; all key information must be fully visible. **Small, partial overlaps or minor obstructions (by office items, printer, etc.) are acceptable as long as the main content and key information of each poster is still fully readable. Only fail if a poster’s message cannot be understood, or if most of it is blocked.**
+- No posters are torn, wrinkled, or damaged. **Minor wrinkles, curled corners, or slight imperfections are acceptable if the poster is still presentable and all information is readable. Only fail for major tears, large wrinkles, or visible, distracting damage.**
+- No personal postings. **Temporary or seasonal personal postings (e.g., a holiday notice or one-time message) are acceptable if they are professional in appearance and do not cover, block, or clutter the main marketing display. Only fail for clearly unprofessional, excessive, or permanent personal postings.**
 
 **No requirement on how many posters are present, or what their specific content is.** Posters may be duplicated or varied freely, provided they meet the other bullets above.
 

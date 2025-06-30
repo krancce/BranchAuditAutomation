@@ -2,12 +2,14 @@ standard_name: D4: File Shelving & Workspace Tidiness
 
 requirements_checklist:
 - All documents are stored on shelves (no loose paper stacks on desks or the floor).
+  **A small stack of papers, one or two boxes on the floor, or documents temporarily resting on a desk are acceptable if the overall area is tidy. Only fail if there are multiple piles, extensive loose documents, or the floor is obviously used as primary storage.**
 - Shelves appear generally tidy and orderly:
-  • Documents may lean slightly or vary in height, but no piles are spilling out or uncontained.  
-  • You do **not** need to see alphabetic dividers or perfectly level rows—just overall neatness.  
-- Shelves should only contain files and essential office-related items. Minor use of available shelf space for extra boxed supplies is acceptable as long as it does not create visual clutter, is not hazardous, and the main document storage appears tidy and organized.
+  • Documents may lean, bulge, or vary in height. **Slightly overfilled or imperfectly aligned files are acceptable if nothing is in danger of falling. Only fail if papers are spilling out onto the floor or shelves are so overcrowded that documents cannot be retrieved safely.**
+  • No need for alphabetic dividers or perfectly level rows—overall appearance is what matters.
+- Shelves should only contain files and essential office-related items.  
+  **A small number of extra boxed supplies, an office mug, a toy, or a breakroom item is fine if it does not create clutter, interfere with file storage, or look out of place. Only fail if non-office or personal items dominate the shelves or create clear mess.**
 
-note: Ignore the presence of empty space or boxed office items on unused parts of shelves if they are neatly placed and not interfering with document organization.
+note: Ignore empty space or boxed office items on shelves if they are neatly placed and do not interfere with document organization. Only fail for clear disorder, major clutter, or if documents/files are clearly uncontained and at risk of falling.
 
 gold_standard_photo_status: [Attached]  
 submission_photo_status: [Attached]

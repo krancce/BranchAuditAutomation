@@ -1,20 +1,17 @@
 standard_name: A3: Parking Lot & Walkways
 
 definition: |
-Evaluates the cleanliness and clear access of visible ground surfaces in parking and walkway areas, focusing on safety and hazard obstruction.
+  Evaluates the cleanliness and clear access of visible ground surfaces in parking and walkway areas, focusing on *safety* and genuine hazard obstruction. **Minor, non-hazardous flaws or normal wear do not result in a failure. Only fail if there is an actual safety risk or the walkway/entrance is mostly blocked.**
 
 requirements_checklist:
-- Ground surfaces are free of significant trash, debris, or litter that could impede safe passage. Small, non-hazardous debris (e.g., a few leaves, small pebbles) is acceptable.
-
-- Walkways and entrances are unobstructed. Fixed safety fixtures (e.g., bollards, signage) in designated positions are allowed if they do not pose a tripping hazard or block more than 25% of the path width.
-
-- Surfaces are even and free of major cracks or potholes that present a safety risk.
-
-- Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage.
+- Ground surfaces are free of significant trash, debris, or litter that could impede safe passage. **Small, non-hazardous debris (e.g., a few leaves, a plastic bag, small pebbles, stains, or a single cup) is acceptable and does not result in failure. Only fail if debris blocks the path or creates a slipping/tripping hazard.**
+- Walkways and entrances are unobstructed. Fixed safety fixtures (e.g., bollards, signage) in designated positions are allowed if they do not pose a tripping hazard or block more than 25% of the path width. **Temporary obstacles (bins, cones, etc.) are acceptable if they do not block more than 25% of the walkway and do not create a hazard.**
+- Surfaces are even and free of *major* cracks or potholes that present a safety risk. **Minor surface cracks, patching, stains, or cosmetic imperfections are acceptable. Only fail for cracks or holes that clearly create a trip hazard or are large enough to impede passage.**
+- Any temporary obstacles (e.g., cones) must be clearly marked and positioned to guide safe passage, **but do not fail for unmarked obstacles if they are not a hazard and are not blocking the main path.**
 - Exception: Vehicles fully contained within a marked parking stall—i.e., entirely behind the visible curb, bumper, or painted stall boundary—are **not** considered obstacles on the pedestrian walk path.
 - Ground-surface visibility:
-  • The photo must show **at least one clear expanse of ground** in front of the store—whether that’s a sidewalk, parking lot, curb strip, or a combined pavement area.  
-  • Do **not** require separate shots of “sidewalk” vs. “parking lot.” Any continuous ground area counts.
+    • The photo must show **at least one clear expanse of ground** in front of the store—whether that’s a sidewalk, parking lot, curb strip, or a combined pavement area.
+    • Do **not** require separate shots of “sidewalk” vs. “parking lot.” Any continuous ground area counts.
 
-gold_standard_photo_status: [Attached]  
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

@@ -1,11 +1,11 @@
 standard_name: B1: Lobby Cleanliness & Furniture Condition
 
 requirements_checklist:
-- No visible trash or debris on the floor.
-- Chairs are aligned in a straight line and flush against an adjacent surface (wall or window).
-- All glass and hard surfaces are free of smudges or dust.
-- Garbage bins are not overflowing.
-- Furniture is free of stains, dust, or visible wear.
+- No visible trash or debris on the floor. **Minor, isolated specks of dust, crumbs, or paper that do not affect overall appearance or cleanliness are acceptable. Only fail for clearly visible litter, multiple debris items, or anything affecting cleanliness.**
+- Chairs are aligned in a straight line and flush against an adjacent surface (wall or window). **Minor variations (e.g., small gaps, slight angle, or one chair out of place) are acceptable as long as the chairs are generally neat, orderly, and in the intended seating area. Only fail if the seating looks messy or is clearly not following the standard/gold photo arrangement.**
+- All glass and hard surfaces are free of smudges or dust. **Minor or routine marks (e.g., a light fingerprint, dust that does not affect appearance, or a single small smudge) are acceptable. Only fail for obvious, multiple, or large marks, graffiti, or visible buildup.**
+- Garbage bins are not overflowing. If no garbage bin is visible in the photo, do not fail for this criterion. **Bins may have trash inside or be partially full, but must not be full to the point where trash is spilling out or visibly overflowing above the rim.**
+- Furniture is free of stains, dust, or visible wear. **Minor or normal wear (e.g., slight fading, small scuff, or a little dust) is acceptable if furniture remains clean and professional. Only fail for obvious stains, heavy dirt, rips, or major visible damage.**
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

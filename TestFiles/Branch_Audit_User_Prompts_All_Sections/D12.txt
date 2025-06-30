@@ -4,14 +4,18 @@ definition: |
   Evaluates the organization and labeling of hanging file drawers for easy retrieval and orderly appearance.
 
 requirements_checklist:
-- Hanging files are arranged in a generally tidy and accessible manner. Minor variations in spacing or alignment are acceptable as long as they don’t obstruct usability.
+- Hanging files are arranged in a generally tidy and accessible manner.
+  **Minor leaning, gaps, uneven spacing, or slightly misaligned files are acceptable as long as you can still easily reach and see each group of files. Only fail if the drawer is genuinely chaotic, jammed, or impossible to use.**
 - Clear, descriptive labels on at least one file tab per section are preferred but not mandatory, as long as some visible grouping or organization is apparent.
-- Drawer interior should not contain excessive debris or unrelated clutter. A few loose papers are acceptable if the overall drawer appears clean, tidy, and usable.
+  **A few missing, handwritten, or unclear labels are fine if it is generally obvious where each file group lives. Only fail if there are no visible labels anywhere, or nothing is grouped or clear.**
+- Drawer interior should not contain excessive debris or unrelated clutter.
+  **A few loose papers, small unrelated items, or minor mess are acceptable if the drawer is still generally tidy and usable. Only fail if the drawer is filled with random junk, piles of unrelated items, or a mess that prevents normal use.**
 
 notes: |
   Do not penalize for isolated loose papers or minor labeling inconsistencies as long as the drawer appears functionally organized and tidy.
   Some drawers may follow non-uniform organization styles—this is acceptable if usability is preserved.
   Emphasize general tidiness, functional order, and accessibility over strict folder-by-folder consistency.
+  If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

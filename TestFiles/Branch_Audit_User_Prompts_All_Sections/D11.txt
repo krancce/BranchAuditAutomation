@@ -2,15 +2,17 @@ standard_name: D11: Garbage Bin Guidelines
 
 requirements_checklist:
 - Bins must be clean and empty (no overflowing garbage).
+  **A small item (e.g., a tissue, bottle, or minor scrap) at the bottom is acceptable as long as the bin is not full, not dirty, and not emitting odor. Only fail if the bin is clearly full, overflowing, or visibly dirty/neglected.**
 - Bins may be located anywhere in the workspace—lobby, teller area, back office, washroom, or storage—as long as they’re within reasonable reach.
+  **Location is not a concern as long as the bin is not obviously unhygienic or hazardous.**
 - The area immediately around each bin should be free of litter, spills, or debris.
+  **Ignore minor floor specks or small items near the bin as long as the general area is tidy. Only fail if there is obvious trash, a large spill, or clear neglect around the bin.**
 - Bins should look well-maintained (lid/liner in place, no torn bags visible).
+  **A missing or imperfect liner, or a minor tear, is acceptable if the bin looks presentable and functional. Only fail for bins that are clearly neglected, filthy, or have bag liners that are torn and spilling trash.**
 
 notes:
-- Location of bin is not a concern as long as it is not visibly unhygienic or hazardous.
-- Blocking walkways or access is no longer considered a failing issue.
-- Pass as long as the bin is reasonably clean, empty, and presentable.
+- **Blocking walkways or access is not a fail.**
+- Pass as long as the bin is reasonably clean, not overflowing, and generally presentable—even if a little bit of trash or minor bag issues are visible. If in doubt, pass.
 
-
-gold_standard_photo_status: [Attached]  
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

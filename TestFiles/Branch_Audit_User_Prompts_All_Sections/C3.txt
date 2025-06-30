@@ -1,24 +1,27 @@
-Standard Name: C3: Cable Management & Equipment Neatness
+standard_name: C3: Cable Management & Equipment Neatness
 
-Purpose: Ensure visible cables are generally tidy and secured, without creating hazards.
+purpose: |
+  Ensure visible cables are generally tidy and secured, without creating hazards.
 
-Requirements Checklist:
+requirements_checklist:
+- All visible cables are routed along furniture edges, walls, or tucked away from walkways.
+  **It is acceptable for cables to run under or behind desks, including in the open leg area, as long as they are not crossing a main walkway or shared footpath.**
+- No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment.
+  **Cables hanging vertically or loosely under the desk are acceptable if they are not in a shared walkway. Only fail if the cable crosses an open aisle or is a clear, realistic tripping risk for people walking *past* the desk—not just the desk user.**
+- Power bars, adapters, and surge protectors are positioned securely, and cables are bundled or clipped where feasible.
+  **Minor loose segments, moderate tangling, or visible clusters are acceptable as long as there is no massive, chaotic mess. A few loops or a visible bundle under/behind the desk is fine. Only fail if the cables are truly neglected or form an overwhelming tangle that dominates the view.**
+- Equipment (computers, printers, modems) is accessible for use and maintenance.
+- Under-desk cable routing is standard and does **not** count as a fail unless it creates a real trip hazard for someone walking through the space.
+- All cables must remain free of visible damage or exposed conductors.
 
-Overall Tidy Appearance: Cables should appear reasonably routed. Small loose segments are acceptable as long as there are no large tangles or excessive visual clutter. A simple bundle, clip, or tied group of wires counts as tidy.
+clarification_notes: |
+  - Cables running under desks—including through the open leg area—are acceptable and do NOT cause a fail, as long as they do not cross an area where multiple people walk or stand.
+  - It is expected for cables to run under, behind, or along the sides of desks to power computers and equipment; this is not a failure.
+  - Cables hanging vertically, bundled, or routed along furniture are always acceptable if not a tripping risk.
+  - Do not over-penalize for visible cable slack, imperfect routing, or a non-hazardous appearance.
+  - If in doubt, pass.
+  - This standard is about practical safety and reasonable tidiness, not cable invisibility or perfection.
+  - Only fail if a cable directly crosses an open, shared path (e.g., a main office aisle), or if there’s a clear and likely trip hazard for someone not seated at the desk.
 
-No Hazardous Dangling: Cables must not extend into walkways, doorways, or foot traffic zones in a way that poses a tripping or obstruction risk.
-
-Clarification Notes for Model (do not omit):
-
-“Do not fail a photo solely because some cables are visible. As long as they are generally grouped or clipped and not forming chaotic loops or clutter, consider it tidy.”
-
-“If cables are simply hanging vertically or gathered behind/under a desk or shelf, that is acceptable.”
-
-“Do not over-penalize for minor visible slack. The goal is practical safety and visual order—not perfection.”
-
-“This standard emphasizes safety and general neatness, not cable invisibility.”
-
-“If a cable is visible under a desk but does not cross a walkable or open area, it is acceptable.”
-
-Gold Standard Photo Status: Attached
-Submission Photo Status: Attached
+gold_standard_photo_status: [Attached]
+submission_photo_status: [Attached]

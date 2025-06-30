@@ -4,14 +4,15 @@ definition: |
 Evaluate whether the restroom appears clean, functional, and in a generally acceptable condition for regular use.
 
 requirements_checklist:
-
 - Toilet and sink must be present, appear clean, and clearly functional.
+  **Minor discoloration, water spots, or old stains are acceptable if the fixtures are otherwise hygienic and clearly in working order. Only fail if there is heavy dirt, obvious buildup, or clear evidence the sink or toilet is unusable.**
 - The surrounding area, including floor and walls, should be reasonably clean and tidy — no visible spills, major stains, or overflowing trash.
+  **Minor spots, discoloration, or slight scuffs on floors and walls are acceptable as long as there is no major trash, visible wet spills, or clear signs of neglect. Only fail for large stains, major dirt, or significant trash/overflow.**
 - The restroom should give an overall impression of hygiene and readiness for use.
+  **If the restroom looks basically clean, usable, and safe for staff or customers, pass—even if it’s not “spotless.” Only fail for clear evidence of uncleanliness, strong odor, or obvious hygiene concerns.**
 
 notes: |
 Do not fail a photo for missing grab bars, toilet paper, soap, or similar minor details. This section prioritizes real-world cleanliness and functional presentation, not idealized or fully-stocked restrooms. Assume intelligent workplace practices where supplies may be replenished as needed. If the restroom looks clean, functional, and presentable overall, it should be considered a pass.
 
-
-gold_standard_photo_status: [Attached]  
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

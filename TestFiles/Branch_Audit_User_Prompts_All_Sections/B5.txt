@@ -1,13 +1,16 @@
 standard_name: B5: Dress Code & Name Tags
 
 definition: |
-Evaluates visible upper-body attire and name tag placement. Bottom garments (e.g., slacks, skirts) are not assessed under this standard.
+  Evaluates visible upper-body attire and name tag placement. Bottom garments (e.g., slacks, skirts) are not assessed under this standard.
 
 requirements_checklist:
-- All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles. **Exception:** Cash 4 You branded tops are acceptable, including all-black shirts with a white flat circle logo on the upper left chest (as shown in the gold standard photo).
+- All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles. **Exception:** Cash 4 You branded tops are acceptable, including all-black shirts with a white flat circle logo on the upper left chest (as shown in the gold standard photo).  
+  **Minor deviations from pattern, color, or style are acceptable as long as the attire is clearly suitable for a professional office and is not a costume, novelty outfit, or party/casualwear. Only fail if the attire is extremely bright, loud, distracting, has offensive material, or is clearly unprofessional (e.g., Halloween costume, sports jersey, pajamas, etc.). If in doubt, pass.**
 - Bottoms (pants, skirts, etc.) are not evaluated under this standard.
-- Name tags are worn above the chest, clearly visible.
-- No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags.
+- Name tags are worn above the chest, clearly visible.  
+  **This is required. If a name tag is missing or not visible above the chest for any staff in the photo, fail for this criterion.**
+- No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags.  
+  **Light sweaters, cardigans, or business-appropriate layers are acceptable unless they completely cover the staff uniform or name tag. Only fail if attire is hidden, if staff are wearing hats/hoods indoors, or if a costume or novelty item is worn. If in doubt, pass.**
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

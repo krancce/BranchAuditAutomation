@@ -1,10 +1,14 @@
 standard_name: C1: Teller Station Organization
 
 requirements_checklist:
-- No excessive paper or personal items visible.
-- Only official materials present (forms, stamps, etc.).
-- No cleaning supplies left out.
-- All items neatly arranged.
+- No excessive paper or personal items visible.  
+  **A small number of personal items (e.g., a water bottle, hand sanitizer, coffee mug, or a phone) is acceptable if the area remains generally neat and uncluttered. Only fail if there is a clear, distracting excess of personal items, or the teller area looks messy.**
+- Only official materials present (forms, stamps, etc.).  
+  **It is acceptable for a few non-official but work-related items (like a fan, small storage box, or water bottle) to be present as long as the counter appears professional and organized. Only fail if there are unrelated personal effects or non-office items that dominate the view.**
+- No cleaning supplies left out.  
+  **Do not fail for the presence of hand sanitizer, a cleaning wipe, or similar items commonly used at teller stations, as long as the area remains neat. Only fail if large, obvious cleaning supplies (like spray bottles, buckets, or mops) are left out in a way that looks unprofessional or cluttered.**
+- All items neatly arranged.  
+  **Minor disorganization, a few loose items, or cables that are not perfectly aligned are acceptable. Only fail if the teller station is visibly messy, with scattered items, tangled wires, or significant clutter.**
 
 gold_standard_photo_status: [Attached/Not Available]
 submission_photo_status: [Attached]
