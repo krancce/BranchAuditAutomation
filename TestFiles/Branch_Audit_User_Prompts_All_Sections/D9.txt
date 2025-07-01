@@ -4,15 +4,21 @@ requirements_checklist:
 - Ladder placement:
   • Ladder may lean vertically or upright against any solid surface (wall, cabinet, etc.) as long as it appears stable.
   • It may rest on the floor, tucked out of the main workspace.
-  • It may also lie horizontally on a shelf or rack—or even on boxes, a ledge, or other surface—as long as it looks reasonably steady and is not likely to fall. **Do not fail for minor leaning or being placed on boxes if it appears safe in context. Only fail if the ladder is obviously at risk of falling, blocking something critical, or is not stably positioned.**
+  • It may also lie horizontally on a shelf or rack—or even on boxes, a ledge, or other surface—as long as it looks reasonably steady and is not likely to fall. **Do NOT fail for minor leaning or being placed on boxes if it appears safe in context. Only fail if the ladder is obviously at risk of falling, blocking something critical, or is not stably positioned.**
 - Obstruction & hazard check:
-  • Ladder must not block any primary walkway or emergency exit. **If the ladder is at the edge of a hallway, in a corner, or does not meaningfully restrict passage, pass. Only fail if it is directly in front of a door, main path, or the only way through.**
-  • It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment. **If it is simply near such equipment but not touching or clearly at risk, pass. Only fail if the ladder is directly leaning on or contacting obvious electrical or hazardous equipment.**
+  • Ladder must not block any primary walkway or emergency exit. **If the ladder is at the edge of a hallway, in a corner, or does not meaningfully restrict passage, PASS. Only fail if it is directly in front of a door, main path, or the only way through.**
+  • It must NOT rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment. **If the ladder is simply NEAR such equipment but not touching or clearly at risk, PASS. Only fail if the ladder is directly in CONTACT with obvious electrical or hazardous equipment.**
 - Surrounding environment:
   • Allow any small adjacent fixtures or equipment (e.g., posters, signage, bins) so long as they do not compromise ladder stability or safe access. **Only fail if a large item or mess clearly blocks or interferes with safe use or access to the ladder.**
-  • Do **not** penalize for benign background elements—only flag true trip hazards or unsafe exposures.
+  • Do NOT penalize for benign background elements—only flag true trip hazards or unsafe exposures.
 - Overall safety:
-  • The ladder setup should look intentional and safe—no loose tools or debris under it, and no obvious risk of falling or sliding. **If there’s a small item or bit of debris but no realistic risk, pass. Only fail if the ladder could realistically slip, fall, or cause a tripping hazard in normal use.**
+  • The ladder setup should look intentional and safe—no loose tools or debris under it, and no obvious risk of falling or sliding. **If there’s a small item or bit of debris but no realistic risk, PASS. Only fail if the ladder could realistically slip, fall, or cause a tripping hazard in normal use.**
+
+clarification_notes: |
+  - Do NOT fail for the ladder being “near” an electrical panel, conduit, or hazardous equipment—ONLY fail if it is in direct physical contact (touching or leaning on).
+  - Only fail for actually blocking the exit or main walkway—do not fail for just being close to an exit, door, or walkway.
+  - Do NOT penalize for minor background clutter or crowded storage, as long as the ladder is not itself a hazard.
+  - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]
