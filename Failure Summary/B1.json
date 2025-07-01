@@ -1,0 +1,76 @@
+[
+  {
+    "store": "024",
+    "failed_criteria": [
+      "Chairs are aligned in a straight line and flush against an adjacent surface (wall or window)."
+    ],
+    "action_plan": [
+      "Retake the photo to include the seating area and ensure chairs are aligned in a straight line and flush against an adjacent surface (wall or window)."
+    ],
+    "visual_feedback": [
+      "Submission photo does not include any chairs; cannot assess alignment against the standard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "047",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for B1: Lobby Cleanliness & Furniture Condition: Ensure image is clear, well-lit, correctly framed, and accurately shows the required lobby seating area and furniture condition as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for B1: Lobby Cleanliness & Furniture Condition; expected view of lobby seating area and furniture, received teller window area. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "056",
+    "failed_criteria": [
+      "Chairs are aligned in a straight line and flush against an adjacent surface (wall or window)."
+    ],
+    "action_plan": [
+      "Rearrange chairs so they are aligned in a straight line and flush against the adjacent wall or window as per the standard."
+    ],
+    "visual_feedback": [
+      "Chairs on the right side of the lobby appear stacked and are not aligned or flush against the wall/windows, deviating from the gold standard arrangement."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "062",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for B1: Lobby Cleanliness & Furniture Condition: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo does not include the seating area; chairs are not visible for assessment. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "070",
+    "failed_criteria": [
+      "Furniture is free of stains, dust, or visible wear."
+    ],
+    "action_plan": [
+      "Replace or repair chairs with visible wear or damage to ensure furniture appears clean and professional."
+    ],
+    "visual_feedback": [
+      "Visible cracks and wear on the leather surface of chairs near the window."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "098",
+    "failed_criteria": [
+      "All glass and hard surfaces are free of smudges or dust."
+    ],
+    "action_plan": [
+      "Clean all glass and hard surfaces thoroughly to remove graffiti, smudges, and marks."
+    ],
+    "visual_feedback": [
+      "Graffiti visible on window glass behind the teller counters indicating large marks."
+    ],
+    "notes": ""
+  }
+]

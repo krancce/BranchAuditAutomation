@@ -1,0 +1,18 @@
+[
+  {
+    "store": "077",
+    "failed_criteria": [
+      "The surrounding area, including floor and walls, should be reasonably clean and tidy — no visible spills, major stains, or overflowing trash.",
+      "The restroom should give an overall impression of hygiene and readiness for use."
+    ],
+    "action_plan": [
+      "Clean and dry the floor to remove visible spills and ensure tidy surroundings.",
+      "Repair and repaint chipped or damaged baseboard areas to eliminate signs of neglect and improve overall hygiene appearance."
+    ],
+    "visual_feedback": [
+      "Visible wet spill/trail across the floor near the drain in the first submission photo.",
+      "Chipped paint and damaged baseboard visible along the wall behind the toilet in the first submission photo."
+    ],
+    "notes": ""
+  }
+]

@@ -5,17 +5,19 @@ requirements_checklist:
   • Small, stationary items against walls or under desks (e.g. service buckets tucked to the side) are acceptable and do NOT cause a fail.
   • Only fail if a large item (e.g., safe, ladder, heavy box, many stacked items) is left directly in the middle of the walkway blocking normal passage. If in doubt, pass.
 - No loose debris, litter, or spill hazards on the floor.
-  **Minor dry stains, discoloration, shadows, or light color differences in the floor are *not* considered spills and do NOT cause a fail. Only fail if there is obvious trash, multiple pieces of debris, or a clearly visible large, *wet* spill in the main walking zone. Stains or marks that do not create a real slip hazard or are not obviously wet should be ignored.**
+  **Minor dry stains, discoloration, shadows, or light color differences in the floor are *not* considered spills and do NOT cause a fail. If a “wet spill,” “wet patch,” or “puddle” is detected by the Vision Model, do NOT fail for this unless there is also obvious trash or debris in the area. Only fail if there is obvious trash, multiple pieces of debris, or a clearly visible large, *fresh trash* in the main walking zone. Stains or marks that do not create a real slip hazard or are not obviously fresh trash should be ignored. Never fail for anything that merely “looks wet” in the photo.**
 - Workspace surfaces and aisles are clear enough to allow unimpeded passage of one person.
   **Minor clutter, slightly narrow aisles, or one small item slightly in the way is acceptable as long as a person can reasonably walk through. Only fail if the aisle is fully blocked, or passage is not possible without moving something substantial.**
 - Any necessary equipment storage (e.g. chairs, carts, bins) is neatly stowed out of the main walking zone.
   **A chair, bin, or cart near a wall or tucked under a desk is acceptable and does NOT cause a fail. Only fail if equipment is left in the center of the main path, or there is clear disorder that blocks walking.**
 
 clarification_notes: |
-  - Do not fail for differences in floor color, old stains, dry marks, faded areas, or patches that appear different but are not *clearly wet*.
-  - Only an *obviously wet spill or puddle* in the main walking area is a fail.
-  - If unsure whether a spot is truly wet, pass.
-  - The intent is to catch *actual slip hazards*—not old stains, cleaning marks, or natural variations in carpet/flooring color.
+  - Do NOT fail for differences in floor color, old stains, dry marks, faded areas, or patches that appear different but are not *clearly fresh trash or debris*.
+  - If the Vision Model identifies a “wet spill,” “puddle,” or “wet patch,” pass the audit unless there is also clear trash, litter, or debris present.
+  - Only an *obvious, fresh pile of trash* in the main walking area is a fail.
+  - Ignore all supposed “wet spots,” “wet patches,” “wet spills,” or “puddles” detected by the Vision Model.
+  - If unsure whether a spot is truly hazardous, pass.
+  - The intent is to catch *actual trash or obstructions*—not old stains, cleaning marks, or natural variations in carpet/flooring color.
   - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]  

@@ -1,0 +1,329 @@
+[
+  {
+    "store": "004",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A2: Store Signage & Lighting: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo is heavily obstructed by glare, making it impossible to assess signage compliance. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "006",
+    "failed_criteria": [
+      "Photo framing: the entire sign face is clearly visible and centered."
+    ],
+    "action_plan": [
+      "Retake photo ensuring the entire sign face is clearly visible and centered in the frame, without obstructions (e.g., vehicle)."
+    ],
+    "visual_feedback": [
+      "Left side of the sign is partially obscured by the vehicle and cut off at the image edge."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated: Confirm that sign bulbs or back-lighting are actually turned on (i.e. you can see the light source glowing)."
+    ],
+    "action_plan": [
+      "Ensure sign bulbs or back-lighting are turned on so the sign is visibly illuminated; retake the submission photo under these conditions."
+    ],
+    "visual_feedback": [
+      "No visible glow or light source on the sign; sign appears unlit."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "014",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A2: Store Signage & Lighting: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo is too blurry and overexposed to assess standard compliance. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "017",
+    "failed_criteria": [
+      "Photo framing: the entire sign face is clearly visible and centered"
+    ],
+    "action_plan": [
+      "Retake photo ensuring the entire sign face is visible and centered in the frame"
+    ],
+    "visual_feedback": [
+      "Sign face is positioned left of center with adjacent businesses visible on both sides, not centered."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "020",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated",
+      "Photo framing: the entire sign face is clearly visible and centered"
+    ],
+    "action_plan": [
+      "Ensure store signage is turned on and visible glowing when taking photo.",
+      "Retake photo with the entire sign face centered and fully visible."
+    ],
+    "visual_feedback": [
+      "Sign appears unlit; no glow visible from bulbs or back-lighting on window signage.",
+      "Sign is off-center and angled; parts of the storefront sign are near the edge of the frame rather than centered."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Turn on exterior signage back-lighting so bulbs are visibly glowing, then retake the photo showing the illuminated sign."
+    ],
+    "visual_feedback": [
+      "Sign letters appear dark and there is no visible glow from bulbs or back-lighting, indicating the signage is not illuminated."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "050",
+    "failed_criteria": [
+      "Photo framing: the entire sign face is clearly visible and centered."
+    ],
+    "action_plan": [
+      "Retake photo to ensure entire sign face is clearly visible and centered: step back or zoom out to capture the full sign, keep camera level."
+    ],
+    "visual_feedback": [
+      "The right edge of the sign face is cut off and the sign is not centered in the frame."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "052",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure exterior signage is turned on with bulbs/back-lighting glowing when taking the photo; retake photo during illumination (e.g., at night or with lights activated)."
+    ],
+    "visual_feedback": [
+      "Main CA$H 4 YOU sign shows no visible glow from bulbs or back-lighting, indicating illumination is off."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "053",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure sign bulbs or back-lighting are turned on so the signage visibly glows; retake the photo when illumination is active."
+    ],
+    "visual_feedback": [
+      "No visible internal illumination detected on the Cash 4 You sign; appears unlit."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "058",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure signage back-lighting or bulbs are turned on and visibly glowing when the photo is taken."
+    ],
+    "visual_feedback": [
+      "Sign appears unlit; no visible light source glowing on the signage panel."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "063",
+    "failed_criteria": [
+      "Photo framing: the entire sign face is clearly visible and centered."
+    ],
+    "action_plan": [
+      "Retake the photo ensuring the entire sign face is centered in the frame."
+    ],
+    "visual_feedback": [
+      "The triangular top sign is shifted to the left edge of the image and not centered."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "066",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure sign's illumination is turned on: retake photo at night with sign bulbs/back-lighting glowing."
+    ],
+    "visual_feedback": [
+      "No visible illumination on the 'CA$H 4 YOU' and lower signage panels; sign appears unlit."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "070",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Turn on exterior signage lighting before taking submission photo. Ensure that bulbs or back-lighting are visibly glowing."
+    ],
+    "visual_feedback": [
+      "No back-lighting seen on sign; appears unlit in daylight conditions."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "072",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure main exterior signage lighting is turned on before retaking the photo to show bulbs or back-lighting illuminated."
+    ],
+    "visual_feedback": [
+      "No back-lighting glow visible on main signage in second submission photo; sign appears unlit and relying solely on daylight."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "074",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure all signage lighting is turned on and glowing when taking the photo; retake the photo when the sign bulbs or back-lighting are visibly illuminated."
+    ],
+    "visual_feedback": [
+      "No visible glow or illumination from the sign bulbs/back-lighting; the sign appears unlit despite natural daylight."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "088",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Turn on sign bulbs or back‐lighting and retake photo when illumination is active"
+    ],
+    "visual_feedback": [
+      "No visible glow from bulbs or back‐lighting; sign appears unlit and only lit by daylight"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated",
+      "Photo framing: the entire sign face is clearly visible and centered"
+    ],
+    "action_plan": [
+      "Ensure exterior signage is turned on and back-lit before taking the photo.",
+      "Retake photo ensuring the entire sign face is clearly visible, unobstructed, and centered in the frame."
+    ],
+    "visual_feedback": [
+      "Sign appears dark with no visible glow from back-lighting.",
+      "White vehicle in foreground obstructs right side of the sign, and the sign is not centered."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "090",
+    "failed_criteria": [
+      "Photo framing: the entire sign face is not centered in the frame"
+    ],
+    "action_plan": [
+      "Retake photo ensuring the entire sign face is clearly visible and centered in the frame"
+    ],
+    "visual_feedback": [
+      "Sign is positioned off-center within the image frame, shifted towards the side"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "092",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated: Confirm that sign bulbs or back-lighting are actually turned on (i.e. you can see the light source glowing). Do not count natural daylight or bright-font-on-dark-background contrast as “illumination.”"
+    ],
+    "action_plan": [
+      "Ensure sign bulbs or back-lighting are turned on (capture photo at night or with illumination active) and retake the photo showing the illuminated sign."
+    ],
+    "visual_feedback": [
+      "No visible glow from the sign back-lighting; the sign appears unlit and relies on natural daylight for contrast."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure sign lighting is activated and glowing during photo capture; resubmit image showing illuminated signage."
+    ],
+    "visual_feedback": [
+      "No visible glow from exterior signage lighting on the store sign panels."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "097",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated: sign bulbs or back-lighting are not turned on"
+    ],
+    "action_plan": [
+      "Ensure the sign’s bulbs or back-lighting are activated and glowing when capturing the photo"
+    ],
+    "visual_feedback": [
+      "No visible glow or illumination behind the sign letters; appears unlit"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "101",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Turn on exterior sign lighting and retake photo ensuring sign bulbs or back-lighting are visibly glowing."
+    ],
+    "visual_feedback": [
+      "No visible glow from sign bulbs or back-lighting; exterior signage appears unlit."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "106",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure signage lighting is turned on so bulbs or back-lighting are visibly glowing"
+    ],
+    "visual_feedback": [
+      "No visible glow from the sign; appears unlit and relying on natural daylight"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "109",
+    "failed_criteria": [
+      "Exterior signage is fully illuminated"
+    ],
+    "action_plan": [
+      "Ensure sign back-lighting or bulbs are turned on and glowing when taking the photo."
+    ],
+    "visual_feedback": [
+      "No visible glow from sign bulbs or back-lighting; sign appears unlit in daylight conditions."
+    ],
+    "notes": ""
+  }
+]

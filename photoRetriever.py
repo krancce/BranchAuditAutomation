@@ -103,7 +103,33 @@ class PhotoRetriever:
                     else:
                         time.sleep(RETRY_DELAY)
         return photos
-
+    
+    # -- Returns the commment of a store regarding 'Reason if picture is not standard'
+    def get_reason_comment_for_section(self, conn, section_id, submission_id):
+        """Fetch the store justification comment for this section submission."""
+        with conn.cursor() as cursor:
+            # 1. Find field_id for "Reason if picture is not standard"
+            cursor.execute("""
+                SELECT field_id
+                FROM section_field
+                WHERE section_id = %s
+                AND LOWER(label) = 'reason if picture is not standard'
+                LIMIT 1
+            """, (section_id,))
+            row = cursor.fetchone()
+            if not row:
+                return ""
+            field_id = row[0]
+            # 2. Get the comment value
+            cursor.execute("""
+                SELECT value_text
+                FROM submission_field_value
+                WHERE submission_id = %s AND field_id = %s
+                LIMIT 1
+            """, (submission_id, field_id))
+            comment_row = cursor.fetchone()
+            return comment_row[0] if comment_row and comment_row[0] else ""
+        
     # --- Return a list of stores that have completed all 25 sections ---
     @classmethod
     def get_stores_with_all_sections(cls, quarter: int, required_sections: int = 25) -> List[int]:
@@ -128,21 +154,34 @@ class PhotoRetriever:
         return stores
     
     def process_section(self, section_code: str, section_id: int, inspection_id: int):
-        all_photos = []
+        all_submissions = []
         try:
             with pymysql.connect(**DB_CONFIG) as conn:
-                submission_ids = self.get_submission_ids(conn, inspection_id, section_id)
+                # Only get Pending submissions for this section!
+                with conn.cursor() as cursor:
+                    cursor.execute("""
+                        SELECT submission_id
+                        FROM section_submission
+                        WHERE inspection_id = %s AND section_id = %s AND status = 'Approved'
+                    """, (inspection_id, section_id))
+                    submission_ids = [row[0] for row in cursor.fetchall()]
+
                 photo_index = 0
                 for sub_id in submission_ids:
                     photos = self.get_photo_data_for_submission(conn, sub_id, section_code, photo_index)
-                    all_photos.extend(photos)
+                    store_comment = self.get_reason_comment_for_section(conn, section_id, sub_id)
+                    all_submissions.append({
+                        "photos": photos,
+                        "store_comment": store_comment,
+                        "submission_id": sub_id  # optional, for traceability
+                    })
                     photo_index += len(photos)
         except Exception as e:
             logging.error(f"Error processing section {section_code} for store {self.store_id:03d}: {e}")
             return
 
         with self.lock:
-            self.photos_by_section[section_code] = all_photos
+            self.photos_by_section[section_code] = all_submissions
 
 
     def retrieve_all_photos(self) -> Dict[str, List[Dict]]:

@@ -1,0 +1,29 @@
+[
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Boxes should be generally stacked in a way that appears stable and will not immediately fall over.",
+      "Boxes should be stored together, generally organized, and not obviously collapsing or unsafe."
+    ],
+    "action_plan": [
+      "Restack boxes to ensure stable, upright alignment without leaning to prevent risk of toppling.",
+      "Reorganize storage so boxes are securely grouped and supported, eliminating unsafe or collapsing stacks."
+    ],
+    "visual_feedback": [
+      "Top boxes on the right stack are noticeably leaning and appear unstable.",
+      "Right-side storage boxes show misalignment and signs of collapsing stacks."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "077",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for D2: Storage Boxes & Aisle Clearance: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for D2: Storage Boxes & Aisle Clearance; expected view of storage boxes, received view of emergency exit/door and ladder. ACTION: Escalate for human review due to low confidence."
+  }
+]

@@ -222,11 +222,11 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, mon
     # Filter to specific section if provided
     target_sections = {section_code.upper()} if section_code else photos_by_section.keys()
 
-    for section_code, submission_photos in photos_by_section.items():
+    for section_code, section_submissions in photos_by_section.items():
         if section_code not in target_sections:
             continue
         try:
-            user_prompt = load_user_prompt(section_code)
+            user_prompt_template = load_user_prompt(section_code)
         except FileNotFoundError:
             log_warning(f"Missing prompt for section {section_code}")
             continue
@@ -239,29 +239,39 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, mon
                     resized = resize_image_bytes(img_f.read())
                     gold_images.append(encode_image_bytes(resized))
 
-
         if not gold_images:
             log_warning(f"No gold standard images found for section {section_code}")
             continue
 
+        # --- Loop over all pending submissions for this section ---
+        for submission in section_submissions:
+            submission_payloads = []
+            for photo in submission["photos"]:
+                if not photo.get("image_bytes"):
+                    log_warning(f"Missing submission photo bytes for Store {store_id:03d}, Section {section_code}")
+                    continue
+                image_bytes = resize_image_bytes(photo["image_bytes"])
+                submission_payloads.append(encode_image_bytes(image_bytes))
 
-        submission_payloads = []
-        for submission in submission_photos:
-            if not submission.get("image_bytes"):
-                log_warning(f"Missing submission photo bytes for Store {store_id:03d}, Section {section_code}")
-                continue
-            image_bytes = resize_image_bytes(submission["image_bytes"])
-            submission_payloads.append(encode_image_bytes(image_bytes))
+            # Dynamically insert the store justification comment:
+            store_comment = submission.get("store_comment", "")
+            user_prompt = user_prompt_template.replace(
+                "store_justification_comments:",
+                f"store_justification_comments:\n  {store_comment or 'None provided'}"
+            )
 
-        task = {
-            "store_id": f"{store_id:03d}",
-            "section": section_code,
-            "system_prompt": system_prompt,
-            "user_prompt": user_prompt,
-            "gold_images": gold_images,
-            "submission_images": submission_payloads,
-        }
-        all_tasks.append(task)
+            task = {
+                "store_id": f"{store_id:03d}",
+                "section": section_code,
+                "system_prompt": system_prompt,
+                "user_prompt": user_prompt,
+                "gold_images": gold_images,
+                "submission_images": submission_payloads,
+                # Optionally for logging/debugging:
+                #"submission_id": submission.get("submission_id")
+            }
+            all_tasks.append(task)
+
 
     logging.info(f"Submitting {len(all_tasks)} tasks to OpenAI for evaluation...")
     results = submit_async_tasks(all_tasks, model=model, start_date=start_date)

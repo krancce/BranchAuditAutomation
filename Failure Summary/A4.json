@@ -1,0 +1,70 @@
+[
+  {
+    "store": "010",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean door handle to remove visible grime and rust before resubmitting the photo."
+    ],
+    "visual_feedback": [
+      "Rust and grime visible on the left door handle plate and knob area (lower left of the image)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "033",
+    "failed_criteria": [
+      "Glass on doors is free of heavy dirt or debris; minor reflections or cash4you related promotional signage are acceptable.",
+      "safety, legal compliance, or accessibility stickers/signage (such as “Automatic Caution Door” or ADA decals) are permitted on the door; tape residue is acceptable if it does not impede visibility."
+    ],
+    "action_plan": [
+      "Remove all heavy dirt, debris, and tape residue from the door glass to restore clear visibility.",
+      "Ensure that any remaining residue does not cover or obstruct any part of the glass."
+    ],
+    "visual_feedback": [
+      "Heavy dirt and tape residue visible on the center and right side of the door glass.",
+      "White adhesive residue obstructs the view through the door glass."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "038",
+    "failed_criteria": [
+      "Hours-of-operation sign must be present but may be slightly skewed or off-center if securely affixed."
+    ],
+    "action_plan": [
+      "Ensure the hours-of-operation sign is clearly visible and not covered by promotional signage; reposition or trim promotional sticker so that hours are readable."
+    ],
+    "visual_feedback": [
+      "Promotional sign covers the area where the hours-of-operation sign should be visible, making it unreadable."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "040",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean or replace the door handle to remove visible grime and corrosion."
+    ],
+    "visual_feedback": [
+      "Visible heavy rust and grime on the left-side exterior door handle."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "050",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean or replace the door handles to remove visible grime and rust to meet cleanliness standards."
+    ],
+    "visual_feedback": [
+      "Significant rust and grime visible on the right door handle at mid-height of the door."
+    ],
+    "notes": ""
+  }
+]

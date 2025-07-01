@@ -2,14 +2,21 @@ standard_name: D3: Archive Box Storage & Workspace Clearance
 
 requirements_checklist:
 - Box stacking neatness:
-  • All visible boxes should be generally contained and not in immediate danger of toppling. **Minor leaning, open lids, slightly uneven edges, or imperfect alignment are acceptable if the stacks are not obviously collapsing. Only fail if there is a real risk of boxes falling or a truly chaotic, unstable pile.**
+  • All visible boxes should be generally contained and not in immediate danger of toppling.
+    **Minor leaning, open lids, slightly uneven edges, or imperfect alignment are acceptable if the stacks are not obviously collapsing. Only fail if there is a real risk of boxes falling or a truly chaotic, unstable pile.**
   • It does **not** matter whether stacks live in a separate storage room or in a corner of the main workspace—as long as they are reasonably contained and not an active hazard.
 - Workspace circulation:
-  • There must be some way for a person to move through the area—even if it’s a narrow path, or requires turning sideways. **Boxes or furniture pushed against walls, under desks, or anywhere that does not truly prevent movement are acceptable. Only fail if there is literally no way for a person to get through or access the area at all.**
+  • There must be some way for a person to move through the area—even if it’s a narrow path, or requires turning sideways.
+    **Boxes or furniture pushed against walls, under desks, or anywhere that does not truly prevent movement are acceptable. Do not require a visible clear “walkway” or “aisle” in the photo—if there is any reasonable way a person could get through, even by squeezing or stepping over a box, pass. Only fail if it is absolutely impossible for a person to access the area at all. If in doubt, pass.**
 - No trash, debris, or expired materials visible on floor or work surfaces near the boxes.
   **Small items, a piece of paper, a wrapper, or a bit of dust are acceptable if the area is otherwise clean. Only fail for obvious trash, piles of debris, or substantial expired material.**
 - Labels (if required by your gold standard) remain legible and unobstructed on the majority of visible boxes.
   **A few missing, covered, or slightly hard-to-read labels are acceptable if most labels are visible and readable. Only fail if the majority of boxes have illegible or missing labels and the contents cannot be identified.**
+
+clarification_notes: |
+  - Ignore the absence of a visible “path” in the photo—do not fail for a crowded or tight room as long as access is plausible.
+  - Do not penalize for minor clutter, tight stacking, or packed storage if boxes are not toppling and it is theoretically possible to get in.
+  - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

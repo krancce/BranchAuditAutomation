@@ -1,0 +1,53 @@
+[
+  {
+    "store": "006",
+    "failed_criteria": [
+      "No excessive paper or personal items visible.",
+      "Only official materials present (forms, stamps, etc.).",
+      "All items neatly arranged."
+    ],
+    "action_plan": [
+      "Remove excess paper clutter from the teller station counter and surrounding area.",
+      "Ensure only official work-related materials are present at the teller station. Remove any non-office items or personal effects.",
+      "Organize all items neatly. Tidy loose papers, secure cables, and ensure a professional and uncluttered appearance."
+    ],
+    "visual_feedback": [
+      "Multiple loose papers and forms are visible hanging from drawers and on the counter.",
+      "Non-office related packaging and miscellaneous items under the printer create visual clutter.",
+      "Cables are tangled on the floor and papers are scattered, indicating disorganization."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "026",
+    "failed_criteria": [
+      "No excessive paper or personal items visible",
+      "Only official materials present (forms, stamps, etc.)",
+      "All items neatly arranged"
+    ],
+    "action_plan": [
+      "Remove excessive paper and personal items from the teller station; keep area generally neat and uncluttered.",
+      "Ensure only official materials (forms, stamps, etc.) are present and remove any unrelated personal effects.",
+      "Arrange all items neatly, organize cables, and remove any clutter to maintain a professional appearance."
+    ],
+    "visual_feedback": [
+      "Excess papers and documents scattered on the floor near the printer storage cabinet.",
+      "Stacks of documents visible protruding from the printer shelf.",
+      "Tangled cables and power strip on the floor in front of the teller station."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "All items neatly arranged"
+    ],
+    "action_plan": [
+      "Ensure all cables and wires are organized and secured to eliminate visible tangles and clutter."
+    ],
+    "visual_feedback": [
+      "Visible cables and power strip on the floor behind the teller machine are tangled and unorganized."
+    ],
+    "notes": ""
+  }
+]

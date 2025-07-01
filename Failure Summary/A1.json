@@ -1,0 +1,312 @@
+[
+  {
+    "store": "010",
+    "failed_criteria": [
+      "Lighting works at dusk (if applicable)"
+    ],
+    "action_plan": [
+      "Retake photo of A1: Road Signs / Lawn Signs / A-Frames at dusk ensuring sign lighting is operational and clearly visible."
+    ],
+    "visual_feedback": [
+      "Lighting at the top of the sign cannot be assessed in daylight image; lighting not visible."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame sign, received multi-tenant plaza sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "015",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Relocate the sign so it does not obstruct the pedestrian pathway; position it closer to the building or off to the side to allow a clear walkway."
+    ],
+    "visual_feedback": [
+      "The A-frame sign is positioned in the middle of the sidewalk, blocking the pedestrian path near the store entrance."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "021",
+    "failed_criteria": [
+      "Lighting works at dusk (if applicable)"
+    ],
+    "action_plan": [
+      "Retake photo at dusk to confirm sign lighting is operational"
+    ],
+    "visual_feedback": [
+      "Unable to verify lighting functionality in daylight image"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "022",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Reposition A-frame and lawn signs so they are off the pedestrian path and do not obstruct the walkway."
+    ],
+    "visual_feedback": [
+      "The A-frame sign on the left side of the sidewalk is placed in the middle of the pedestrian path, blocking the walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "024",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Relocate A-frame sign so it does not obstruct the pedestrian walkway."
+    ],
+    "visual_feedback": [
+      "The A-frame sign is positioned directly in the middle of the sidewalk, blocking the walking path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "027",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected A-frame sign view, received pylon sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "031",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required A-frame sign in front of the branch as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame sign in front of branch; received a pylon sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "040",
+    "failed_criteria": [
+      "All signs are upright (not leaning or fallen)"
+    ],
+    "action_plan": [
+      "Ensure all signs are placed upright and stable; adjust the A-frame so it stands level without leaning."
+    ],
+    "visual_feedback": [
+      "The A-frame sign is leaning noticeably to the right at the top junction of the frame."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "043",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame or lawn sign, received multi-tenant sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "050",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Move signs so they are not obstructing pedestrian pathways; place sign adjacent to walkway without blocking the path."
+    ],
+    "visual_feedback": [
+      "The sign legs are placed directly on the walkway area as shown in the submission photo foreground, blocking pedestrian path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "053",
+    "failed_criteria": [
+      "No signs blocking walkways."
+    ],
+    "action_plan": [
+      "Move all lawn signs to a position that does not obstruct pedestrian walkways; ensure clear path according to policy guidelines."
+    ],
+    "visual_feedback": [
+      "Sign is placed on the sidewalk obstructing pedestrian walkway as seen near the entrance."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "055",
+    "failed_criteria": [
+      "All signs are upright (not leaning or fallen)"
+    ],
+    "action_plan": [
+      "Straighten the sign so it stands fully upright and stable."
+    ],
+    "visual_feedback": [
+      "The parking sign is visibly leaning to the right in the photo."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "056",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Relocate the A-frame sign so it does not obstruct the walkway to the entrance; ensure clear pedestrian path is maintained."
+    ],
+    "visual_feedback": [
+      "The A-frame sign’s legs are positioned directly on the sidewalk, blocking the pedestrian path to the store entrance."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "057",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required A-frame sign outside the store as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame sign outside store, received view of overhead pole sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "060",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Reposition signs so they do not obstruct sidewalks or pathways; ensure clear pedestrian access."
+    ],
+    "visual_feedback": [
+      "A-frame sign is placed in the middle of the sidewalk, blocking the pedestrian walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "063",
+    "failed_criteria": [
+      "All signs are clean (no visible dirt, stains, or damage)"
+    ],
+    "action_plan": [
+      "Remove graffiti from sign and ensure all signage surfaces are clean and free of stains or damage."
+    ],
+    "visual_feedback": [
+      "Graffiti visible on the main sign panel (black spray tags on yellow background)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "068",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required road sign/lawn sign/A-frame."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of signage A-frame, received storefront facade view with timestamp. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "070",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Move signs so they do not obstruct any pedestrian walkways or store entrances."
+    ],
+    "visual_feedback": [
+      "Sign placed directly on the sidewalk in front of the entrance, obstructing the pedestrian path."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "074",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of road sign/A-frame, received storefront. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "077",
+    "failed_criteria": [
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Relocate the A-frame sign so it does not obstruct the pedestrian pathway; place it off to the side ensuring a clear walkway to the entrance."
+    ],
+    "visual_feedback": [
+      "The A-frame sign is positioned in the center of the sidewalk directly in front of the store, blocking the walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "084",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required A-frame sign at the branch entrance as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame sign, received plaza pylon signage. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "087",
+    "failed_criteria": [
+      "No expired promotions visible",
+      "No signs blocking walkways"
+    ],
+    "action_plan": [
+      "Remove or update any expired promotional signage before retaking photo.",
+      "Relocate signs off the pedestrian walkway to ensure a clear path."
+    ],
+    "visual_feedback": [
+      "Expired promotional sign in window showing 'Ends May 15' is visible, and the photo date is May 18, indicating the promotion is expired.",
+      "A-frame sign is placed in the center of the sidewalk, obstructing the pedestrian walkway."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "088",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A1: Road Signs / Lawn Signs / A-Frames: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted for A1: Road Signs / Lawn Signs / A-Frames; expected view of A-frame sign, received multi-business sign. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "109",
+    "failed_criteria": [
+      "No signs blocking walkways."
+    ],
+    "action_plan": [
+      "Relocate the sign off the sidewalk to ensure it does not block pedestrian pathways."
+    ],
+    "visual_feedback": [
+      "Sign is positioned on the sidewalk, blocking the pedestrian walkway."
+    ],
+    "notes": ""
+  }
+]

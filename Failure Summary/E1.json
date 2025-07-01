@@ -1,0 +1,67 @@
+[
+  {
+    "store": "004",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure cleaning log sign-offs are completed for all required dates up to the photo date shown on the image"
+    ],
+    "visual_feedback": [
+      "Columns for Monday (2025-05-26) and Tuesday (2025-05-27) are blank with no initials"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "022",
+    "failed_criteria": [
+      "Sign-offs are not present for the majority of required dates up to the photo date (2025-06-07)"
+    ],
+    "action_plan": [
+      "Update the cleaning log for the current week and ensure sign-offs are completed for each day up to the date of the photo (2025-06-07)."
+    ],
+    "visual_feedback": [
+      "The posted log is dated week of Dec 23–Dec 30 and has no sign-offs corresponding to the current week up to the photo date."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "049",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure daily sign-offs are completed for all weekdays up to the timestamp date (2025/05/29); review and initial tasks on Wednesday, Thursday, and Friday entries."
+    ],
+    "visual_feedback": [
+      "Only Monday and Tuesday columns have visible initials; Wednesday through Friday columns are blank despite being before the photo timestamp date."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure sign-offs are completed for all required dates up to the photo date, especially the Kitchen Area row on Monday 2025/07/07."
+    ],
+    "visual_feedback": [
+      "Kitchen Area row under Monday column is blank, missing initials."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Replace the log sheet with the current week’s log and complete sign-offs for each date up to the photo date before resubmitting photo."
+    ],
+    "visual_feedback": [
+      "No signatures are present for current week dates (May 12–May 17) on the posted log sheet."
+    ],
+    "notes": ""
+  }
+]

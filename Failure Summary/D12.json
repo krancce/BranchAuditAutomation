@@ -1,0 +1,28 @@
+[
+  {
+    "store": "030",
+    "failed_criteria": [
+      "Drawer interior should not contain excessive debris or unrelated clutter"
+    ],
+    "action_plan": [
+      "Remove loose papers and organize them into appropriate hanging folders; ensure drawer contains only properly filed documents and no random piles."
+    ],
+    "visual_feedback": [
+      "Bottom drawer contains loose, unfiled papers without hanging folders, indicating excessive clutter that impedes normal use."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "074",
+    "failed_criteria": [
+      "Drawer interior should not contain excessive debris or unrelated clutter"
+    ],
+    "action_plan": [
+      "Remove the unrelated items (pink binders) from the bottom drawer and ensure only hanging files and necessary documents are stored"
+    ],
+    "visual_feedback": [
+      "Bottom-most drawer contains multiple pink binders instead of hanging files"
+    ],
+    "notes": ""
+  }
+]

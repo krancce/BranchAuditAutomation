@@ -1,0 +1,28 @@
+[
+  {
+    "store": "002",
+    "failed_criteria": [
+      "Posters should not overlap or obscure each other; all key information must be fully visible."
+    ],
+    "action_plan": [
+      "Remove or reposition overlapping posters to ensure no poster covers or obscures any key information on existing marketing materials."
+    ],
+    "visual_feedback": [
+      "Circular promotional stickers on the storefront glass overlap and obscure the background window decals (\"Approval in MINUTES\" graphic)."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "059",
+    "failed_criteria": [
+      "Posters should not overlap or obscure each other; all key information must be fully visible."
+    ],
+    "action_plan": [
+      "Relocate or remove office equipment obstructing the posters. Ensure each poster’s key information is fully visible and not blocked by furniture or equipment."
+    ],
+    "visual_feedback": [
+      "The bottom section of the 'Borrow Online 24/7' poster is obscured by the office printer, hiding the e-Transfer logo and website URL."
+    ],
+    "notes": ""
+  }
+]

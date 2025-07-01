@@ -5,23 +5,22 @@ purpose: |
 
 requirements_checklist:
 - All visible cables are routed along furniture edges, walls, or tucked away from walkways.
-  **It is acceptable for cables to run under or behind desks, including in the open leg area, as long as they are not crossing a main walkway or shared footpath.**
+  **It is acceptable for power bars (PowerCore), surge protectors, and all wires/cables to be on the floor under the desk, in the leg area, or behind/alongside furniture. Do not fail solely for cables, adapters, or PowerCores being under or behind a desk. Only fail if a cable or device directly crosses a main walkway or shared footpath for general staff—not just the desk user.**
 - No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment.
-  **Cables hanging vertically or loosely under the desk are acceptable if they are not in a shared walkway. Only fail if the cable crosses an open aisle or is a clear, realistic tripping risk for people walking *past* the desk—not just the desk user.**
+  **Cables hanging vertically or loosely under the desk are acceptable as long as they are not in a walkway shared by multiple people. Only fail if a cable crosses an open aisle or is a clear, realistic tripping risk for people walking *past* the desk—not for someone sitting at the desk.**
 - Power bars, adapters, and surge protectors are positioned securely, and cables are bundled or clipped where feasible.
   **Minor loose segments, moderate tangling, or visible clusters are acceptable as long as there is no massive, chaotic mess. A few loops or a visible bundle under/behind the desk is fine. Only fail if the cables are truly neglected or form an overwhelming tangle that dominates the view.**
 - Equipment (computers, printers, modems) is accessible for use and maintenance.
-- Under-desk cable routing is standard and does **not** count as a fail unless it creates a real trip hazard for someone walking through the space.
+- Under-desk cable routing and floor-level placement of PowerCore, power bars, or wires is **always acceptable** and does NOT count as a fail unless it creates a real trip hazard for someone walking through the space (i.e., a main office aisle or general access path—not just under the desk).
 - All cables must remain free of visible damage or exposed conductors.
 
 clarification_notes: |
-  - Cables running under desks—including through the open leg area—are acceptable and do NOT cause a fail, as long as they do not cross an area where multiple people walk or stand.
-  - It is expected for cables to run under, behind, or along the sides of desks to power computers and equipment; this is not a failure.
-  - Cables hanging vertically, bundled, or routed along furniture are always acceptable if not a tripping risk.
-  - Do not over-penalize for visible cable slack, imperfect routing, or a non-hazardous appearance.
+  - Power bars (PowerCore), surge protectors, and any wires on the floor under or behind desks are standard and should always pass unless they block a shared footpath or major walkway.
+  - Do NOT fail a submission solely because any electrical device or wire is under, behind, or on the floor within the desk/leg area.
+  - Cables, power bars, or adapters within the private “desk zone” (where only the desk user sits) are always acceptable, regardless of their position or orientation.
+  - Only fail if a device or cable crosses an open/shared path used by others.
+  - Do not over-penalize for visible cable slack, imperfect routing, or non-hazardous appearance.
   - If in doubt, pass.
-  - This standard is about practical safety and reasonable tidiness, not cable invisibility or perfection.
-  - Only fail if a cable directly crosses an open, shared path (e.g., a main office aisle), or if there’s a clear and likely trip hazard for someone not seated at the desk.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

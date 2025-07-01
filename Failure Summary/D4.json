@@ -1,0 +1,28 @@
+[
+  {
+    "store": "015",
+    "failed_criteria": [
+      "Shelves appear generally tidy and orderly"
+    ],
+    "action_plan": [
+      "Reorganize shelves to prevent overcrowding: reduce the height of paper stacks, ensure files are aligned and not leaning, and avoid creating unstable piles."
+    ],
+    "visual_feedback": [
+      "Mid and top shelves have tall, bulging piles of papers leaning forward and appearing unstable, risking falling."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "091",
+    "failed_criteria": [
+      "Multiple storage boxes on the floor instead of shelves"
+    ],
+    "action_plan": [
+      "Move documents from the floor boxes onto the shelving units or add additional shelving so that no more than two boxes of files are stored on the floor."
+    ],
+    "visual_feedback": [
+      "Multiple file storage boxes are visible on the floor to the right of the shelving units, indicating documents are not properly shelved."
+    ],
+    "notes": ""
+  }
+]

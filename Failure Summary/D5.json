@@ -1,0 +1,76 @@
+[
+  {
+    "store": "013",
+    "failed_criteria": [
+      "Shelves have cleaning and non-cleaning items jumbled with no clear grouping",
+      "Loose items and debris inside/around cabinet",
+      "Personal or unrelated clutter mixed with supplies"
+    ],
+    "action_plan": [
+      "Organize shelves by grouping cleaning supplies separately from office items; remove or relocate unrelated items outside the cabinet.",
+      "Remove loose items and debris from inside the cabinet and floor; ensure all items rest stably on shelves or in bins.",
+      "Clear personal or unrelated clutter from inside the cabinet, leaving only cleaning supplies."
+    ],
+    "visual_feedback": [
+      "Bottom shelf contains tangled cables and power strip not stably stored.",
+      "Multiple shelves have mixed office items (boxes and wires) intermingled with cleaning supplies without grouping.",
+      "Loose object on the floor near cabinet base poses safety hazard."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "030",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
+    ],
+    "action_plan": [
+      "Retake photo showing the designated cleaning supplies cabinet clearly stocked with cleaning supplies arranged neatly on all shelves. Ensure the photo is well-lit, focused, and highlights organized cleaning products."
+    ],
+    "visual_feedback": [
+      "Cabinet shelves are predominantly filled with office items and miscellaneous supplies; only a few cleaning bottles are visible on the bottom shelf, failing to demonstrate a properly stocked, organized cleaning cabinet."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
+    ],
+    "action_plan": [
+      "Retake photo for D5: Cleaning Supplies & Cabinet Organization: Ensure the designated cleaning supplies cabinet is clearly visible and stocked with cleaning materials organized on the shelves."
+    ],
+    "visual_feedback": [
+      "Submission photo shows a mostly empty cabinet with boxes and office items; lacks visible cleaning supplies on shelves."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "093",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
+    ],
+    "action_plan": [
+      "Retake a photo showing the designated cleaning supplies cabinet stocked with cleaning chemicals (e.g., sprays, paper towels) organized neatly on shelves."
+    ],
+    "visual_feedback": [
+      "No visible cleaning chemicals or supplies in the cabinet; shelves contain office and electronic supplies instead."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "098",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet."
+    ],
+    "action_plan": [
+      "Retake photo showing the designated cleaning supplies cabinet with stocked shelves in an organized manner.",
+      "Ensure all cleaning supplies and chemicals are stored inside the designated cabinet; relocate any items outside the cabinet."
+    ],
+    "visual_feedback": [
+      "No closed cabinet visible; cleaning supplies are stored on an open shelving unit and wall-mounted shelf instead of inside a cabinet.",
+      "Cleaning supplies are placed outside the cabinet on open shelves, not inside the designated cabinet."
+    ],
+    "notes": ""
+  }
+]

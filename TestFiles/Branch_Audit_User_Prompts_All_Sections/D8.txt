@@ -2,19 +2,24 @@ standard_name: D8: Security Office / DVR Area
 
 requirements_checklist:
 - DVR placement:
+  • DVR must be visible in the photo. If the device is completely obstructed or the photo is of the wrong area, fail.
   • DVR may sit on a desk, shelf, floor, chair, or box—location flexibility is OK, regardless of surface material (wood, carpet, metal, etc.).
-  • Monitors or networking equipment may be stacked with the DVR, provided everything is reasonably stable and not at immediate risk of falling. **Tight stacking, contact, or small items on/near the DVR is acceptable if nothing looks likely to topple or block use. Do not fail if a box or board is simply near, adjacent to, or next to the DVR—even if it is visually close. Only fail if a major object is sitting *on top* of the DVR and fully blocking ventilation.**
+  • Monitors or networking equipment may be stacked with the DVR, provided everything is reasonably stable and not at immediate risk of falling. **Tight stacking, contact, or small items on/near the DVR is acceptable if nothing looks likely to topple or block use. A monitor covering the top of the DVR (including vents or lens) is acceptable—do NOT fail for this setup. Do NOT fail for boxes, boards, or pipes next to or visually close to the DVR. Only fail if a major, removable object (box, UPS, monitor, etc.) is sitting directly on top of the DVR, *fully* blocking all top vents, and it is not a permanent fixture.**
+  • If a permanent, store hardware (like a metal pipe or structural element) is present above or across the DVR, this is NOT a fail, as it cannot be removed by staff.
 - Obstruction & heat dissipation:
-  • No non-essential items (personal clutter, loose papers, cleaning supplies) placed directly on or fully covering the DVR. **A single small item, like a mouse or a thin sheet of paper, is acceptable if it doesn't fully cover vents. Only fail if a major object (e.g., pizza box, UPS, or large stack) is placed directly on the DVR, fully blocking all top vents.**
-  • DVR vents and heat sinks must be unobstructed—allow at least some open space around all **exposed** sides (top and side panels); bottom surface contact with the resting surface is acceptable. **Close placement to a wall, box, or minor objects is fine as long as there is *any* visible gap for airflow. Only fail if the top and all side vents are *completely* blocked or smothered, with no possible airflow. Never fail just because something is nearby or the DVR is rotated in the photo.**
+  • No non-essential items (personal clutter, loose papers, cleaning supplies) placed directly on or fully covering the DVR. **A single small item, like a mouse or a thin sheet of paper, is acceptable if it doesn't fully cover vents. Only fail if a major, removable object (e.g., pizza box, UPS, large stack) is placed directly on the DVR, fully blocking all top vents and airflow. Permanent fixtures (e.g., wall pipes, built-in structures) are NOT fails.**
+  • DVR vents and heat sinks must be unobstructed—allow at least some open space around all **exposed** sides (top and side panels); bottom surface contact with the resting surface is acceptable. **Close placement to a wall, box, or minor objects is fine as long as there is *any* visible gap for airflow. Only fail if the top and all side vents are *completely* blocked or smothered, with no possible airflow, AND it is by a removable object, not by a permanent store feature.**
+  • Never fail just because something is nearby, photo is rotated, or the DVR is tight in a space.
 - Accessibility & cleanliness:
   • DVR and associated cables must remain accessible for maintenance (not buried under piles or blocked by furniture). **Crowded or tangled cables are fine as long as it’s possible to reach the DVR and main ports. Only fail if the DVR is literally buried or unreachable—not just “hard to see” or “in a pile.”**
   • Area should be free of excessive dust piles or debris that could interfere with equipment. **Light dust, normal debris, or even a little mess is fine. Only fail for heavy, clearly neglected dust or a pileup that could interfere with operation.**
 
 clarification_notes: |
-  - Do not fail for rotated photos, nearby boxes, or objects visually close to the DVR if the DVR’s vents are not covered.
-  - Only fail if a large object (board, box, UPS, stack) sits directly on the DVR and covers the entire top, blocking airflow.
-  - Being “next to” a pile or wall is not a fail.
+  - Do not fail for rotated photos, boxes/boards/pipes next to the DVR, or objects visually close, unless they *completely* block all vents and are *removable*.
+  - Only fail if a large, *removable* object (monitor, UPS, box, etc.) sits directly on the DVR, fully blocks all top and side vents, and can be moved by staff.
+  - Permanent store hardware (pipes, built-in features) above or across the DVR are NOT fails.
+  - A monitor covering the top of the DVR is fine—do NOT fail for this setup.
+  - If the DVR device is completely obstructed by boxes, or not visible in the submission, fail.
   - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
