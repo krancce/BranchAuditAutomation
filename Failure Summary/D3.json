@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "store": "046",
+    "failed_criteria": [
+      "Workspace circulation: There must be some way for a person to move through the area—even if it’s a narrow path, or requires turning sideways."
+    ],
+    "action_plan": [
+      "Rearrange or remove boxes blocking the floor to ensure a passage is available for a person to move through the area."
+    ],
+    "visual_feedback": [
+      "All floor space visible in the submission photo is occupied by stacked boxes, preventing any path for entry."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "055",
+    "failed_criteria": [
+      "Box stacking neatness",
+      "Workspace circulation"
+    ],
+    "action_plan": [
+      "Re-stack boxes to ensure stable piles that are not at risk of toppling",
+      "Clear a narrow pathway to allow reasonable access through the workspace area"
+    ],
+    "visual_feedback": [
+      "Boxes are scattered on the floor with opened lids and no stable stacking, creating a chaotic, unstable pile",
+      "Boxes cover the entire floor area with no visible path for a person to move through the workspace"
+    ],
+    "notes": ""
+  }
+]

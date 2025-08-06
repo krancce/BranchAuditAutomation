@@ -1,3 +1,2 @@
-[2025-06-30 15:44:30] ⚠️ ❌ Failed to parse tool arguments as JSON for store 013, section D1: Expecting ',' delimiter: line 6 column 20 (char 115)
-[2025-06-30 16:12:58] ⚠️ ❌ Failed to parse tool arguments as JSON for store 092, section A4: Expecting ',' delimiter: line 6 column 20 (char 101)
-[2025-06-30 16:20:17] ⚠️ ❌ Failed to parse tool arguments as JSON for store 110, section D5: Expecting ',' delimiter: line 6 column 20 (char 120)
+[2025-07-03 18:19:07] ⚠️ ❌ Failed to parse tool arguments as JSON for store 040, section D12: Expecting ',' delimiter: line 6 column 20 (char 118)
+[2025-07-03 18:31:34] ⚠️ ❌ Failed to parse tool arguments as JSON for store 072, section C2: Expecting ',' delimiter: line 6 column 20 (char 103)

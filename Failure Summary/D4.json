@@ -2,26 +2,32 @@
   {
     "store": "015",
     "failed_criteria": [
-      "Shelves appear generally tidy and orderly"
+      "All documents are stored on shelves (no loose paper stacks on desks or the floor)",
+      "Shelves appear generally tidy and orderly",
+      "Shelves should only contain files and essential office-related items"
     ],
     "action_plan": [
-      "Reorganize shelves to prevent overcrowding: reduce the height of paper stacks, ensure files are aligned and not leaning, and avoid creating unstable piles."
+      "Remove all boxes and loose storage items from the floor; ensure floor is clear of any document storage.",
+      "Reorganize and declutter shelves: redistribute documents or add additional shelving to prevent bulging stacks and leaning files.",
+      "Remove non-essential items and cardboard boxes from shelves; store supplies in designated storage areas separate from file shelving."
     ],
     "visual_feedback": [
-      "Mid and top shelves have tall, bulging piles of papers leaning forward and appearing unstable, risking falling."
+      "Multiple cardboard boxes on the floor under and beside the shelving unit.",
+      "Overfilled and bulging document stacks on shelves, with leaning papers at risk of falling.",
+      "Open cardboard box containing documents on the bottom shelf among file folders."
     ],
     "notes": ""
   },
   {
-    "store": "091",
+    "store": "110",
     "failed_criteria": [
-      "Multiple storage boxes on the floor instead of shelves"
+      "All documents are stored on shelves (no loose paper stacks on desks or the floor)."
     ],
     "action_plan": [
-      "Move documents from the floor boxes onto the shelving units or add additional shelving so that no more than two boxes of files are stored on the floor."
+      "Remove all document boxes from the floor and place all files on the shelves; add or rearrange shelving if needed to ensure no files are stored on the floor."
     ],
     "visual_feedback": [
-      "Multiple file storage boxes are visible on the floor to the right of the shelving units, indicating documents are not properly shelved."
+      "Boxes of documents are visibly stored on the floor at the base of the shelving unit."
     ],
     "notes": ""
   }

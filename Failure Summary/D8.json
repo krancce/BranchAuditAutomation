@@ -1,116 +1,82 @@
 [
   {
-    "store": "006",
+    "store": "022",
     "failed_criteria": [
-      "No non-essential items placed directly on or fully covering the DVR"
+      "Major removable object placed on DVR blocking all top vents"
     ],
     "action_plan": [
-      "Remove large/non-essential equipment (e.g., network switch) from on top of the DVR so that vents are fully unobstructed"
+      "Remove the removable device from on top of the DVR or relocate it so that the DVR's top vents are fully unobstructed, ensuring proper heat dissipation."
     ],
     "visual_feedback": [
-      "Network switch placed directly on top of DVR covering the top vents"
+      "AverMedia device stacked directly on top of the Hikvision DVR, covering the top vents."
     ],
     "notes": ""
   },
   {
-    "store": "015",
+    "store": "049",
     "failed_criteria": [
-      "Major object (monitor) sitting directly on DVR blocking top vents"
+      "DVR placement: DVR must be visible in the photo."
     ],
     "action_plan": [
-      "Remove the monitor from atop the DVR to ensure vents are unobstructed and allow proper ventilation"
+      "Retake photo to clearly show the DVR in the submission area, ensuring it is unobstructed and visible."
     ],
     "visual_feedback": [
-      "Top panel of DVR is fully covered by the monitor base, blocking ventilation"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "020",
-    "failed_criteria": [
-      "Major object on top of the DVR fully blocking ventilation"
-    ],
-    "action_plan": [
-      "Remove the large monitor from on top of the DVR to ensure unobstructed ventilation vents."
-    ],
-    "visual_feedback": [
-      "Monitor base placed directly on top of the DVR, covering the entire top surface and blocking vents."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "039",
-    "failed_criteria": [
-      "Major object is sitting on the DVR and fully blocking ventilation"
-    ],
-    "action_plan": [
-      "Remove the monitor from the top of the DVR to ensure vents remain unobstructed"
-    ],
-    "visual_feedback": [
-      "Monitor base covers the top vents of the DVR, blocking airflow"
+      "No identifiable DVR unit visible; only networking equipment and UPS are shown."
     ],
     "notes": ""
   },
   {
     "store": "055",
     "failed_criteria": [
-      "Submission photo unreviewable for assessing standard compliance"
+      "DVR must be visible in the photo. If the device is completely obstructed or the photo is of the wrong area, fail."
     ],
     "action_plan": [
-      "Retake photo for D8: Security Office / DVR Area: Ensure image is clear, well-lit, correctly framed, and accurately shows the DVR vents, placement, and surrounding area as per policy guidelines."
-    ],
-    "visual_feedback": [],
-    "notes": "Submission photo does not clearly show the DVR vents or placement for compliance assessment. ACTION: Escalate for human review due to low confidence."
-  },
-  {
-    "store": "089",
-    "failed_criteria": [
-      "No non-essential items placed directly on or fully covering the DVR."
-    ],
-    "action_plan": [
-      "Remove the UPS from on top of the DVR to ensure the top vents and heat sinks are unobstructed for proper airflow."
+      "Retake and resubmit the photo ensuring the DVR device is clearly visible, unobstructed, and correctly framed in the submission."
     ],
     "visual_feedback": [
-      "An APC UPS unit is placed directly on top of the DVR, covering the top vents."
+      "No DVR device detected; the submission shows only networking equipment without the DVR visible."
     ],
     "notes": ""
   },
   {
-    "store": "090",
+    "store": "064",
     "failed_criteria": [
-      "Obstruction & heat dissipation: major object placed directly on DVR fully blocking vents"
+      "DVR must be visible in the photo. If the device is completely obstructed or the photo is of the wrong area, fail."
     ],
     "action_plan": [
-      "Remove all non-essential items from on top of the DVR to ensure vents and heat sinks are unobstructed."
+      "Retake photo showing the DVR clearly in the frame, ensuring it is not obstructed and captures its placement in the security office/DVR area."
     ],
     "visual_feedback": [
-      "Cardboard box and remote sitting on the top surface of the DVR blocking ventilation vents."
+      "The submission photo appears to show network equipment and patch panels but no identifiable DVR device; the DVR is not visible."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
+    "failed_criteria": [
+      "A major, removable object (UPS) is placed directly on the DVR, fully blocking top vents",
+      "DVR vents and heat sinks are not unobstructed"
+    ],
+    "action_plan": [
+      "Remove the UPS from the top of the DVR to ensure no removable objects block vents",
+      "Ensure all DVR vents (top and sides) remain unobstructed by storing removable items elsewhere"
+    ],
+    "visual_feedback": [
+      "UPS unit sits directly atop the DVR, covering the entire top surface vents",
+      "No visible gap around DVR vents; top vents are completely smothered by the UPS"
     ],
     "notes": ""
   },
   {
     "store": "101",
     "failed_criteria": [
-      "Submission photo unreviewable for assessing standard compliance"
+      "DVR must be visible in the photo."
     ],
     "action_plan": [
-      "Retake photo for D8: Security Office / DVR Area: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
-    ],
-    "visual_feedback": [],
-    "notes": "Submission photo does not show the DVR; device is completely obstructed by boxes. ACTION: Escalate for human review due to low confidence."
-  },
-  {
-    "store": "110",
-    "failed_criteria": [
-      "No non-essential items (personal clutter, loose papers, cleaning supplies) placed directly on or fully covering the DVR. Only fail if a major object (e.g., pizza box, UPS, or large stack) is placed directly on the DVR, fully blocking all top vents.",
-      "DVR vents and heat sinks must be unobstructed—allow at least some open space around all exposed sides (top and side panels); bottom surface contact with the resting surface is acceptable. Only fail if the top and all side vents are completely blocked or smothered, with no possible airflow."
-    ],
-    "action_plan": [
-      "Remove any large objects resting directly on the DVR to ensure no obstruction of vents and proper airflow.",
-      "Ensure DVR vents and heat sinks are clear of any objects to allow free airflow around all exposed sides."
+      "Retake the photo ensuring the DVR device is fully visible and unobstructed by boxes or other objects."
     ],
     "visual_feedback": [
-      "A large metal pipe is resting across the top of the DVR, covering the vent area and blocking airflow."
+      "The DVR device is fully concealed behind stacked boxes on both sides; no part of the DVR is visible."
     ],
     "notes": ""
   }

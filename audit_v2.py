@@ -12,6 +12,9 @@ import os
 import time
 import subprocess
 import sys
+from dotenv import load_dotenv
+load_dotenv()
+
 
 from photoRetriever import PhotoRetriever
 
@@ -358,6 +361,21 @@ def evaluate_store(store_id: int, quarter: int, model: str, start_date: str, mon
     total_time = evaluation_end - photo_start
     generate_summary(store_id, all_results, submission_time, evaluation_time, total_time)
 
+    def log_store_section_comments(store_id, photos_by_section):
+        log_path = "logs/store_section_comments.log"
+        now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        with open(log_path, "a", encoding="utf-8") as logf:
+            logf.write(f"\n=== Store {store_id:03d} Section Comments ({now}) ===\n")
+            for section_code, submissions in photos_by_section.items():
+                for submission in submissions:
+                    section_id = submission.get("section_id", "N/A")
+                    field_id = submission.get("field_id", "N/A")
+                    comment = submission.get("store_comment", "")
+                    submission_id = submission.get("submission_id", "N/A")
+                    logf.write(
+                        f"Section {section_code} | Section ID: {section_id} | Field ID: {field_id} | Submission ID: {submission_id} | Comment: {comment or '[blank]'}\n"
+                    )
+    log_store_section_comments(store_id, photos_by_section)
 
     # NEW: Save reference image paths per section to a log file
     ENABLE_REFERENCE_LOG = False # temp disabled for now...

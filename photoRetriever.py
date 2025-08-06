@@ -128,7 +128,8 @@ class PhotoRetriever:
                 LIMIT 1
             """, (submission_id, field_id))
             comment_row = cursor.fetchone()
-            return comment_row[0] if comment_row and comment_row[0] else ""
+            comment = comment_row[0] if comment_row and comment_row[0] else ""
+            return comment, field_id
         
     # --- Return a list of stores that have completed all 25 sections ---
     @classmethod
@@ -169,10 +170,12 @@ class PhotoRetriever:
                 photo_index = 0
                 for sub_id in submission_ids:
                     photos = self.get_photo_data_for_submission(conn, sub_id, section_code, photo_index)
-                    store_comment = self.get_reason_comment_for_section(conn, section_id, sub_id)
+                    store_comment,field_id = self.get_reason_comment_for_section(conn, section_id, sub_id)
                     all_submissions.append({
                         "photos": photos,
                         "store_comment": store_comment,
+                        "field_id": field_id,
+                        "section_id": section_id,
                         "submission_id": sub_id  # optional, for traceability
                     })
                     photo_index += len(photos)

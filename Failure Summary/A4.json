@@ -5,12 +5,36 @@
       "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
     ],
     "action_plan": [
-      "Clean door handle to remove visible grime and rust before resubmitting the photo."
+      "Clean or replace the door handles and surrounding hardware to remove all visible grime and rust."
     ],
     "visual_feedback": [
-      "Rust and grime visible on the left door handle plate and knob area (lower left of the image)."
+      "Visible rust and accumulated grime on the door handle plate and latch area."
     ],
     "notes": ""
+  },
+  {
+    "store": "021",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean or replace the door handles to remove visible grime and rust, ensuring handles are free of dirt."
+    ],
+    "visual_feedback": [
+      "Visible rust and grime on the right door handle near the latch mechanism."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "022",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for A4: Front Door & Entrance: Ensure image is clear, well-lit, correctly framed, and shows the entire front door including glass, door handles, promotional signage, hours-of-operation sign, and any safety/accessibility stickers."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo does not show the door handle or full entrance view; unable to assess checklist items. ACTION: Escalate for human review due to low confidence."
   },
   {
     "store": "033",
@@ -19,25 +43,12 @@
       "safety, legal compliance, or accessibility stickers/signage (such as “Automatic Caution Door” or ADA decals) are permitted on the door; tape residue is acceptable if it does not impede visibility."
     ],
     "action_plan": [
-      "Remove all heavy dirt, debris, and tape residue from the door glass to restore clear visibility.",
-      "Ensure that any remaining residue does not cover or obstruct any part of the glass."
+      "Thoroughly clean the glass door to remove all heavy dirt and tape residue; ensure the surface is clear and free of debris.",
+      "Remove or replace tape residue near signage to restore full visibility through the door glass."
     ],
     "visual_feedback": [
-      "Heavy dirt and tape residue visible on the center and right side of the door glass.",
-      "White adhesive residue obstructs the view through the door glass."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "038",
-    "failed_criteria": [
-      "Hours-of-operation sign must be present but may be slightly skewed or off-center if securely affixed."
-    ],
-    "action_plan": [
-      "Ensure the hours-of-operation sign is clearly visible and not covered by promotional signage; reposition or trim promotional sticker so that hours are readable."
-    ],
-    "visual_feedback": [
-      "Promotional sign covers the area where the hours-of-operation sign should be visible, making it unreadable."
+      "Heavy tape residue covering central and lower portions of the glass door, impeding clear visibility through the door.",
+      "Large areas of dirt and adhesive residue visible around the door edges, failing the clean-glass requirement."
     ],
     "notes": ""
   },
@@ -47,10 +58,23 @@
       "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
     ],
     "action_plan": [
-      "Clean or replace the door handle to remove visible grime and corrosion."
+      "Clean the door handles to remove visible grime and rust to comply with cleanliness standard."
     ],
     "visual_feedback": [
-      "Visible heavy rust and grime on the left-side exterior door handle."
+      "Left door handle shows rust and grime accumulation, particularly around the base of the handle."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "049",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean the door handles thoroughly to remove visible grime and residue, then retake the photo ensuring handles are free of dirt."
+    ],
+    "visual_feedback": [
+      "Black residue visible at bottom of right door handle indicating grime."
     ],
     "notes": ""
   },
@@ -60,10 +84,23 @@
       "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
     ],
     "action_plan": [
-      "Clean or replace the door handles to remove visible grime and rust to meet cleanliness standards."
+      "Clean the door handles to remove visible grime; ensure handles are free of dirt or replace if necessary."
     ],
     "visual_feedback": [
-      "Significant rust and grime visible on the right door handle at mid-height of the door."
+      "Visible grime and corrosion on the right door handle near the lock mechanism."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "052",
+    "failed_criteria": [
+      "Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable."
+    ],
+    "action_plan": [
+      "Clean the door handle thoroughly to remove visible grime and residue before retaking the photo."
+    ],
+    "visual_feedback": [
+      "Visible grime and residue around the mounting area of the door handle in the lower-center of the submission photo."
     ],
     "notes": ""
   }

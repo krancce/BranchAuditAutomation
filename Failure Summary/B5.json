@@ -1,110 +1,125 @@
 [
   {
-    "store": "012",
-    "failed_criteria": [
-      "All staff in photo wear proper professional tops suitable for office work"
-    ],
-    "action_plan": [
-      "Have staff wear a professional top in a subdued, office-appropriate color or approved Cash 4 You top without bright or distracting hues."
-    ],
-    "visual_feedback": [
-      "Staff member’s bright red blouse is loud and distracting, not meeting the professional attire color guidelines."
-    ],
-    "notes": ""
-  },
-  {
     "store": "031",
     "failed_criteria": [
-      "All staff in photo wear proper professional tops suitable for office work without unauthorized outerwear",
-      "No unauthorized outerwear obstructing attire or name tags"
+      "All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles.",
+      "No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags."
     ],
     "action_plan": [
-      "Remove the hoodie and wear a professional top as per guidelines (e.g., Cash 4 You branded shirt or suitable office-appropriate blouse)",
-      "Ensure no unauthorized outerwear (e.g., hoodies) in the photo and keep name tag visible above the chest"
+      "Replace hoodie with a professional top such as a shirt or blouse without streetwear elements.",
+      "Ensure no hoodies or other unauthorized outerwear are worn indoors so the uniform and name tag remain fully visible."
     ],
     "visual_feedback": [
-      "The white hoodie worn by staff is unauthorized outerwear and obscures professional attire"
+      "The staff member is wearing a casual hoodie which is streetwear-style and not professional attire.",
+      "A hoodie is present, which is listed as unauthorized outerwear under this standard."
     ],
     "notes": ""
   },
   {
     "store": "039",
     "failed_criteria": [
-      "All staff in photo wear proper professional tops suitable for office work"
+      "All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles."
     ],
     "action_plan": [
-      "Ensure all staff wear professional tops without bright/neon colors or loud patterns; retake photo with staff in acceptable attire."
+      "Ensure all staff wear professional tops in neutral or muted colors without extremely bright/neon hues or loud patterns."
     ],
     "visual_feedback": [
-      "Bright green floral outfit in the second submission photo is too loud and distracting, violating professional attire guidelines."
+      "Submission photo shows a neon green floral outfit that is too bright and distracting for a professional office environment."
     ],
     "notes": ""
   },
   {
     "store": "042",
     "failed_criteria": [
-      "Name tags are worn above the chest, clearly visible."
+      "Name tags missing or not visible above the chest for all staff in the photo"
     ],
     "action_plan": [
-      "Ensure all staff wear clearly visible name tags above the chest before submitting the photo."
+      "Ensure all staff wear name tags above the chest and are clearly visible in the photo. Retake the photo after correcting this issue."
     ],
     "visual_feedback": [
-      "No name tags visible on the staff members; chest area lacks any name tag."
+      "Name tag not visible on staff on the left wearing a grey cardigan",
+      "Name tag not visible on staff on the right wearing a dark top"
     ],
     "notes": ""
   },
   {
     "store": "052",
     "failed_criteria": [
-      "Name tag missing or not visible above chest",
-      "Unauthorized outerwear (hat) obstructing attire"
+      "Name tags are worn above the chest, clearly visible.",
+      "No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags."
     ],
     "action_plan": [
-      "Ensure all staff wear name tags above the chest and clearly visible",
-      "Remove hats or unauthorized headwear while indoors"
+      "Ensure each staff member wears a visible name tag above the chest in the photo.",
+      "Remove any hats or hoodies that cover attire or name tags when taking the photo."
     ],
     "visual_feedback": [
-      "No name tag visible on the staff member's chest area",
-      "Staff member wearing a hat indoors which is not allowed"
+      "No name tag visible on the staff member’s chest area.",
+      "Hat detected covering the staff member’s head and hood covering upper uniform."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "058",
+    "failed_criteria": [
+      "Name tags are worn above the chest, clearly visible."
+    ],
+    "action_plan": [
+      "Ensure all staff wear name tags above the chest, clearly visible in the photo."
+    ],
+    "visual_feedback": [
+      "No name tag visible on the staff member's chest."
     ],
     "notes": ""
   },
   {
     "store": "070",
     "failed_criteria": [
+      "All staff in photo wear proper professional tops suitable for office work"
+    ],
+    "action_plan": [
+      "Ensure all staff wear professional tops free of prominent logos or novelty patterns; replace the multicolor designer-logo shirt with a solid-color or Cash 4 You branded top and retake the photo."
+    ],
+    "visual_feedback": [
+      "First staff member (timestamped 2025/06/11 18:14:27) is wearing a brightly colored designer-logo patterned shirt, which is not acceptable professional attire."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "090",
+    "failed_criteria": [
+      "No unauthorized outerwear (e.g., hats, hoodies) obstructing attire or name tags"
+    ],
+    "action_plan": [
+      "Ensure staff remove unauthorized outerwear (e.g., hoodies) indoors so that attire and name tags are fully visible"
+    ],
+    "visual_feedback": [
+      "Older staff member on the left is wearing a beige hoodie indoors, which is unauthorized outerwear"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "092",
+    "failed_criteria": [
       "All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles."
     ],
     "action_plan": [
-      "Ensure all staff wear professional tops free of prominent logos, funky patterns, bright/neon colors, or streetwear styles. Retake photo showing compliant attire."
+      "Have staff wear professional tops in neutral or subdued colors, avoiding bright or neon hues; ensure attire is clearly suitable for a professional office environment."
     ],
     "visual_feedback": [
-      "Left staff member's top features a prominent multicolor pattern/logo, which violates the professional attire requirement."
+      "The bright blue top/dress worn by the staff member is too loud and does not meet the subdued color requirement."
     ],
     "notes": ""
   },
   {
     "store": "093",
     "failed_criteria": [
-      "All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses, low-contrast florals) without prominent logos, funky patterns, bright/neon colors, or streetwear styles."
+      "All staff in photo wear proper professional tops suitable for office work (e.g., shirts, blouses)"
     ],
     "action_plan": [
-      "Ensure all staff wear professional tops suitable for office work (shirts, blouses, or approved branded tops) without revealing cuts or casual dress styles; replace the ombre dress with an appropriate professional blouse or Cash 4 You branded top."
+      "Ensure all staff wear professional tops suitable for office work, such as shirts or blouses with appropriate necklines; avoid dresses with spaghetti straps or informal attire."
     ],
     "visual_feedback": [
-      "Staff member in the first submission photo is wearing a casual ombre dress top with a low-cut neckline rather than a professional office top."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "106",
-    "failed_criteria": [
-      "Name tags are worn above the chest, clearly visible."
-    ],
-    "action_plan": [
-      "Have all staff wear name tags above the chest and ensure they are clearly visible in the submission photo."
-    ],
-    "visual_feedback": [
-      "No name tag visible on the staff member's chest area in the submission photo."
+      "Employee in the first submission photo is wearing a spaghetti-strap dress under a cardigan, which does not meet the professional tops requirement."
     ],
     "notes": ""
   },
@@ -114,10 +129,10 @@
       "Name tags are worn above the chest, clearly visible."
     ],
     "action_plan": [
-      "Ensure all staff wear name tags above the chest and that they are clearly visible in the photo."
+      "Ensure all staff wear a visible name tag above the chest and retake the photo."
     ],
     "visual_feedback": [
-      "No name tag is visible on the staff member's upper chest area."
+      "No name tag visible on the individual’s chest area."
     ],
     "notes": ""
   }

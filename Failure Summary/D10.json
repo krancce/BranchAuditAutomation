@@ -1,55 +1,40 @@
 [
   {
-    "store": "002",
+    "store": "016",
     "failed_criteria": [
-      "Drawer organization: presence of removable garbage in drawer"
+      "Drawer organization: fresh, removable sticky residue visible"
     ],
     "action_plan": [
-      "Remove the empty cardboard roll and any other trash from the drawer and dispose of it in the waste bin, ensuring the drawer contents remain orderly"
+      "Clean the interior of the drawer to remove fresh sticky residue before photographing"
     ],
     "visual_feedback": [
-      "Empty cardboard roll visible in bottom drawer, should be removed as garbage"
+      "White residue marks along the bottom of the drawer interior visible in the submission photo"
     ],
     "notes": ""
   },
   {
     "store": "026",
     "failed_criteria": [
-      "Drawer organization: removable crumbs/dirt visible in drawer"
+      "Drawer interior contains visible removable debris or crumbs"
     ],
     "action_plan": [
-      "Remove all crumbs and debris from the drawer; wipe surfaces clean and ensure no fresh dirt or loose food remains."
+      "Clean out the drawer and remove all visible debris or crumbs, then retake and resubmit the photo"
     ],
     "visual_feedback": [
-      "Small brown crumb-like debris visible on the bottom surface of the second drawer (image taken 2025/05/16 15:07:18)."
+      "Small yellowish crumb-like particles visible at the bottom of the drawer in the submission photo"
     ],
     "notes": ""
   },
   {
-    "store": "052",
+    "store": "056",
     "failed_criteria": [
-      "Drawer organization: actual, removable garbage, loose food, crumbs, or dirt visible"
+      "Drawer organization: fresh removable crumbs/dirt visible"
     ],
     "action_plan": [
-      "Remove all crumbs and debris from inside the drawer; clean and wipe the drawer interior to ensure it is free of loose residue and dirt."
+      "Clean the drawer to remove all crumbs and dirt, then wipe down surfaces to ensure no loose debris is present before resubmitting the photo."
     ],
     "visual_feedback": [
-      "Small loose crumbs are visible on the bottom surface of the drawer in the submission photo."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "060",
-    "failed_criteria": [
-      "Drawer organization: items are loose and chaotic",
-      "Drawer organization: visible fresh sticky residue in drawer interior"
-    ],
-    "action_plan": [
-      "Reorganize drawer: group items in containers or compartments, remove loose piles, and ensure contents are orderly",
-      "Clean drawer interior: wipe away any fresh sticky residue or removable debris"
-    ],
-    "visual_feedback": [
-      "Submission drawer photo (timestamp 2025/05/27 17:06:16) shows items loosely piled and a red sticky substance in the center of the drawer"
+      "Small yellow specks and crumb-like debris visible near the calculator in the drawer."
     ],
     "notes": ""
   }

@@ -2,16 +2,31 @@
   {
     "store": "013",
     "failed_criteria": [
-      "Boxes should be generally stacked in a way that appears stable and will not immediately fall over.",
-      "Boxes should be stored together, generally organized, and not obviously collapsing or unsafe."
+      "Stacking neatness: large unstable, collapsing pile that is an obvious hazard",
+      "Proper storage: boxes obviously collapsing or unsafe"
     ],
     "action_plan": [
-      "Restack boxes to ensure stable, upright alignment without leaning to prevent risk of toppling.",
-      "Reorganize storage so boxes are securely grouped and supported, eliminating unsafe or collapsing stacks."
+      "Restack boxes to ensure stability and prevent leaning or collapsing",
+      "Organize storage by securing boxes together so they are not at risk of toppling"
     ],
     "visual_feedback": [
-      "Top boxes on the right stack are noticeably leaning and appear unstable.",
-      "Right-side storage boxes show misalignment and signs of collapsing stacks."
+      "Right-hand stack shows top boxes severely leaning and spilling, indicating an unstable, collapsing pile"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "055",
+    "failed_criteria": [
+      "Stacking neatness",
+      "Proper storage"
+    ],
+    "action_plan": [
+      "Restack boxes so they are properly aligned with no large leaning or instability.",
+      "Organize boxes together in a stable configuration to prevent potential hazards."
+    ],
+    "visual_feedback": [
+      "Top box is leaning at a noticeable angle and could tip over.",
+      "Boxes are not uniformly stacked or organized, with one box placed horizontally under another."
     ],
     "notes": ""
   },
@@ -24,6 +39,22 @@
       "Retake photo for D2: Storage Boxes & Aisle Clearance: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
     ],
     "visual_feedback": [],
-    "notes": "Incorrect photo submitted for D2: Storage Boxes & Aisle Clearance; expected view of storage boxes, received view of emergency exit/door and ladder. ACTION: Escalate for human review due to low confidence."
+    "notes": "Incorrect photo submitted for D2: Storage Boxes & Aisle Clearance; expected view of storage boxes, received unrelated area. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "Stacking neatness",
+      "Proper storage"
+    ],
+    "action_plan": [
+      "Re-stack boxes to eliminate leaning and ensure stack stability.",
+      "Replace or repair damaged boxes and store them securely to avoid collapse."
+    ],
+    "visual_feedback": [
+      "Bottom boxes in the rightmost stack are leaning outward and visibly deformed, indicating instability.",
+      "Crushed lower boxes in the right stack show an unsafe storage risk."
+    ],
+    "notes": ""
   }
 ]

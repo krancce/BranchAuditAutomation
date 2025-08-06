@@ -1,75 +1,137 @@
 [
   {
-    "store": "013",
+    "store": "010",
     "failed_criteria": [
-      "Shelves have cleaning and non-cleaning items jumbled with no clear grouping",
-      "Loose items and debris inside/around cabinet",
-      "Personal or unrelated clutter mixed with supplies"
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet."
     ],
     "action_plan": [
-      "Organize shelves by grouping cleaning supplies separately from office items; remove or relocate unrelated items outside the cabinet.",
-      "Remove loose items and debris from inside the cabinet and floor; ensure all items rest stably on shelves or in bins.",
-      "Clear personal or unrelated clutter from inside the cabinet, leaving only cleaning supplies."
+      "Stock and display cleaning supplies and related chemicals inside the designated cabinet so they are visible in the photo."
     ],
     "visual_feedback": [
-      "Bottom shelf contains tangled cables and power strip not stably stored.",
-      "Multiple shelves have mixed office items (boxes and wires) intermingled with cleaning supplies without grouping.",
-      "Loose object on the floor near cabinet base poses safety hazard."
+      "No cleaning supplies or chemicals detected; shelves contain only office supplies, thermal rolls, and storage boxes."
     ],
     "notes": ""
   },
   {
-    "store": "030",
+    "store": "033",
+    "failed_criteria": [
+      "Shelves mix cleaning chemicals and non-cleaning items without grouping",
+      "Unrelated clutter (office supplies, electronics) mixed with cleaning supplies"
+    ],
+    "action_plan": [
+      "Group cleaning supplies together on separate shelves or sections, ensuring no non-cleaning items are stored on those shelves",
+      "Remove all office supplies and electronic items from the cleaning cabinet to maintain a tidy, designated cleaning supply storage area"
+    ],
+    "visual_feedback": [
+      "Top-middle and right compartments show cords and keyboards mixed with cleaning items",
+      "Cables and electronics dominate compartments, indicating unrelated clutter in the cabinet"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "038",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for D5: Cleaning Supplies & Cabinet Organization: Ensure image is clear, well-lit, correctly framed, and accurately shows the designated cleaning supplies cabinet with shelves stocked as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Incorrect photo submitted; expected cleaning supplies cabinet view, received cabinet with office supplies. ACTION: Escalate for human review due to low confidence."
+  },
+  {
+    "store": "059",
     "failed_criteria": [
       "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
     ],
     "action_plan": [
-      "Retake photo showing the designated cleaning supplies cabinet clearly stocked with cleaning supplies arranged neatly on all shelves. Ensure the photo is well-lit, focused, and highlights organized cleaning products."
+      "Retake photo to clearly show the designated cleaning supplies cabinet with cleaning supplies organized on shelves."
     ],
     "visual_feedback": [
-      "Cabinet shelves are predominantly filled with office items and miscellaneous supplies; only a few cleaning bottles are visible on the bottom shelf, failing to demonstrate a properly stocked, organized cleaning cabinet."
+      "Submission photos show an under-sink area and a cabinet with office supplies, but no clear image of the designated cleaning supplies cabinet."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "068",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet.",
+      "Shelves may mix cleaning supplies with office items only if they are grouped by level: cleaning chemicals and non-cleaning items appear mixed together.",
+      "No personal or unrelated clutter mixed in with cleaning supplies."
+    ],
+    "action_plan": [
+      "Retake photo showing the actual designated cleaning supplies cabinet (with doors open) and stocked neatly on shelves.",
+      "Ensure all cleaning supplies and chemicals are placed inside the designated cabinet before photographing.",
+      "Organize shelves so that cleaning supplies are grouped on one level and office or non-cleaning items on a separate level.",
+      "Remove personal or unrelated items (e.g., flowers, mugs, plates, snacks) from the cleaning supplies storage area."
+    ],
+    "visual_feedback": [
+      "The photo shows an open wooden shelving unit in an office setting, not the designated cleaning supplies cabinet.",
+      "Cleaning bottles and wipes are on open shelves rather than inside a cabinet.",
+      "Office supplies (pens, mugs, plates) are interspersed with cleaning items on the shelves.",
+      "Decorative items (flowers, mugs) are present alongside cleaning supplies."
     ],
     "notes": ""
   },
   {
     "store": "089",
     "failed_criteria": [
-      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet."
     ],
     "action_plan": [
-      "Retake photo for D5: Cleaning Supplies & Cabinet Organization: Ensure the designated cleaning supplies cabinet is clearly visible and stocked with cleaning materials organized on the shelves."
+      "Retake photo ensuring the designated cleaning supplies cabinet is clearly shown with shelves visibly stocked in an organized manner, displaying cleaning supplies prominently.",
+      "Ensure all cleaning supplies and chemicals are stored inside the designated cabinet before taking a new photo."
     ],
     "visual_feedback": [
-      "Submission photo shows a mostly empty cabinet with boxes and office items; lacks visible cleaning supplies on shelves."
+      "Submission image shows mostly office supplies and stationery with minimal cleaning supplies, failing to depict the designated cleaning cabinet stocked with cleaning items.",
+      "Only a single roll of paper towels is visible as a cleaning supply, with other items predominantly non-cleaning and not properly grouped."
     ],
     "notes": ""
   },
   {
     "store": "093",
     "failed_criteria": [
-      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner."
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet."
     ],
     "action_plan": [
-      "Retake a photo showing the designated cleaning supplies cabinet stocked with cleaning chemicals (e.g., sprays, paper towels) organized neatly on shelves."
+      "Place the designated cleaning supplies inside the cabinet and retake the photo showing shelves stocked with cleaning supplies in an organized manner.",
+      "Ensure all cleaning supplies and related chemicals are stored inside the designated cabinet before submission."
     ],
     "visual_feedback": [
-      "No visible cleaning chemicals or supplies in the cabinet; shelves contain office and electronic supplies instead."
+      "Cabinet shelves contain office items and electronics but no cleaning supplies across all visible shelves.",
+      "No cleaning chemicals or supplies are present in the cabinet; appears used for storage of toner cartridges and office materials."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "096",
+    "failed_criteria": [
+      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
+      "All cleaning supplies and related chemicals are stored inside the designated cabinet."
+    ],
+    "action_plan": [
+      "Retake photos ensuring the designated cleaning supplies cabinet is fully open and clearly visible with shelves stocked and organized.",
+      "Place all cleaning supplies and related chemicals inside the designated cabinet before retaking the photo."
+    ],
+    "visual_feedback": [
+      "Submission photo shows cleaning supplies stored on an open rack instead of inside the designated cabinet.",
+      "No image depicts the required cleaning supplies cabinet."
     ],
     "notes": ""
   },
   {
     "store": "098",
     "failed_criteria": [
-      "At least one image must clearly show the designated cleaning supplies cabinet, with shelves visibly stocked in a reasonably organized manner.",
       "All cleaning supplies and related chemicals are stored inside the designated cabinet."
     ],
     "action_plan": [
-      "Retake photo showing the designated cleaning supplies cabinet with stocked shelves in an organized manner.",
-      "Ensure all cleaning supplies and chemicals are stored inside the designated cabinet; relocate any items outside the cabinet."
+      "Store all cleaning supplies and related chemicals inside the designated cleaning cabinet so that the majority of items are housed within the cabinet."
     ],
     "visual_feedback": [
-      "No closed cabinet visible; cleaning supplies are stored on an open shelving unit and wall-mounted shelf instead of inside a cabinet.",
-      "Cleaning supplies are placed outside the cabinet on open shelves, not inside the designated cabinet."
+      "Multiple spray bottles and large jugs are currently placed on the wooden unit and wall shelf outside the designated cabinet, rather than inside."
     ],
     "notes": ""
   }

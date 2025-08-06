@@ -1,10 +1,19 @@
 standard_name: A4: Front Door & Entrance
 
 requirements_checklist:
-- Glass on doors is free of heavy dirt or debris; minor reflections or cash4you related promotional signage are acceptable.
+- Glass on doors is free of heavy dirt or debris; minor reflections or Cash 4 You related promotional signage are acceptable.
+  **Minor, permanent discoloration, etching, or non-removable stains are acceptable and do NOT count as heavy dirt or debris. Only fail if there is obvious, fresh, removable heavy dirt or debris that can and should be cleaned with regular effort. If unsure, pass.**
 - Door handles may display approved signage; visible grime automatically disqualifies but fingerprints and minor smudges are acceptable.
+  **Only fail if there is clear, fresh, and removable grime or dirt present on the handle. Minor smudges, natural wear, discoloration, or permanent residue that does not transfer or cannot be cleaned with regular effort are acceptable. Do NOT fail for “invisible grime” or faint marks that cannot be reliably detected, or for ordinary wear, permanent scratches, or metallic aging.**
 - Hours-of-operation sign must be present but may be slightly skewed or off-center if securely affixed.
-- safety, legal compliance, or accessibility stickers/signage (such as “Automatic Caution Door” or ADA decals) are permitted on the door; tape residue is acceptable if it does not impede visibility.
+- Safety, legal compliance, or accessibility stickers/signage (such as “Automatic Caution Door” or ADA decals) are permitted on the door; tape residue is acceptable if it does not impede visibility.
+  **Minor residue or faded adhesive that does not block the view is acceptable. Only fail for residue or stickers that make it hard to see in or out.**
+
+clarification_notes: |
+  - Do NOT fail for invisible grime, faint residue, or natural discoloration.
+  - Only fail if there is obvious, visible, fresh, and *removable* grime, dirt, or heavy debris.
+  - Do NOT fail for permanent marks, metallic tarnish, or anything that cannot be wiped away with normal cleaning.
+  - If in doubt, pass.
 
 gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

@@ -1,181 +1,43 @@
 [
   {
-    "store": "005",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
-    ],
-    "action_plan": [
-      "Remove any wet spills from the main walking zone and dry the area completely."
-    ],
-    "visual_feedback": [
-      "Wet spill visible on the carpet in the main walking zone near the first desk."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "022",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
-    ],
-    "action_plan": [
-      "Remove the wet spill in the main walking area to ensure the floor is free of slip hazards."
-    ],
-    "visual_feedback": [
-      "Visible dark, wet-looking patch on the carpeted walkway near the desks indicating a spill hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "024",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
-    ],
-    "action_plan": [
-      "Clean up and fully dry any spills on the main walking path, then retake the photo ensuring the floor is free of wet spill hazards."
-    ],
-    "visual_feedback": [
-      "Image 2: Visible wet-looking spill/puddle in the main walking area near the center of the frame."
-    ],
-    "notes": "Obvious wet spill detected in the main walking zone."
-  },
-  {
-    "store": "039",
-    "failed_criteria": [
-      "Submission photo unreviewable for assessing standard compliance"
-    ],
-    "action_plan": [
-      "Retake photo for D1: Overall Floor & Workspace Clearance: Ensure image is clear, well-lit, correctly framed, and includes a broad view of the main walking path free of obstructions or hazards per policy guidelines."
-    ],
-    "visual_feedback": [],
-    "notes": "Submission photo does not show the main walking area needed to assess floor clearance. ACTION: Escalate for human review due to low confidence."
-  },
-  {
-    "store": "045",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor"
-    ],
-    "action_plan": [
-      "Clean up the spill immediately and ensure the area is dry before resubmitting the photo."
-    ],
-    "visual_feedback": [
-      "Visible wet spill near the central walking path in the second submission photo, left of the desks."
-    ],
-    "notes": "Identified a wet spill hazard that poses a slip risk."
-  },
-  {
-    "store": "058",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor"
-    ],
-    "action_plan": [
-      "Clean up any spilled liquids immediately and ensure the main walking area is dry and clear of any puddles."
-    ],
-    "visual_feedback": [
-      "Obvious wet-looking spill visible in the main walking aisle near the center of the second image."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "060",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
-    ],
-    "action_plan": [
-      "Clean up any wet spills immediately to remove slip hazards. Dry the area thoroughly before taking a new compliance photo."
-    ],
-    "visual_feedback": [
-      "Visible wet spill/puddle in the main walking area near the center of the room."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "070",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor"
-    ],
-    "action_plan": [
-      "Clean and remove the wet spill from the main walking path and ensure floor is dry before retaking photo."
-    ],
-    "visual_feedback": [
-      "Obvious wet spill visible near center of main walking zone in the submission photo."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "072",
+    "store": "006",
     "failed_criteria": [
       "The central circulation area (the main walking path through the room) is free of any major obstructions or trip hazards."
     ],
     "action_plan": [
-      "Remove or relocate large items, such as the round table, from the center of the main walking path to allow unobstructed passage."
+      "Remove large items (e.g., safe) from the main walking path to ensure unobstructed passage."
     ],
     "visual_feedback": [
-      "Round table positioned in the center of the room, blocking the main walkway."
+      "A large safe is positioned directly in the center of the walkway, blocking normal passage."
     ],
     "notes": ""
   },
   {
-    "store": "083",
+    "store": "090",
     "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
+      "Central circulation area (main walking path) is obstructed by a large ladder",
+      "Equipment storage (ladder) not stowed out of the main walking zone"
     ],
     "action_plan": [
-      "Clean up and remove any wet spill from the main walking area; ensure the floor is completely dry and free of puddles."
+      "Remove the ladder from the central walkway and store it neatly against a wall or in a designated storage area",
+      "Ensure all equipment and tools are stowed out of the main walking path to maintain unimpeded passage"
     ],
     "visual_feedback": [
-      "Obvious wet-like puddle visible near the center-bottom of the timestamped submission photo."
+      "Ladder visible blocking the main walkway in the image stamped 2025/05/15 12:33:31",
+      "Equipment (ladder) positioned in the center of the walking zone rather than against a wall"
     ],
     "notes": ""
   },
   {
     "store": "091",
     "failed_criteria": [
-      "The central circulation area (the main walking path through the room) is free of any major obstructions or trip hazards."
+      "The central circulation area (the main walking path through the room) is blocked by a large item (safe) left directly in the middle of the walkway."
     ],
     "action_plan": [
-      "Remove the safe and ladder from the main walkway to clear the central circulation area for normal passage."
+      "Remove the safe from the central walking path and relocate it to a designated storage area out of the main circulation route to ensure unobstructed passage."
     ],
     "visual_feedback": [
-      "Safe positioned in the middle of the main walkway blocking the central path."
-    ],
-    "notes": "Visible timestamp (2025-05-16) confirms recency. A large safe is obstructing the main walking path."
-  },
-  {
-    "store": "099",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor"
-    ],
-    "action_plan": [
-      "Remove any spills or debris from the main walking area; ensure floor is dry and free of hazards."
-    ],
-    "visual_feedback": [
-      "Obvious wet spill visible in the center of the main walking zone near desks in the second submission photo."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "100",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor"
-    ],
-    "action_plan": [
-      "Remove or clean any wet spills from the main walking zone to eliminate slip hazards"
-    ],
-    "visual_feedback": [
-      "Obvious wet patch visible on carpet in submission photo (timestamp 2025/05/16 13:47:31) near the center of the main aisle"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "107",
-    "failed_criteria": [
-      "No loose debris, litter, or spill hazards on the floor."
-    ],
-    "action_plan": [
-      "Clean up and fully dry the spill in the main walking area to eliminate slip hazards."
-    ],
-    "visual_feedback": [
-      "Visible wet spill near center of floor in second submission photo, between desks."
+      "Image 4: Large safe visible in the center of the main walkway blocking normal passage."
     ],
     "notes": ""
   }

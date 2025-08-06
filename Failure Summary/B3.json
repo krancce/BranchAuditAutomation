@@ -2,16 +2,13 @@
   {
     "store": "001",
     "failed_criteria": [
-      "Missing expiration date on license",
-      "No clutter in the display area"
+      "Missing expiration date on license"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible",
-      "Remove any unrelated items or posters from around the license display area to avoid clutter"
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (top document) expiration date not legible in submitted photos",
-      "Poster visible to the left of display creating clutter"
+      "Top 'Establishment License' does not display an expiration date; area where expiration date should be is unclear."
     ],
     "notes": ""
   },
@@ -24,7 +21,7 @@
       "Replace with a valid, unexpired license"
     ],
     "visual_feedback": [
-      "Provincial license (Payday Loans Act, 2008 Certificate of Licence, right side) shows expiration date of July 27, 2024, which is before the submission date"
+      "Provincial license (right) shows expiration date 'July 27, 2024', which is before submission date 2025-05-17."
     ],
     "notes": ""
   },
@@ -37,46 +34,23 @@
       "Replace with a valid, unexpired license"
     ],
     "visual_feedback": [
-      "Municipal Establishment Licence expiration date January 4, 2025 is visible and has passed"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "010",
-    "failed_criteria": [
-      "No clutter in the display area"
-    ],
-    "action_plan": [
-      "Remove any non-license signage or clutter from the display area to ensure only the required licenses are visible."
-    ],
-    "visual_feedback": [
-      "Additional poster 'UNSECURED HOME' sign visible to the right of the municipal license display, creating clutter."
+      "Municipal license expiration date reads January 1, 2024, which is expired (visible on the top certificate in the timestamped photo)."
     ],
     "notes": ""
   },
   {
     "store": "013",
     "failed_criteria": [
-      "Missing expiration date on license"
+      "Missing expiration date on license",
+      "Clutter in display area"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible"
+      "Ensure expiration date is clearly printed and legible",
+      "Remove unrelated items and posters from the license display area"
     ],
     "visual_feedback": [
-      "Municipal license (top document) does not display an expiration date; the lower section where expiry should appear is blank or obscured."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "017",
-    "failed_criteria": [
-      "License expired"
-    ],
-    "action_plan": [
-      "Replace with a valid, unexpired license"
-    ],
-    "visual_feedback": [
-      "Expiration date on the right license (Establishment Licence) shows January 20, 2025, which is before the submission date."
+      "Expiration date not visible due to glare and overexposure on top license in the first image.",
+      "Promotional sticker to left of licenses creates clutter in the display area."
     ],
     "notes": ""
   },
@@ -89,9 +63,9 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top municipal license: expiration date area is unreadable or obscured"
+      "Top municipal license lacks a visible expiration date (obscured by glare)"
     ],
-    "notes": ""
+    "notes": "ACTION: Escalate for human review due to low confidence."
   },
   {
     "store": "021",
@@ -102,7 +76,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top license in first photo shows no visible expiration date; glare and reflections obscure text"
+      "Municipal license in top photo does not display an expiration date."
     ],
     "notes": ""
   },
@@ -115,7 +89,8 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date is not visible on the displayed licenses."
+      "Top municipal license expiration date not visible due to reflection",
+      "Bottom provincial license expiration date obscured by glare and not legible"
     ],
     "notes": ""
   },
@@ -128,7 +103,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top license (Municipal Business License) does not display an expiration date in the image."
+      "Top municipal license: expiration date not visible or legible due to glare/reflection"
     ],
     "notes": ""
   },
@@ -141,7 +116,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "No expiration date visible on the \"Payday Loan Act 2008 Certificate of Licence\" displayed on the right side of the submission photo"
+      "Provincial Regulatory License (Payday Loan Act, 2008 Certificate of License) does not display an expiration date."
     ],
     "notes": ""
   },
@@ -154,7 +129,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Provincial license (top) expiration date not visible due to glare/reflection."
+      "Provincial license (Certificate of Licence under Payday Loan Act) in the first photo: no visible expiration date."
     ],
     "notes": ""
   },
@@ -167,12 +142,12 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top document (municipal license) does not display an expiration date."
+      "Expiration date on the municipal license (top document) is not visible or legible"
     ],
     "notes": ""
   },
   {
-    "store": "037",
+    "store": "033",
     "failed_criteria": [
       "Missing expiration date on license"
     ],
@@ -180,9 +155,20 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date not visible on the municipal license (top document)."
+      "Glare reflection obscures expiration date on the Payday Loan Act 2008 certificate (provincial license) making it unreadable."
     ],
     "notes": ""
+  },
+  {
+    "store": "037",
+    "failed_criteria": [
+      "Submission photo unreviewable for assessing standard compliance"
+    ],
+    "action_plan": [
+      "Retake photo for B3: Licensing Displays: Ensure image is clear, well-lit, correctly framed, and legibly shows both municipal and provincial licenses with all expiration dates visible as per policy guidelines."
+    ],
+    "visual_feedback": [],
+    "notes": "Submission photo is too blurry to assess standard compliance. ACTION: Escalate for human review due to low confidence."
   },
   {
     "store": "038",
@@ -193,23 +179,20 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top municipal license (Establishment License) does not show an expiration date; text area appears blank or obscured by glare."
+      "First license (municipal) expiration date not visible or missing on the displayed license"
     ],
     "notes": ""
   },
   {
     "store": "039",
     "failed_criteria": [
-      "Did not display both municipal and provincial licenses",
       "Missing expiration date on license"
     ],
     "action_plan": [
-      "Display both a valid municipal business license and a provincial regulatory license in the photos",
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "No municipal license detected in any submission photo",
-      "Expiration date on the top establishment license is not visible due to glare and blur"
+      "Top municipal license (Establishment License) in the first image has no visible expiration date."
     ],
     "notes": ""
   },
@@ -217,31 +200,31 @@
     "store": "041",
     "failed_criteria": [
       "Missing expiration date on license",
-      "License expired",
-      "Clutter in the display area"
+      "License expired"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible on all displayed licenses",
-      "Replace with a valid, unexpired license",
-      "Remove extraneous items and ensure licenses are displayed against a plain, uncluttered background"
+      "Ensure expiration date is clearly printed and legible",
+      "Replace with a valid, unexpired license"
     ],
     "visual_feedback": [
-      "The municipal license text is too distant and glare makes the expiration date illegible",
-      "Provincial license shows expiration date of 2005, which is expired relative to submission date",
-      "Background behind the licenses includes store signage and equipment causing clutter"
+      "Expiration date not visible on municipal license in submission photos",
+      "Provincial license expiration date visible as 2008, expired relative to submission date"
     ],
     "notes": ""
   },
   {
     "store": "042",
     "failed_criteria": [
+      "Missing municipal license",
       "Missing expiration date on license"
     ],
     "action_plan": [
+      "Display both one municipal and one provincial license",
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top municipal license does not display an expiration date."
+      "Municipal license not detected in submitted photos",
+      "The top license lacks a visible expiration date"
     ],
     "notes": ""
   },
@@ -251,10 +234,10 @@
       "Missing expiration date on license"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible on each license"
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date on the municipal Establishment License at the top is not visible or legible."
+      "Expiration date not visible on municipal license (top document)"
     ],
     "notes": ""
   },
@@ -267,23 +250,20 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (top) expiration date not visible or legible"
+      "Top municipal license in first image has no visible expiration date (glare and blur around the date area)."
     ],
     "notes": ""
   },
   {
     "store": "050",
     "failed_criteria": [
-      "Missing municipal license",
       "Missing expiration date on license"
     ],
     "action_plan": [
-      "Display municipal license alongside the provincial license",
-      "Ensure expiration date is clearly printed and legible on all licenses"
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "No municipal license visible in any submission photo",
-      "Municipal license expiration date not legible or not present"
+      "Top license (Establishment License) expiration date area illegible or not visible"
     ],
     "notes": ""
   },
@@ -296,7 +276,7 @@
       "Replace with a valid, unexpired license"
     ],
     "visual_feedback": [
-      "Municipal Business Licence displays expiration date 'September 30, 2024', which is before the submission date"
+      "Top municipal license shows expiration date 'September 30, 2024' which is before the submission date on the timestamp."
     ],
     "notes": ""
   },
@@ -309,7 +289,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top license ('Establishment Licence') has no visible expiration date; details are obscured by glare and reflections."
+      "Expiration date on the municipal license at the top is not legible due to glare and blur."
     ],
     "notes": ""
   },
@@ -322,33 +302,33 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (top document) does not display an expiration date or it is not legible due to glare."
+      "Top license titled 'Establishment License' shows no visible expiration date"
     ],
     "notes": ""
   },
   {
     "store": "056",
     "failed_criteria": [
-      "Missing expiration date on license"
+      "Exactly two distinct license types must be shown across the photo set (missing municipal license)"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible"
+      "Display a valid municipal business license alongside the provincial license to show both required license types."
     ],
     "visual_feedback": [
-      "Top license (Establishment Licence) lacks a visible expiration date; the date area is blurred and unreadable."
+      "No municipal license detected in provided photos; only provincial licenses are visible."
     ],
     "notes": ""
   },
   {
     "store": "057",
     "failed_criteria": [
-      "Missing expiration date on license"
+      "Missing municipal license"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible"
+      "Include a valid municipal business license display alongside the provincial license"
     ],
     "visual_feedback": [
-      "Municipal license (top document) does not show an expiration date."
+      "No municipal business license visible in photo set; only provincial licenses displayed"
     ],
     "notes": ""
   },
@@ -361,7 +341,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Provincial license (Payday Loans Act certificate) does not show an expiration date."
+      "No visible expiration date found on the provincial license displayed in the photo set"
     ],
     "notes": ""
   },
@@ -374,7 +354,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "No expiration date visible on municipal license (top document)"
+      "Municipal license (top document) does not show an expiration date anywhere on the license."
     ],
     "notes": ""
   },
@@ -387,7 +367,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date not visible on the provincial Certificate of Licence displayed at the bottom of the first submission image."
+      "Provincial license (Payday Loans Act, 2000 Certificate of License) displayed in the lower position: expiration date not visible or legible"
     ],
     "notes": ""
   },
@@ -400,25 +380,13 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date area of both municipal and provincial licenses have no visible date in the photo."
+      "Expiration date not visible on Toronto Municipal license (left)",
+      "Expiration date not visible on Payday Loans Act 2008 Certificate (right)"
     ],
     "notes": ""
   },
   {
-    "store": "070",
-    "failed_criteria": [
-      "Exactly two distinct license types must be shown across the photo set: one municipal license and one provincial license"
-    ],
-    "action_plan": [
-      "Remove additional license types; display only one municipal license and one provincial license"
-    ],
-    "visual_feedback": [
-      "Temporary Portable Sign Permit visible in the second submission photo indicates an extra municipal license type"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "074",
+    "store": "068",
     "failed_criteria": [
       "Missing expiration date on license"
     ],
@@ -426,7 +394,23 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date on municipal license (top photo) is not visible or legible."
+      "Expiration date on provincial license is obscured by glare and not readable in the bottom license display."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "074",
+    "failed_criteria": [
+      "Exactly two distinct license types must be shown across the photo set",
+      "Missing expiration date on license"
+    ],
+    "action_plan": [
+      "Ensure both a municipal license and a provincial license are displayed; retake photo showing both license types",
+      "Ensure expiration date is clearly printed and legible on all licenses"
+    ],
+    "visual_feedback": [
+      "Only provincial licenses detected; no municipal license is visible",
+      "The municipal licence (top document) does not display an expiration date"
     ],
     "notes": ""
   },
@@ -439,7 +423,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top municipal license (Establishment Licence) has no visible expiration date."
+      "Expiration date on municipal license (top document) is not visible in the photo"
     ],
     "notes": ""
   },
@@ -452,12 +436,28 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "No expiration date visible on the municipal license at the top of the display."
+      "First photo: The municipal license (Establishment License) expiration date area is obscured by glare/reflection and not visible."
     ],
     "notes": ""
   },
   {
-    "store": "087",
+    "store": "088",
+    "failed_criteria": [
+      "Only one license type visible; missing municipal license",
+      "Missing expiration date on license"
+    ],
+    "action_plan": [
+      "Display one municipal license and one provincial license",
+      "Ensure expiration date is clearly printed and legible"
+    ],
+    "visual_feedback": [
+      "Second image shows only the provincial license under the Payday Loans Act; municipal license not visible across provided photos",
+      "Expiration date on the municipal license (top document in first image) is not legible"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "089",
     "failed_criteria": [
       "Missing expiration date on license"
     ],
@@ -465,54 +465,22 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (Toronto Municipal Licensing & Standards certificate) lacks a visible expiration date in the display."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "088",
-    "failed_criteria": [
-      "Missing expiration date on license",
-      "Clutter in display area"
-    ],
-    "action_plan": [
-      "Ensure expiration date is clearly printed and legible",
-      "Remove unrelated items from the display area to avoid clutter"
-    ],
-    "visual_feedback": [
-      "The municipal license on the top lacks a visible expiration date in the frame",
-      "Non-license items, such as the 'Borrow Online Now' sign adjacent to licenses, clutter the display area"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "089",
-    "failed_criteria": [
-      "Exactly two distinct license types must be shown across the photo set"
-    ],
-    "action_plan": [
-      "Add one municipal license to the display alongside the existing provincial license to meet the requirement of two distinct license types."
-    ],
-    "visual_feedback": [
-      "No municipal license detected in any image; only provincial licenses are visible."
+      "Top document labeled 'Establishment License' does not display an expiration date."
     ],
     "notes": ""
   },
   {
     "store": "090",
     "failed_criteria": [
-      "Missing expiration date on license",
-      "Clutter in display area"
+      "Missing expiration date on license"
     ],
     "action_plan": [
-      "Ensure expiration date is clearly printed and legible",
-      "Remove unrelated items and keep the display area clear of clutter"
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (top document) does not show an expiration date; expiration date not visible",
-      "Sanitizer bottles adjacent to licenses create clutter in the display area"
+      "Expiration date on the municipal license (top document) is not visible or legible due to glare and reflection in the upper-center of the photo."
     ],
-    "notes": ""
+    "notes": "Expiration date on municipal license not legible in submission photo. ACTION: Escalate for human review due to low confidence."
   },
   {
     "store": "091",
@@ -523,7 +491,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date not visible on municipal license (top document) due to glare and resolution"
+      "Municipal license at top has no visible expiration date; the expiration section is obscured or not legible."
     ],
     "notes": ""
   },
@@ -536,7 +504,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license (top document) does not show any expiration date"
+      "Municipal Establishment Licence (top) does not show an expiration date in the visible area"
     ],
     "notes": ""
   },
@@ -549,20 +517,20 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Municipal license expiration date not visible in submitted images; glare/reflection obscures date area."
+      "Unable to locate expiration date on municipal license from City of Sault Ste. Marie"
     ],
-    "notes": "Expiration date on municipal license not visible. ACTION: Escalate for human review due to low confidence."
+    "notes": ""
   },
   {
     "store": "096",
     "failed_criteria": [
-      "Missing municipal license"
+      "Missing expiration date on license"
     ],
     "action_plan": [
-      "Display a municipal business license alongside the existing provincial license to meet the two distinct license types requirement."
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Only the provincial licence (Payday Loans Act, 2008 Certificate of Licence) is visible. No municipal business license detected."
+      "Expiration date on municipal license (top sheet in first gold standard comparison photo) is not visible or legible."
     ],
     "notes": ""
   },
@@ -575,7 +543,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top license (municipal) does not display an expiration date in the printed area."
+      "Expiration date not visible on the municipal license displayed in the top frame."
     ],
     "notes": ""
   },
@@ -588,12 +556,25 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date on municipal license (top) is not visible due to glare and reflection."
+      "Expiration date not visible on municipal license (Establishment Licence) at top of display"
     ],
     "notes": ""
   },
   {
     "store": "099",
+    "failed_criteria": [
+      "Exactly two distinct license types must be shown across the photo set: one municipal license and one provincial license"
+    ],
+    "action_plan": [
+      "Include a clearly visible municipal license in the display set alongside the provincial license"
+    ],
+    "visual_feedback": [
+      "Only the provincial 'Payday Loans Act, 2008 Certificate of Licence' is visible in the submission photo; the municipal license is missing"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "102",
     "failed_criteria": [
       "Missing expiration date on license"
     ],
@@ -601,23 +582,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Top (municipal) license does not display an expiration date."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "102",
-    "failed_criteria": [
-      "Missing expiration date on license",
-      "No clutter in the display area"
-    ],
-    "action_plan": [
-      "Ensure expiration date is clearly printed and legible",
-      "Remove any clutter from the license display area to keep focus on licenses"
-    ],
-    "visual_feedback": [
-      "Expiration date on municipal license (top document) is not visible due to blur and reflection",
-      "Background posters and reflections around licenses create visual clutter obstructing clear display"
+      "No expiration date visible on municipal license (top document)"
     ],
     "notes": ""
   },
@@ -630,36 +595,33 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date on municipal license (top) is obscured by glare and not visible."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "106",
-    "failed_criteria": [
-      "No clutter in the display area"
-    ],
-    "action_plan": [
-      "Remove any unrelated signage or items from the license display area to eliminate clutter"
-    ],
-    "visual_feedback": [
-      "'Borrow Online Here' signage visible adjacent to the licenses, causing clutter"
+      "Expiration date on the municipal license is not visible or legible in the photo."
     ],
     "notes": ""
   },
   {
     "store": "107",
     "failed_criteria": [
-      "Exactly two distinct license types must be shown across the photo set",
-      "Missing expiration date on municipal license"
+      "Missing expiration date on license"
     ],
     "action_plan": [
-      "Include one municipal license and one provincial license in the photo set",
-      "Ensure expiration date on municipal license is clearly printed and legible"
+      "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Only provincial license is clearly visible with expiration date in the lower image; no municipal license detected",
-      "Top document (municipal license) shows no expiration date"
+      "Top municipal license does not show an expiration date; expiration date is not visible or legible."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "108",
+    "failed_criteria": [
+      "Missing expiration date on license"
+    ],
+    "action_plan": [
+      "Ensure expiration date is clearly printed and legible"
+    ],
+    "visual_feedback": [
+      "Expiration date not visible on the municipal Establishment Licence displayed at the top"
     ],
     "notes": ""
   },
@@ -672,7 +634,7 @@
       "Ensure expiration date is clearly printed and legible"
     ],
     "visual_feedback": [
-      "Expiration date not visible on municipal license (Establishment Licence); text area is unreadable/blurred."
+      "Municipal Business License (top) does not show an expiration date clearly."
     ],
     "notes": ""
   },
@@ -680,15 +642,15 @@
     "store": "110",
     "failed_criteria": [
       "Missing expiration date on license",
-      "License not visible at eye level"
+      "License not displayed at eye level"
     ],
     "action_plan": [
       "Ensure expiration date is clearly printed and legible",
-      "Display all licenses at eye level so they are easily readable"
+      "Display all licenses at eye level for clear visibility"
     ],
     "visual_feedback": [
-      "Top license in window: expiration date not visible",
-      "Second license lying flat on counter: not displayed at eye level"
+      "Municipal license in first image lacks a visible expiration date",
+      "Provincial license in second image is placed flat on a counter below eye level"
     ],
     "notes": ""
   }

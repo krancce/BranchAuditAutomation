@@ -1,26 +1,24 @@
 standard_name: B3: Licensing Displays
 
-# ——— Submission Photos Handling ———
-- Treat all submitted images as one set; you do not need to see every license in a single frame.
-- For each image, identify which license it shows by reading the title/header (e.g. “Municipal Business License” vs. “Provincial Regulatory License”).
-
 requirements_checklist:
 - Exactly two distinct license types must be shown across the photo set:
-    • One municipal license and one provincial license (order doesn’t matter).  
+    • One municipal license and one provincial license (order doesn’t matter).
     • It’s okay if you see duplicates of the same license—just ensure you have both types somewhere.
-- For each identified license:  • Locate the expiration date printed on each license.  
-  • If **no expiration date is visible** on a license:
-      – Set `"pass": false`.  
-      – Add `"Missing expiration date on license"` to `failed_criteria`.  
-      – Add `"Ensure expiration date is clearly printed and legible"` to `action_plan`.  
-  • Else if **expiration date < current date**:
-      – Set `"pass": false`.  
-      – Add `"License expired"` to `failed_criteria`.  
-      – Add `"Replace with a valid, unexpired license"` to `action_plan`.  
-  • Otherwise (expiration date ≥ submission date), treat as passing this check.
+- For each identified license:
+    • Locate the expiration date printed on each license.
+    • If no expiration date is visible on a license: set pass: false.
+    • If expiration date < current date: set pass: false.
+    • Otherwise, treat as passing.
 - Items are framed or neatly arranged.
 - All licenses are visible at eye level (not blocked or hidden).
 - No clutter in the display area.
 
-gold_standard_photo_status: [Attached]  
+clarification_notes: |
+  - If the store provides a justification comment (in “store_justification_comments”) explaining that they have only one permission, one license, only a municipal license, or only an Ontario license, or only both (municipal + Ontario), grant a PASS for this section. Clearly state in notes: "Conditional pass: Store explained reason as follows: [repeat justification]."
+  - Do NOT fail for missing licenses, missing provincial/municipal licenses, or having only one license type if the justification is present and reasonable.
+  - Only fail if the justification is missing, implausible, or if licenses are expired/missing and no comment is provided.
+  - For all other requirements (expiration dates, legibility, arrangement), evaluate as usual.
+  - If in doubt, pass.
+
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

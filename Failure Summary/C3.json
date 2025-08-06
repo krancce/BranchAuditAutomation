@@ -1,152 +1,45 @@
 [
   {
-    "store": "014",
+    "store": "037",
+    "failed_criteria": [
+      "A cable crosses a shared footpath/walkway creating a trip hazard"
+    ],
+    "action_plan": [
+      "Re-route the cable along furniture edges or behind the desk so it does not cross any shared walkway"
+    ],
+    "visual_feedback": [
+      "Cable from the computer is visible crossing the open aisle under the desk, posing a trip hazard"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "064",
     "failed_criteria": [
       "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
       "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
     ],
     "action_plan": [
-      "Route all visible cables along furniture edges or behind the desk to keep them off the floor and away from walkways.",
-      "Remove the power cable crossing the open floor space; secure it under or behind the desk or use a cable cover to eliminate trip hazards."
+      "Re-route cables to run along furniture edges or walls, securing them with clips or ties so they do not cross the shared walkway.",
+      "Bundle or clip loose cable segments under the desk to eliminate any dangling sections that extend into the open aisle."
     ],
     "visual_feedback": [
-      "Second submission photo shows a power cable and adapter lying across the floor in front of the desk, crossing the walkway and creating a trip hazard.",
-      "Cables under the desk are not fully routed along edges and extend into the open aisle area."
+      "Cable from the rightmost desk is running across the main walkway, creating a trip hazard.",
+      "Loose cable segment under the right desk dangles into the shared footpath."
     ],
     "notes": ""
   },
   {
-    "store": "033",
+    "store": "089",
     "failed_criteria": [
       "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
       "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
     ],
     "action_plan": [
-      "Reroute cables so they run along desk edges or walls and do not cross open walkways.",
-      "Secure loose cables under the desk with clips or ties to eliminate trip hazards in front of the workstation."
+      "Re-route cables to run along desk edges or walls, away from open pathways.",
+      "Use cable clips, conduit, or cable covers to secure any cables crossing shared walkways and eliminate trip hazards."
     ],
     "visual_feedback": [
-      "Front desk view: cables are lying across the floor in front of the desk, crossing the main walkway.",
-      "Under-desk view: cables are loosely draped and extending into the shared footpath, creating a potential trip hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "038",
-    "failed_criteria": [
-      "All visible cables are routed along furniture edges, walls, or tucked away from walkways."
-    ],
-    "action_plan": [
-      "Reroute the cable and power strip to run along the back or side of the desk or under a desk leg, ensuring no cables cross the open floor where someone could trip."
-    ],
-    "visual_feedback": [
-      "The power strip and its cable are laid across the open area under the desk rather than secured along the furniture edge, creating a trip hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "040",
-    "failed_criteria": [
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
-    ],
-    "action_plan": [
-      "Re-route the red cable so it runs along the desk edge or behind furniture, ensuring it does not cross the front walkway or pose a trip hazard."
-    ],
-    "visual_feedback": [
-      "Red cable on the left side extends across the front of the desk into the open walkway, creating a potential trip hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "057",
-    "failed_criteria": [
-      "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
-    ],
-    "action_plan": [
-      "Re-route the grey cable running across the open floor so that it follows along the wall or is tucked under/behind the desk, eliminating the trip hazard.",
-      "Secure loose cables under the desk using clips or cable ties to prevent any dangling that could cause a trip hazard for passersby."
-    ],
-    "visual_feedback": [
-      "Grey cable visible crossing the open floor in front of the desk, creating a trip hazard instead of being routed along the desk edge or wall.",
-      "Loose cable segments hanging under the desk near the center aisle that could obstruct a walking path."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "074",
-    "failed_criteria": [
-      "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
-    ],
-    "action_plan": [
-      "Re-route cables to run along furniture edges or walls and tuck them away from open walkways using cable clips or conduits.",
-      "Ensure no cables cross open floor areas; secure or route cables under desks or along walls to eliminate trip hazards."
-    ],
-    "visual_feedback": [
-      "Floor in front of desk: cable running across open carpeted area.",
-      "Under-desk left side: loose cable hanging and not secured to furniture edge."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "083",
-    "failed_criteria": [
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
-    ],
-    "action_plan": [
-      "Re-route and secure the loose cable on the floor so it does not cross open workspace or walkway—bundle or clip it under the desk or along furniture edges."
-    ],
-    "visual_feedback": [
-      "Loose cable visible crossing under the desk in front of workspace, presenting a potential trip hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "084",
-    "failed_criteria": [
-      "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment."
-    ],
-    "action_plan": [
-      "Re-route all visible cables along furniture edges, walls, or under the desk to avoid crossing walkways.",
-      "Secure loose cables by bundling or clipping them away from floor traffic areas to eliminate trip hazards."
-    ],
-    "visual_feedback": [
-      "Loose black cable running across the floor in front of the desk crossing the open walkway.",
-      "Cable hanging loosely under the desk creating a potential trip hazard."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "093",
-    "failed_criteria": [
-      "All visible cables are routed along furniture edges, walls, or tucked away from walkways.",
-      "No cables should dangle in a way that could cause a trip hazard or obstruct access to equipment.",
-      "Power bars, adapters, and surge protectors are positioned securely, and cables are bundled or clipped where feasible."
-    ],
-    "action_plan": [
-      "Re-route the loose cable along the desk edge or baseboard to keep it out of the open walkway.",
-      "Remove the power adapter from the floor and mount or secure it under the desk or along a furniture leg to eliminate trip hazards.",
-      "Use cable clips or ties to bundle and secure any loose segments and ensure power bars/adapters are fixed away from walk paths."
-    ],
-    "visual_feedback": [
-      "The black power cable and adapter lying on the carpet under the desk crosses the open area and is not routed along the furniture edge, creating a trip hazard.",
-      "The power adapter is placed on the floor rather than secured under the desk, increasing the risk of obstruction.",
-      "Visible loose segments of cable under the desk are not bundled or clipped, leading to a disorganized appearance."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "096",
-    "failed_criteria": [
-      "Cable crosses open floor area under desk, creating a trip hazard"
-    ],
-    "action_plan": [
-      "Re-route cables so they do not cross the open floor area in front of the desk; bundle or clip cables along furniture edges or walls"
-    ],
-    "visual_feedback": [
-      "Cable running from center of desk to power bar on floor crosses an open area under the desk, posing a potential trip hazard"
+      "In the second submission image, a loose cable extends across the front opening of the desk into the walkway, posing a trip hazard."
     ],
     "notes": ""
   }

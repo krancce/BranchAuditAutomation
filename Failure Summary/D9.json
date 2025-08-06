@@ -1,164 +1,113 @@
 [
   {
-    "store": "013",
+    "store": "002",
     "failed_criteria": [
-      "Ladder rests against electrical panels or hazardous equipment"
+      "Ladder must not block any primary walkway or emergency exit"
     ],
     "action_plan": [
-      "Relocate the ladder so it is not contacting or leaning on electrical panels; place it on a stable, non-hazardous surface away from electrical equipment"
+      "Reposition ladder away from the door to ensure it does not block any primary walkway or emergency exit."
     ],
     "visual_feedback": [
-      "The ladder is shown lying horizontally in direct contact with electrical panel switches and meter boxes"
+      "Ladder is placed directly in front of the exit door, blocking the egress path."
     ],
     "notes": ""
   },
   {
-    "store": "015",
+    "store": "014",
     "failed_criteria": [
-      "Submission photo unreviewable for assessing standard compliance"
+      "Ladder must not block any primary walkway or emergency exit."
     ],
     "action_plan": [
-      "Retake photo for D9: Ladder Storage & Safety: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
+      "Reposition ladder to ensure it does not block any primary walkway or emergency exit, placing it out of the path of doors and hallways."
     ],
-    "visual_feedback": [],
-    "notes": "Submission photo is too blurry to assess standard compliance. ACTION: Escalate for human review due to low confidence."
+    "visual_feedback": [
+      "Ladder is positioned directly in front of a door handle, blocking access."
+    ],
+    "notes": ""
   },
   {
     "store": "019",
     "failed_criteria": [
-      "It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
+      "It must NOT rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
     ],
     "action_plan": [
-      "Relocate the ladder so that it is not resting against or on electrical panels or other hazardous equipment; place it on a stable, non-hazardous surface."
+      "Relocate the ladder so it is not in contact with electrical panels or other hazardous equipment; place it on a stable shelf, rack, or against a solid surface away from electrical installations."
     ],
     "visual_feedback": [
-      "The ladder is placed horizontally directly on top of electrical panels and conduit, contacting hazardous equipment."
+      "Ladder is lying horizontally in direct contact with the electrical panels at the bottom of the image."
     ],
     "notes": ""
   },
   {
     "store": "024",
     "failed_criteria": [
-      "Ladder resting against or leaning on electrical panels or hazardous equipment"
+      "It must NOT rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
     ],
     "action_plan": [
-      "Reposition the ladder so it does not lean on or touch any electrical panels or hazardous equipment"
+      "Reposition the ladder so it does not lean against or touch electrical panels or other hazardous equipment; lean it securely against a solid, non‐hazardous surface."
     ],
     "visual_feedback": [
-      "The ladder on the right is visibly leaning against the electrical panel located on the right side of the image"
+      "The right ladder is in direct contact with the electrical panel on the right side of the image."
     ],
     "notes": ""
   },
   {
-    "store": "033",
+    "store": "031",
     "failed_criteria": [
-      "Ladder is resting against or contacting an electrical panel, posing hazard"
+      "Ladder must not block any primary walkway or emergency exit. Only fail if it is directly in front of a door, main path, or the only way through."
     ],
     "action_plan": [
-      "Reposition the ladder so it does not lean on or touch electrical panels or hazardous equipment; store it on a stable surface away from such equipment."
+      "Move ladder away from the door to ensure it does not block any primary walkway or entry point."
     ],
     "visual_feedback": [
-      "Ladder top section is in contact with the electrical panel on the wall"
-    ],
-    "notes": ""
-  },
-  {
-    "store": "045",
-    "failed_criteria": [
-      "Ladder must not block any primary walkway or emergency exit"
-    ],
-    "action_plan": [
-      "Remove the ladder from blocking the exit doorway. Store the ladder in a location that does not obstruct any walkways or emergency exits."
-    ],
-    "visual_feedback": [
-      "The ladder is lying horizontally on boxes directly in front of the exit door, blocking the primary exit path."
+      "Ladder is positioned directly in front of a door, obstructing access."
     ],
     "notes": ""
   },
   {
     "store": "050",
     "failed_criteria": [
-      "Ladder blocking emergency exit"
+      "Ladder must not block any primary walkway or emergency exit."
     ],
     "action_plan": [
-      "Relocate ladder away from exit door to ensure clear emergency exit access."
+      "Reposition the ladder so it does not block any primary walkway or emergency exit, ensuring clear and unobstructed access."
     ],
     "visual_feedback": [
-      "Ladders are placed directly in front of the EXIT door, obstructing the emergency egress path."
+      "The ladder on the right is positioned directly in front of the exit door, blocking access."
     ],
     "notes": ""
   },
   {
     "store": "052",
     "failed_criteria": [
-      "It may also lie horizontally on a shelf or rack—or even on boxes, a ledge, or other surface—as long as it looks reasonably steady and is not likely to fall.",
-      "It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment.",
-      "The ladder setup should look intentional and safe—no loose tools or debris under it, and no obvious risk of falling or sliding."
+      "Ladder must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
     ],
     "action_plan": [
-      "Reposition the ladder horizontally onto a stable surface like a shelf, rack, or solid support rather than chairs to ensure it appears reasonably steady.",
-      "Move the ladder away from all electrical panels, wiring bundles, meter boxes, or other hazardous equipment to prevent contact or leaning.",
-      "Store the ladder securely so it is intentional and stable, eliminating any risk of it slipping or falling."
+      "Relocate the ladder so it is not in direct contact with electrical panels or hazardous equipment. Place it on a stable surface or against a wall."
     ],
     "visual_feedback": [
-      "The ladder is draped across chairs under its midpoint, which are not a stable support surface.",
-      "The ladder rests directly against electrical panels mounted beneath it, creating a contact hazard.",
-      "The overall setup appears precarious, with risk of slipping off the chairs and falling."
+      "Bottom section of the ladder is resting on metal electrical panels."
     ],
     "notes": ""
   },
   {
-    "store": "070",
+    "store": "055",
     "failed_criteria": [
-      "Submission photo unreviewable for assessing standard compliance"
+      "Obstruction & hazard check: Ladder must not block any primary walkway or emergency exit.",
+      "Ladder placement: Ladder is resting on a door and appears unstable."
     ],
     "action_plan": [
-      "Retake photo for D9: Ladder Storage & Safety: Ensure image is clear, well-lit, correctly framed, and accurately shows the required area/details as per policy guidelines."
-    ],
-    "visual_feedback": [],
-    "notes": "Incorrect photo submitted for D9: Ladder Storage & Safety; expected view of ladder setup, received storage boxes only. ACTION: Escalate for human review due to low confidence."
-  },
-  {
-    "store": "074",
-    "failed_criteria": [
-      "Ladder is obstructing a primary walkway or emergency exit"
-    ],
-    "action_plan": [
-      "Relocate ladder so it does not block any doorways or primary walkways, ensuring clear access to emergency exits."
+      "Reposition the ladder so it does not block any doors or walkways; store horizontally on a secure rack or vertically against a wall out of the path.",
+      "Ensure ladder rests on a stable surface; use a proper ladder rack or lean against a solid wall to prevent slipping."
     ],
     "visual_feedback": [
-      "Ladder positioned directly in front of exit door, blocking potential egress."
+      "The ladder is placed horizontally across the garage door, blocking the exit.",
+      "The ladder is resting on the door surface rather than a stable support, making it prone to sliding or falling."
     ],
     "notes": ""
   },
   {
-    "store": "087",
-    "failed_criteria": [
-      "It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
-    ],
-    "action_plan": [
-      "Relocate the ladder so it does not lean on or touch any hazardous equipment; place it on a stable surface such as a wall or a designated rack."
-    ],
-    "visual_feedback": [
-      "Ladder is resting directly on the piping and valve assembly, indicating contact with hazardous equipment."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "092",
-    "failed_criteria": [
-      "It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
-    ],
-    "action_plan": [
-      "Reposition ladder so it does not contact electrical panels or hazardous equipment; place it against a solid surface away from hazardous areas."
-    ],
-    "visual_feedback": [
-      "Ladder is seen leaning directly against the wall-mounted panel door, indicating contact with potential electrical equipment."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "108",
+    "store": "064",
     "failed_criteria": [
       "Submission photo unreviewable for assessing standard compliance"
     ],
@@ -169,15 +118,41 @@
     "notes": "Submission photo is too blurry to assess standard compliance. ACTION: Escalate for human review due to low confidence."
   },
   {
-    "store": "110",
+    "store": "087",
     "failed_criteria": [
-      "It must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
+      "Ladder rests in direct contact with hazardous equipment (pipes/valve assembly)"
     ],
     "action_plan": [
-      "Reposition the ladder so it does not contact electrical panels or other hazardous equipment. Store it vertically against a stable wall or horizontally on a secure rack or shelf away from electrical components."
+      "Relocate ladder to rest on a stable, non-hazardous surface, ensuring it does not touch or lean on any pipes, meters, or other hazardous equipment."
     ],
     "visual_feedback": [
-      "The ladder is directly resting on and leaning against the electrical panels and meter boxes on the wall."
+      "Ladder is directly resting on the pipe and valve assembly in the center of the image."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "092",
+    "failed_criteria": [
+      "Ladder must NOT rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
+    ],
+    "action_plan": [
+      "Reposition the ladder so it does not lean against electrical panels or other hazardous equipment; place it against a stable, non-hazardous surface."
+    ],
+    "visual_feedback": [
+      "The top section of the ladder is in direct contact with the electrical panel door mounted on the wall."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "110",
+    "failed_criteria": [
+      "Ladder must not rest against or lean on electrical panels, wiring bundles, meter boxes, or other hazardous equipment."
+    ],
+    "action_plan": [
+      "Reposition the ladder so it does not touch or lean on electrical panels or other hazardous equipment; store it on an appropriate rack or bracket away from electrical panels."
+    ],
+    "visual_feedback": [
+      "The ladder is in direct contact with the electrical panels visible on the wall (center and lower right of the image)."
     ],
     "notes": ""
   }

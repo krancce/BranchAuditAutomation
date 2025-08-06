@@ -2,51 +2,73 @@
   {
     "store": "006",
     "failed_criteria": [
+      "All items neatly arranged"
+    ],
+    "action_plan": [
+      "Reorganize the teller station: neatly arrange all items, secure loose papers, tuck away hanging forms, and organize cables to reduce clutter."
+    ],
+    "visual_feedback": [
+      "Loose papers hanging from counter drawers",
+      "Tangled cables visible on the floor near the printer",
+      "Stacks of boxes next to the printer causing clutter"
+    ],
+    "notes": ""
+  },
+  {
+    "store": "019",
+    "failed_criteria": [
       "No excessive paper or personal items visible.",
-      "Only official materials present (forms, stamps, etc.).",
       "All items neatly arranged."
     ],
     "action_plan": [
-      "Remove excess paper clutter from the teller station counter and surrounding area.",
-      "Ensure only official work-related materials are present at the teller station. Remove any non-office items or personal effects.",
-      "Organize all items neatly. Tidy loose papers, secure cables, and ensure a professional and uncluttered appearance."
+      "Remove distracting excess items from the teller counter area to maintain a clean, uncluttered workspace.",
+      "Organize and secure cables and loose items under the counter to ensure all materials appear neatly arranged."
     ],
     "visual_feedback": [
-      "Multiple loose papers and forms are visible hanging from drawers and on the counter.",
-      "Non-office related packaging and miscellaneous items under the printer create visual clutter.",
-      "Cables are tangled on the floor and papers are scattered, indicating disorganization."
+      "Cluttered cables, a hanging poster, and loose items under the teller counter create a distracting appearance.",
+      "Tangled wires and items on the floor under the counter are visible and need to be organized."
     ],
     "notes": ""
   },
   {
     "store": "026",
     "failed_criteria": [
-      "No excessive paper or personal items visible",
-      "Only official materials present (forms, stamps, etc.)",
-      "All items neatly arranged"
+      "No excessive paper or personal items visible.",
+      "All items neatly arranged."
     ],
     "action_plan": [
-      "Remove excessive paper and personal items from the teller station; keep area generally neat and uncluttered.",
-      "Ensure only official materials (forms, stamps, etc.) are present and remove any unrelated personal effects.",
-      "Arrange all items neatly, organize cables, and remove any clutter to maintain a professional appearance."
+      "Remove excess papers from the printer shelf and floor to keep the teller area neat and uncluttered.",
+      "Rearrange and organize remaining items so the counter appears professional and free of clutter."
     ],
     "visual_feedback": [
-      "Excess papers and documents scattered on the floor near the printer storage cabinet.",
-      "Stacks of documents visible protruding from the printer shelf.",
-      "Tangled cables and power strip on the floor in front of the teller station."
+      "Scattered papers and clutter visible under and around the printer on the right side of the station.",
+      "Loose papers on the floor and disorganized shelf near the printer indicate the area is not neatly arranged."
     ],
     "notes": ""
   },
   {
-    "store": "105",
+    "store": "052",
     "failed_criteria": [
       "All items neatly arranged"
     ],
     "action_plan": [
-      "Ensure all cables and wires are organized and secured to eliminate visible tangles and clutter."
+      "Organize and secure cables around the teller station: use cable management solutions or conceal power strips to ensure all items are neatly arranged."
     ],
     "visual_feedback": [
-      "Visible cables and power strip on the floor behind the teller machine are tangled and unorganized."
+      "Tangled cables and visible power strip on the floor next to the rightmost teller station."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "087",
+    "failed_criteria": [
+      "All items neatly arranged"
+    ],
+    "action_plan": [
+      "Neatly organize cables and wires: use cable management (clips, ties) to secure cords behind the teller station out of sight."
+    ],
+    "visual_feedback": [
+      "Cables and extension cord visibly cluttered on the floor near the printer."
     ],
     "notes": ""
   }

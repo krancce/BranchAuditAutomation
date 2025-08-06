@@ -7,5 +7,10 @@ requirements_checklist:
 - No signs blocking walkways.
 - Lighting works at dusk (if applicable).
 
-gold_standard_photo_status: [Attached/Not Available]
+clarification_notes: |
+  - If the store provides a justification comment explaining that there is no road sign, lawn sign, or A-frame (for example: "store does not have a road sign" or "no sign at this location"), and this explanation is plausible, then PASS this section. Clearly state in notes: "Conditional pass: Store explained reason as follows: [repeat justification]."
+  - Do not fail for the absence of signage when a valid store justification is given. Only fail if the justification is missing or implausible, or if the section fails other requirements and no comment is given.
+  - If in doubt, pass.
+
+gold_standard_photo_status: [Attached]
 submission_photo_status: [Attached]

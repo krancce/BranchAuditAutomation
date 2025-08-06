@@ -1,27 +1,33 @@
 [
   {
-    "store": "030",
+    "store": "014",
     "failed_criteria": [
-      "Drawer interior should not contain excessive debris or unrelated clutter"
+      "Hanging files are arranged in a generally tidy and accessible manner"
     ],
     "action_plan": [
-      "Remove loose papers and organize them into appropriate hanging folders; ensure drawer contains only properly filed documents and no random piles."
+      "Reinstate proper hanging file folders and arrange documents neatly in the drawer to ensure easy access and visibility of each file group."
     ],
     "visual_feedback": [
-      "Bottom drawer contains loose, unfiled papers without hanging folders, indicating excessive clutter that impedes normal use."
+      "Bottom-most drawer (timestamp 2025/05/27 02:26:27 image) shows loose papers stacked without hanging files, preventing tidy organization."
     ],
     "notes": ""
   },
   {
-    "store": "074",
+    "store": "055",
     "failed_criteria": [
-      "Drawer interior should not contain excessive debris or unrelated clutter"
+      "Hanging files are arranged in a generally tidy and accessible manner.",
+      "Clear, descriptive labels on at least one file tab per section are preferred but not mandatory, as long as some visible grouping or organization is apparent.",
+      "Drawer interior should not contain excessive debris or unrelated clutter."
     ],
     "action_plan": [
-      "Remove the unrelated items (pink binders) from the bottom drawer and ensure only hanging files and necessary documents are stored"
+      "Reorganize hanging files in all drawers to ensure files are neatly aligned and accessible; remove loose papers and ensure all files hang properly from rails.",
+      "Add or improve visible group labels on file tabs in each section to indicate file groupings clearly.",
+      "Remove loose stacks of papers and unrelated items from the drawer; maintain a tidy, usable interior."
     ],
     "visual_feedback": [
-      "Bottom-most drawer contains multiple pink binders instead of hanging files"
+      "Loose stack of papers at bottom of drawer in the third submission image preventing proper hanging of files.",
+      "No visible file tabs or grouping in the drawer shown in the third submission image.",
+      "Unrelated loose papers are cluttering the drawer interior in the third submission image."
     ],
     "notes": ""
   }

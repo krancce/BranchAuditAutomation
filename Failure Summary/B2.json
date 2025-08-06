@@ -2,26 +2,40 @@
   {
     "store": "002",
     "failed_criteria": [
-      "Posters should not overlap or obscure each other; all key information must be fully visible."
+      "Posters should not overlap or obscure each other"
     ],
     "action_plan": [
-      "Remove or reposition overlapping posters to ensure no poster covers or obscures any key information on existing marketing materials."
+      "Remove overlapping window decals or secondary promotions that obstruct existing posters, ensuring all key information on each poster is fully visible without overlap."
     ],
     "visual_feedback": [
-      "Circular promotional stickers on the storefront glass overlap and obscure the background window decals (\"Approval in MINUTES\" graphic)."
+      "In the front exterior submission image (timestamp 2025/05/17 12:32:07), heart-shaped promotional decals overlap and obscure portions of the main marketing posters on the windows, blocking key information."
     ],
     "notes": ""
   },
   {
-    "store": "059",
+    "store": "031",
     "failed_criteria": [
       "Posters should not overlap or obscure each other; all key information must be fully visible."
     ],
     "action_plan": [
-      "Relocate or remove office equipment obstructing the posters. Ensure each poster’s key information is fully visible and not blocked by furniture or equipment."
+      "Ensure no items obstruct the posters; reposition the printer and retake the photo so that all key information on each poster is fully visible."
     ],
     "visual_feedback": [
-      "The bottom section of the 'Borrow Online 24/7' poster is obscured by the office printer, hiding the e-Transfer logo and website URL."
+      "The bottom promotional poster is partially obstructed by a printer, blocking the QR code and text."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "056",
+    "failed_criteria": [
+      "Promotional posters not secured flat with consistent alignment"
+    ],
+    "action_plan": [
+      "Ensure all promotional posters are hung flat, upright, and consistently aligned; rotate any sideways posters to correct orientation and evenly space them."
+    ],
+    "visual_feedback": [
+      "Fifth submission image: QR-code poster is hung sideways (rotated 90°).",
+      "Seventh submission image: Canadian Premier poster is hung sideways (rotated 90°)."
     ],
     "notes": ""
   }

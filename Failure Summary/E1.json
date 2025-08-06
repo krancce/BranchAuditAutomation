@@ -5,23 +5,49 @@
       "Sign-offs are present for the majority of required dates"
     ],
     "action_plan": [
-      "Ensure cleaning log sign-offs are completed for all required dates up to the photo date shown on the image"
+      "Fill in initials for all daily tasks on each required date up to the photo date (2025-05-27) so that the majority of required dates have sign-offs, then retake and submit the photo showing completed entries."
     ],
     "visual_feedback": [
-      "Columns for Monday (2025-05-26) and Tuesday (2025-05-27) are blank with no initials"
+      "Missing initials in the sign-off columns for Monday (05/26) and Tuesday (05/27) for most tasks; only the 'Empty ALL garbage and replace bag' row has signatures."
     ],
     "notes": ""
   },
   {
     "store": "022",
     "failed_criteria": [
-      "Sign-offs are not present for the majority of required dates up to the photo date (2025-06-07)"
+      "Sign-offs are present for the majority of required dates"
     ],
     "action_plan": [
-      "Update the cleaning log for the current week and ensure sign-offs are completed for each day up to the date of the photo (2025-06-07)."
+      "Ensure the cleaning log is signed for all required dates up to and including the photo timestamp date (2025-06-07)."
     ],
     "visual_feedback": [
-      "The posted log is dated week of Dec 23–Dec 30 and has no sign-offs corresponding to the current week up to the photo date."
+      "The log sheet on the bulletin board shows blank sign-off fields with no initials for dates up to the photo date."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "033",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Ensure the cleaning log has sign-offs for the majority of required dates up to the photo date."
+    ],
+    "visual_feedback": [
+      "Monday, Tuesday, and Friday columns are blank with no sign-offs visible."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "043",
+    "failed_criteria": [
+      "Sign-offs are present for the majority of required dates"
+    ],
+    "action_plan": [
+      "Complete sign-offs for the missing weekdays up to 2025-05-16 on the cleaning log"
+    ],
+    "visual_feedback": [
+      "Most weekday sign-off columns up to the date 2025-05-16 are blank, indicating missing multiple days of sign-offs."
     ],
     "notes": ""
   },
@@ -31,36 +57,23 @@
       "Sign-offs are present for the majority of required dates"
     ],
     "action_plan": [
-      "Ensure daily sign-offs are completed for all weekdays up to the timestamp date (2025/05/29); review and initial tasks on Wednesday, Thursday, and Friday entries."
+      "Ensure the cleaning log is signed off for the majority of required dates up to the photo timestamp (2025-05-29)."
     ],
     "visual_feedback": [
-      "Only Monday and Tuesday columns have visible initials; Wednesday through Friday columns are blank despite being before the photo timestamp date."
+      "No sign-off entries visible in the date columns for the current week up to the photo date."
     ],
     "notes": ""
   },
   {
-    "store": "096",
+    "store": "084",
     "failed_criteria": [
       "Sign-offs are present for the majority of required dates"
     ],
     "action_plan": [
-      "Ensure sign-offs are completed for all required dates up to the photo date, especially the Kitchen Area row on Monday 2025/07/07."
+      "Ensure sign-offs are completed for all weekdays up to the photo date (Mon–Thu) before taking a new audit photo"
     ],
     "visual_feedback": [
-      "Kitchen Area row under Monday column is blank, missing initials."
-    ],
-    "notes": ""
-  },
-  {
-    "store": "105",
-    "failed_criteria": [
-      "Sign-offs are present for the majority of required dates"
-    ],
-    "action_plan": [
-      "Replace the log sheet with the current week’s log and complete sign-offs for each date up to the photo date before resubmitting photo."
-    ],
-    "visual_feedback": [
-      "No signatures are present for current week dates (May 12–May 17) on the posted log sheet."
+      "Tuesday, Wednesday, and Thursday columns show 'NP' or blank entries indicating missing signatures"
     ],
     "notes": ""
   }

@@ -1,27 +1,53 @@
 [
   {
-    "store": "002",
+    "store": "039",
     "failed_criteria": [
-      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+      "Surfaces are even and free of major cracks or potholes that present a safety risk"
     ],
     "action_plan": [
-      "Repair or patch the pothole/crack in the parking surface to eliminate the trip hazard and ensure an even, safe walkway."
+      "Repair major cracks/potholes in walkway and parking surfaces to eliminate trip hazards"
     ],
     "visual_feedback": [
-      "A large pothole with standing water is visible in the parking area directly in front of the store entrance, creating a trip hazard."
+      "Visible large crack/pothole near painted parking lines in front of store entrance"
     ],
     "notes": ""
   },
   {
-    "store": "041",
+    "store": "045",
     "failed_criteria": [
       "Walkways and entrances are unobstructed"
     ],
     "action_plan": [
-      "Ensure vehicles are parked entirely within marked stalls and not blocking any walkway or entrance."
+      "Ensure walkways and entrances are clear of parked vehicles; park vehicles fully within marked stalls and off the walkway."
     ],
     "visual_feedback": [
-      "Parked vehicle obstructing walkway directly in front of the entrance."
+      "Vehicle encroaching the walkway at the store entrance, blocking safe passage."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "098",
+    "failed_criteria": [
+      "Walkways and entrances are unobstructed."
+    ],
+    "action_plan": [
+      "Ensure walkways are clear by relocating the parked vehicle off the sidewalk so at least 75% of the walkway width remains unobstructed."
+    ],
+    "visual_feedback": [
+      "Vehicle parked partially on the sidewalk, blocking the pedestrian path near the storefront."
+    ],
+    "notes": ""
+  },
+  {
+    "store": "105",
+    "failed_criteria": [
+      "Surfaces are even and free of major cracks or potholes that present a safety risk."
+    ],
+    "action_plan": [
+      "Repair or patch any major cracks or potholes in the walkway/parking area to ensure a smooth, safe surface free of trip hazards."
+    ],
+    "visual_feedback": [
+      "Visible large pothole in the parking area near the center of the image creating a trip hazard."
     ],
     "notes": ""
   },
@@ -31,9 +57,9 @@
       "Submission photo unreviewable for assessing standard compliance"
     ],
     "action_plan": [
-      "Retake photo for A3: Parking Lot & Walkways: Ensure image is clear, well-lit, correctly framed, and accurately shows the required ground surfaces in front of the store, including walkways and parking areas."
+      "Retake photo for A3: Parking Lot & Walkways: Ensure image is clear, well-lit, correctly framed, and accurately shows the store’s parking lot or pedestrian walkway area directly in front of the entrance."
     ],
     "visual_feedback": [],
-    "notes": "Submission photo does not show the store's parking lot or walkways as required. ACTION: Escalate for human review due to low confidence."
+    "notes": "Incorrect photo submitted for A3: Parking Lot & Walkways; expected view of store parking lot or walkway, received distant street view. ACTION: Escalate for human review due to low confidence."
   }
 ]
